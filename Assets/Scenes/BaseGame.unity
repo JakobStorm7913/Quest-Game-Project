@@ -150,6 +150,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1968059680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &399664418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 399664419}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &399664419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399664418}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.77, y: 0.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1734411256}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689555515
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +470,7 @@ GameObject:
   - component: {fileID: 1645623045}
   - component: {fileID: 1645623044}
   - component: {fileID: 1645623046}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +525,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.050011635, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -565,6 +596,107 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1734411252 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2657354608977905715, guid: a61b1e375a22e3740a6e8b36ec385a25, type: 3}
+  m_PrefabInstance: {fileID: 4016595719399714910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1734411256 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6881730686218019959, guid: a61b1e375a22e3740a6e8b36ec385a25, type: 3}
+  m_PrefabInstance: {fileID: 4016595719399714910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1734411257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734411252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c53d406b3e718e48a08dfe2f8041bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  maxHealth: 1
+  currentHealth: 0
+  damageMaterial: {fileID: 0}
+  damageFeedBackDuration: 0.2
+  attackRadius: 0.94
+  attackPoint: {fileID: 399664419}
+  whatIsTarget:
+    serializedVersion: 2
+    m_Bits: 0
+  groundCheckDistance: 2.7
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  moveSpeed: 8
+  jumpForce: 15
+--- !u!50 &1734411258
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734411252}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!70 &1734411259
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734411252}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.22440374, y: -0.14025259}
+  m_Size: {x: 0.808789, y: 3.660122}
+  m_Direction: 0
 --- !u!1 &1968059679
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,11 +775,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6881730686218019959, guid: a61b1e375a22e3740a6e8b36ec385a25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.65
+      value: -2.19
       objectReference: {fileID: 0}
     - target: {fileID: 6881730686218019959, guid: a61b1e375a22e3740a6e8b36ec385a25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.53
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 6881730686218019959, guid: a61b1e375a22e3740a6e8b36ec385a25, type: 3}
       propertyPath: m_LocalPosition.z
@@ -683,8 +815,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6881730686218019959, guid: a61b1e375a22e3740a6e8b36ec385a25, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 399664419}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2657354608977905715, guid: a61b1e375a22e3740a6e8b36ec385a25, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1734411257}
+    - targetCorrespondingSourceObject: {fileID: 2657354608977905715, guid: a61b1e375a22e3740a6e8b36ec385a25, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1734411259}
+    - targetCorrespondingSourceObject: {fileID: 2657354608977905715, guid: a61b1e375a22e3740a6e8b36ec385a25, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1734411258}
   m_SourcePrefab: {fileID: 100100000, guid: a61b1e375a22e3740a6e8b36ec385a25, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
