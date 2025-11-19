@@ -1,9 +1,15 @@
 using UnityEngine;
 
-public class QuestItem : MonoBehaviour
+public class QuestItem : InventoryItem
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private bool isQuestItem;
+    public QuestItem(string type, string name, bool questItem)
+        : base(type, name)
+    {
+        isQuestItem = questItem;
+    }
+
+    public override void UseItem()
     {
         
     }

@@ -6,8 +6,8 @@ public abstract class InventoryItem : MonoBehaviour
     private string itemName;
 
     protected InventoryItem(string type, string name) {
-        this.itemType = type;
-        this.itemName = name;
+        itemType = type;
+        itemName = name;
     }
     public abstract void UseItem();
     public virtual void PickUpItem()
