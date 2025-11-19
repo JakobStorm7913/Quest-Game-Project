@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - WhichCombatTrigger
+  - Door
+  - Vines
+  - PlayerAttack
+  - Wall
+  - Ground
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Player
+  - PlayerDodge
+  - Enemies
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1752695917
+    locked: 0
+  - name: Player
+    uniqueID: 2305214023
+    locked: 0
+  - name: Particles
+    uniqueID: 1798692213
+    locked: 0
+  - name: Front
+    uniqueID: 3744316217
+    locked: 0
+  - name: FrontFront
+    uniqueID: 323575583
+    locked: 0
+  m_RenderingLayers:
+  - Default
