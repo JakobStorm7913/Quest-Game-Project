@@ -1,10 +1,11 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Rendering;
 
 public class InventorySlot : MonoBehaviour
 {
     //public static InventorySlot Instance  { get; private set; }
-    [SerializeField] public float slotNumber;
+    [SerializeField] public int slotNumber;
     [SerializeField] private int slotCapacity;
     [SerializeField] private int itemCount;
     [SerializeField] private List<InventoryItem> SlotItems;
@@ -44,6 +45,14 @@ public class InventorySlot : MonoBehaviour
     public void AddItem(InventoryItem item)
     {
         SlotItems.Add(item);
+    }
+    public void DeleteItem(InventoryItem item)
+    {
+        SlotItems.Remove(item);
+    }
+    public int GetSlotNumber()
+    {
+        return slotNumber;
     }
     public int GetItemCount()
     {

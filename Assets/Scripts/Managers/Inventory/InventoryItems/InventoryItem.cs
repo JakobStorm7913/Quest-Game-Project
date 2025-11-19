@@ -12,7 +12,7 @@ public abstract class InventoryItem : MonoBehaviour
     public abstract void UseItem();
     public virtual void PickUpItem()
     {
-        InventoryManager.Instance.addItemToInventory(this);
+        InventoryManager.Instance.AddItemToInventory(this);
     }
 
     public virtual string getName()
