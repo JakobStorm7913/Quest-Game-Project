@@ -6,7 +6,7 @@ public class Enemy : Entity
 
     private bool playerDetected;
 
-     [Header("Movement details")]
+    [Header("Movement details")]
     [SerializeField] protected float moveSpeed = 0f; // Kode til moveSpeed
 
     protected override void Update()
