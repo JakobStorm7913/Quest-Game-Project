@@ -4,10 +4,32 @@ using UnityEngine.InputSystem;
 
 public class PlayerMeleeAttack : MonoBehaviour
 {
+
+
+    protected SpriteRenderer sr;
+    protected Animator anim;
+    protected Rigidbody2D rb;
+    protected Collider2D col;
+
     [Header("Hitbox")]
     [SerializeField] private Collider2D attackHitbox;
     [SerializeField] private float attackDuration = 0.15f;
     [SerializeField] private float attackCooldown = 0.4f;
+    
+    [Header("Attack details")]
+    [SerializeField] protected float attackRadius; // Den radius der må være
+    [SerializeField] protected Transform attackPoint; // Hvor detectiuon sker
+    [SerializeField] protected LayerMask whatIsTarget; // Hvad den skal registere
+
+    [Header("Health")]
+    [SerializeField] private int maxHealth = 1;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private Material damageMaterial;
+    [SerializeField] private float damageFeedBackDuration = .2f;
+    private Coroutine damageFeedbackCoroutine;
+
+
+
 
     private bool isAttacking = false;
     private float lastAttackTime = -999f;
@@ -19,6 +41,8 @@ public class PlayerMeleeAttack : MonoBehaviour
         attackAction = InputSystem.actions.FindAction("Attack");
         attackAction.Enable();
         attackAction.performed += OnAttackTriggered;
+        currentHealth = maxHealth;
+        sr = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Start()
@@ -53,4 +77,76 @@ public class PlayerMeleeAttack : MonoBehaviour
         Debug.Log("Hitbox state = " + attackHitbox.enabled.ToString());
         isAttacking = false;
     }
+
+
+     private IEnumerator DamageFeedbackCo() // Damage Feedback
+
+
+    {
+        Material originalMat = sr.material;
+
+        sr.material = damageMaterial;
+
+        yield return new WaitForSeconds(damageFeedBackDuration);
+
+        sr.material = originalMat;
+    }
+
+    public void DamageTargets() // Kode til at se om enemy tager skade eller om enemy bliver ramt
+
+    {
+
+        Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget); // Koden vil detecte enemies colliders. 
+
+        foreach (Collider2D enemy in enemyColliders) // Kode til enemy detection/Encapsulation
+        {
+
+            Entity entityTarget = enemy.GetComponent<Entity>();
+            entityTarget.TakeDamage();
+
+        }
+
+    }
+
+
+          private void PlayDamageFeedback() // Kode til damageFeedBack
+    {
+        if (damageFeedbackCoroutine != null)
+            StopCoroutine(damageFeedbackCoroutine);
+
+        StartCoroutine(DamageFeedbackCo());
+    }
+
+
+    
+
+    public void TakeDamage() // Kode til skade
+
+
+    {
+        
+        currentHealth = currentHealth - 1;
+
+        PlayDamageFeedback();
+
+        if (currentHealth <= 0)
+        Die();
+        
+    }
+
+
+     protected virtual void Die() // Kode til die
+
+    {
+        anim.enabled = false;
+        col.enabled = false;
+
+        rb.gravityScale = 12;
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
+
+        Destroy(gameObject, 3);
+    }
+
+    
+
 }

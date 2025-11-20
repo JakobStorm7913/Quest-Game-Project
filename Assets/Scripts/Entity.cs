@@ -88,7 +88,7 @@ public class Entity : MonoBehaviour
 
     }
 
-    private void TakeDamage() // Kode til skade
+    public void TakeDamage() // Kode til skade
     {
         currentHealth = currentHealth - 1;
 
