@@ -20,8 +20,8 @@ public class Entity : MonoBehaviour
     protected SpriteRenderer sr;
 
     [Header("Health")]
-    [SerializeField] private int maxHealth = 1;
-    [SerializeField] private int currentHealth;
+    [SerializeField] private float maxHealth = 25;
+    [SerializeField] private float currentHealth;
     [SerializeField] private Material damageMaterial;
     [SerializeField] private float damageFeedBackDuration = .2f;
     private Coroutine damageFeedbackCoroutine;
@@ -79,18 +79,16 @@ public class Entity : MonoBehaviour
 
         foreach (Collider2D enemy in enemyColliders) // Kode til enemy detection/Encapsulation
         {
-
+            
             Entity entityTarget = enemy.GetComponent<Entity>();
             entityTarget.TakeDamage();
-
-
         }
 
     }
 
     public void TakeDamage() // Kode til skade
     {
-        currentHealth = currentHealth - 1;
+        currentHealth -= GameData.Instance.PlayerAttackDamage;
 
         PlayDamageFeedback();
 

@@ -7,7 +7,7 @@ public class Enemy : Entity
     private bool playerDetected;
 
      [Header("Movement details")]
-    [SerializeField] protected float moveSpeed = 2f; // Kode til moveSpeed
+    [SerializeField] protected float moveSpeed = 0f; // Kode til moveSpeed
 
     protected override void Update()
     {
@@ -25,7 +25,6 @@ public class Enemy : Entity
 
     protected override void HandleMovement()
     {
-
 
         if (canMove)
             rb.linearVelocity = new Vector2(facingDir * moveSpeed, rb.linearVelocity.y);
