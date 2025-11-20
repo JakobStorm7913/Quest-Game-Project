@@ -21,7 +21,7 @@ public class PlayerMeleeAttack : MonoBehaviour
     [SerializeField] protected Transform attackPoint; // Hvor detectiuon sker
     [SerializeField] protected LayerMask whatIsTarget; // Hvad den skal registere
 
-    [Header("Health")]
+    [Header("Health")] // Ellers du Attack details ikke
     [SerializeField] private int maxHealth = 1;
     [SerializeField] private int currentHealth;
     [SerializeField] private Material damageMaterial;
@@ -121,7 +121,6 @@ public class PlayerMeleeAttack : MonoBehaviour
     
 
     public void TakeDamage() // Kode til skade
-
 
     {
         
