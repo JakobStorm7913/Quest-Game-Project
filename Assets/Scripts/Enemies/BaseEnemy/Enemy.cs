@@ -1,13 +1,13 @@
 using System;
 using UnityEngine;
 
-public class Enemy : Entity
+public class Enemy : Entity_Enemy
 {
 
     private bool playerDetected;
 
-    [Header("Movement details")]
-    [SerializeField] protected float moveSpeed = 0f; // Kode til moveSpeed
+     [Header("Movement details")]
+    [SerializeField] protected float moveSpeed = 2f; // Kode til moveSpeed
 
     protected override void Update()
     {

@@ -11,11 +11,7 @@ public class PlayerMeleeAttack : MonoBehaviour
     protected Rigidbody2D rb;
     protected Collider2D col;
 
-    [Header("Hitbox")]
-    [SerializeField] private Collider2D attackHitbox;
-    [SerializeField] private float attackDuration = 0.15f;
-    [SerializeField] private float attackCooldown = 0.4f;
-    
+   
     [Header("Attack details")]
     [SerializeField] protected float attackRadius; // Den radius der må være
     [SerializeField] protected Transform attackPoint; // Hvor detectiuon sker
@@ -30,55 +26,28 @@ public class PlayerMeleeAttack : MonoBehaviour
 
 
 
+    protected int facingDir = 1;
+    protected bool facingRight = true; // Kode til retning af player
+    
+    [Header("Collision details")]
+    [SerializeField] private float groundCheckDistance;
 
-    private bool isAttacking = false;
-    private float lastAttackTime = -999f;
+    [SerializeField] private LayerMask whatIsGround;
+    protected bool canMove = true;
+    
+    protected bool isGrounded;
 
-    private InputAction attackAction;
+
+
 
     private void Awake()
     {
-        attackAction = InputSystem.actions.FindAction("Attack");
-        attackAction.Enable();
-        attackAction.performed += OnAttackTriggered;
+        
         currentHealth = maxHealth;
         sr = GetComponentInChildren<SpriteRenderer>();
     }
 
-    private void Start()
-    {
-        if (attackHitbox != null)
-            attackHitbox.enabled = false;
-    }
-
-    private void OnAttackTriggered(InputAction.CallbackContext ctx)
-    { 
-        if (isAttacking) return;
-        if (!isAttacking) {
-        
-            if (Time.time < lastAttackTime + attackCooldown) return;
-
-            StartCoroutine(DoAttack());
-        }
-    }
-
-    private IEnumerator DoAttack()
-    {
-        isAttacking = true;
-        lastAttackTime = Time.time;
-
-        attackHitbox.enabled = true;
-        SoundFXManager.Instance.PlayPlayerAttackSFX();
-        Debug.Log("Hitbox state = " + attackHitbox.enabled.ToString());
-
-        yield return new WaitForSeconds(attackDuration);
-
-        attackHitbox.enabled = false;
-        Debug.Log("Hitbox state = " + attackHitbox.enabled.ToString());
-        isAttacking = false;
-    }
-
-
+   
      private IEnumerator DamageFeedbackCo() // Damage Feedback
 
 
