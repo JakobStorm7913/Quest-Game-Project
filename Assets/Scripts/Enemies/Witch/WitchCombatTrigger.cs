@@ -74,9 +74,6 @@ public class WitchCombatTrigger : MonoBehaviour
         }
         if (other.CompareTag(playerTag))
         {
-            Debug.Log("Player exited Witch fight");
-            combatManager.EndCombat();
-            
             playerCam.Priority = 10;
             bossCam.Priority = 0;
            // witchHouse = Instantiate(housePrefab, new Vector3(houseX, houseY, 0), Quaternion.identity);

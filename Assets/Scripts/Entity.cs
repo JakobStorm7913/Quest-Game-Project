@@ -74,7 +74,6 @@ public class Entity : MonoBehaviour
     public void DamageTargets() // Kode til at se om enemy tager skade eller om enemy bliver ramt
 
     {
-
         Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget); // Koden vil detecte enemies colliders. 
 
         foreach (Collider2D enemy in enemyColliders) // Kode til enemy detection/Encapsulation
@@ -102,10 +101,8 @@ public class Entity : MonoBehaviour
     {
         anim.enabled = false;
         col.enabled = false;
-
         rb.gravityScale = 12;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
-
         Destroy(gameObject, 3);
     }
 
