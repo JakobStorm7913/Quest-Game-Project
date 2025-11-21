@@ -24,8 +24,6 @@ public class PlayerMeleeAttack : MonoBehaviour
     [SerializeField] private float damageFeedBackDuration = .2f;
     private Coroutine damageFeedbackCoroutine;
 
-
-
     protected int facingDir = 1;
     protected bool facingRight = true; // Kode til retning af player
     
@@ -36,6 +34,13 @@ public class PlayerMeleeAttack : MonoBehaviour
     protected bool canMove = true;
     
     protected bool isGrounded;
+
+
+    [Header("Movement details")]
+    [SerializeField] protected float moveSpeed = 8f; // Kode til moveSpeed
+    [SerializeField] private float jumpForce = 15f; // Kode til jumpforde
+    private float xInput;
+    private bool canJump = true;
 
 
 
