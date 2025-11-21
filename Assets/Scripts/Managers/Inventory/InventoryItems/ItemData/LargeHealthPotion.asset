@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e6329935d8b2246918b9b39585a770, type: 3}
   m_Name: LargeHealthPotion
   m_EditorClassIdentifier: Assembly-CSharp::PotionItemData
-  itemName: New Item
-  itemType: 3
-  icon: {fileID: 0}
-  description: 
-  healAmount: 10
+  itemName: Large Health Potion
+  itemType: 0
+  icon: {fileID: 21300000, guid: 5f9d9d4713c2e3643bf4a060f4551890, type: 3}
+  description: A Large bottle filled with a magical liquid with healing abilities
+  healAmount: 25

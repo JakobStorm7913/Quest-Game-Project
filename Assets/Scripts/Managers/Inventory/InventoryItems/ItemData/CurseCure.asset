@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4ba8c8a60ae264d9d5fe5fd2d05acb, type: 3}
   m_Name: CurseCure
   m_EditorClassIdentifier: Assembly-CSharp::QuestItemData
-  itemName: New Item
-  itemType: 3
-  icon: {fileID: 0}
+  itemName: Curse Cure
+  itemType: 1
+  icon: {fileID: 8598634611415830664, guid: 89d340f4ea1379a4b8d234aaf66fb9cf, type: 3}
   description: 

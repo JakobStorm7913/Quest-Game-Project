@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7fbaea19e707f94fa3e008b751ea301, type: 3}
   m_Name: WitchKey
   m_EditorClassIdentifier: Assembly-CSharp::KeyItemData
-  itemName: New Item
-  itemType: 3
-  icon: {fileID: 0}
-  description: 
+  itemName: Witch Key
+  itemType: 2
+  icon: {fileID: -2902247422746666468, guid: 89d340f4ea1379a4b8d234aaf66fb9cf, type: 3}
+  description: The key to open the door at the witch' cabin
   useAmount: 1

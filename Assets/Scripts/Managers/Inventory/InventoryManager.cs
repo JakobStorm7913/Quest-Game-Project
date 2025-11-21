@@ -18,7 +18,7 @@ public class InventoryManager : MonoBehaviour
 
     [Header("Special Items")]
     [SerializeField] private ItemData witchKeyItem;
-    [SerializeField] private ItemData antidoteItem;
+    [SerializeField] private ItemData cureItem;
 
     [Header("Actions")]
     public System.Action OnInventoryChanged;
@@ -103,11 +103,11 @@ public class InventoryManager : MonoBehaviour
         }
     else if (slot.item.itemType == ItemType.QuestItem)
         {
-        if (slot.item == antidoteItem) 
+        if (slot.item == cureItem) 
             {
             if (playerUse != null)
                 {
-                if (playerUse.UseAntidote())
+                if (playerUse.UseCure())
                     {
                     slot.count--;
                     }
