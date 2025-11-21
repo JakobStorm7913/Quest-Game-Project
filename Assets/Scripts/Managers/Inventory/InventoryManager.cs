@@ -1,100 +1,178 @@
 using UnityEngine;
-using System.Collections.Generic;
-using System.IO.IsolatedStorage;
+using System.Collections.Generic; 
+using UnityEngine.InputSystem;
+
 public class InventoryManager : MonoBehaviour
 {
-    public static InventoryManager Instance  { get; private set; }
-    [SerializeField] public int InventorySlots { get; set; }
-    [SerializeField] public int SlotsMaxCount { get; set; }
-    [SerializeField] public List<InventorySlot> Inventory { get; set; }
+    public static InventoryManager Instance { get; private set; }
 
-    void Awake() {
-        if (Instance == null) {
-            
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            InventorySlots = 5;
-            SlotsMaxCount = 10;
-            Inventory = new List<InventorySlot>(InventorySlots);
-            InitializeInventorySlots();
+    [Header("Inventory Settings")]
+    [SerializeField] private int slotCount = 5;
+    [SerializeField] private int stackLimit = 10;
+
+    [SerializeField] private List<InventorySlot> slots;
+
+    public IReadOnlyList<InventorySlot> Slots => slots;
+    public int SlotCount => slotCount;
+    public int StackLimit => stackLimit;
+
+    [Header("Special Items")]
+    [SerializeField] private ItemData witchKeyItem;
+    [SerializeField] private ItemData antidoteItem;
+
+    [Header("Actions")]
+    public System.Action OnInventoryChanged;
+    private InputAction slot1Action;
+    private InputAction slot2Action;
+    private InputAction slot3Action;
+    private InputAction slot4Action;
+    private InputAction slot5Action;
+
+    [Header("References")]
+    private PlayerUseQuestItem playerUse;
+
+    private void Awake()
+    {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
         }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        if (slots == null || slots.Count != slotCount)
+        {
+            slots = new List<InventorySlot>(slotCount);
+            for (int i = 0; i < slotCount; i++)
+            {
+                slots.Add(new InventorySlot());
+            }
+        }
+        EnableInventoryActions();
+        playerUse = GameObject.FindWithTag("Player").GetComponent<PlayerUseQuestItem>();
     }
 
-    public void AddItemToInventory(InventoryItem item)
+    public void AddItem(ItemData itemData)
     {
-        foreach (InventorySlot slot in Inventory)
+        foreach (var slot in slots) //First check if we already hold an item of this type and adds 1 to the stack.
         {
-            List<InventoryItem> tempList = slot.GetList();
-            if (tempList.Count == 0)
+            if (slot.item == itemData && slot.count < stackLimit)
             {
-                slot.AddItem(item);
-                slot.IncreaseItemCount();
-                break;
-            } if (tempList.Count > 0)
+                slot.count++;
+                OnInventoryChanged?.Invoke();
+                return;
+            }
+        }
+        foreach (var slot in slots) //Second put it in an empty slot if there is one
+        {
+            if (slot.IsEmpty)
             {
-                if (tempList[1].getName().Equals(item.name))
-                {
-                    slot.IncreaseItemCount();
-                    break;
+                slot.item = itemData;
+                slot.count = 1;
+                OnInventoryChanged?.Invoke();
+                return;
+            }
+        }
+
+        Debug.Log("Inventory full, cant add: " + itemData.itemName);
+    }
+
+    public void UseItem(int slotIndex)
+    {
+        Debug.Log("UseItem called for slot " + slotIndex);
+        if (slotIndex < 0 || slotIndex >= slotCount) return; //making sure we dont grab an index out of range
+
+    var slot = slots[slotIndex];
+    if (slot.IsEmpty) return;
+
+    if (slot.item is PotionItemData potion)
+        {
+            if (GameData.Instance != null)
+            {
+                Debug.Log("Previous Player Health: " + GameData.Instance.PlayerHealth);
+                GameData.Instance.PlayerHealth += potion.healAmount;
+                if (GameData.Instance.PlayerHealth > 100) {
+                    GameData.Instance.PlayerHealth = 100;
+                    Debug.Log("Player reached full health");
                 }
-            }
-            if (slot.GetSlotNumber().Equals(10))
-            {
-                break;
+                slot.count--;
+                Debug.Log("Player was healed: " + potion.healAmount + ", New HP: " + GameData.Instance.PlayerHealth);
             }
         }
-    }
-
-     public void RemoveItemFromInventory(InventoryItem item)
-    {
-        foreach (InventorySlot slot in Inventory)
+    else if (slot.item.itemType == ItemType.QuestItem)
         {
-            List<InventoryItem> tempList = slot.GetList();
-            if (tempList.Count == 0)
+        if (slot.item == antidoteItem) 
             {
-                break;
-            } if (tempList.Count > 0)
-            {
-                if (tempList[1].getName().Equals(item.name))
+            if (playerUse != null)
                 {
-                    slot.DecreaseItemCount();
-                    if (slot.GetItemCount() == 0)
+                if (playerUse.UseAntidote())
                     {
-                        slot.DeleteItem(item);
+                    slot.count--;
                     }
-                    break;
                 }
             }
-            if (slot.GetSlotNumber().Equals(10))
+        }
+    else if (slot.item.itemType == ItemType.Key)
+        {
+        if (slot.item == witchKeyItem) 
             {
-                break;
+            if (playerUse != null)
+                {
+                if (playerUse.UseWitchKey())
+                    {
+                    slot.count--;
+                    }
+                }
             }
         }
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void InitializeInventorySlots()
-    {
-        for (int i = 1; i <= InventorySlots; i++)
+    
+    if (slot.count <= 0)
         {
-            InventorySlot InventorySlot = new InventorySlot(i, SlotsMaxCount);
-            Inventory.Add(InventorySlot);
-            Debug.Log("Inventory slot created, number: " + i);
+            slot.item = null;
+            slot.count = 0;
         }
+
+    OnInventoryChanged?.Invoke();
+}
+    
+
+void EnableInventoryActions()
+{
+    slot1Action = InputSystem.actions.FindAction("UseItem0");
+    if (slot1Action != null)
+    {
+        slot1Action.Enable();
+        slot1Action.performed += ctx => UseItem(0);
     }
 
-    void UpdateInventoryUI()
+    slot2Action = InputSystem.actions.FindAction("UseItem1");
+    if (slot2Action != null)
     {
-        
+        slot2Action.Enable();
+        slot2Action.performed += ctx => UseItem(1);
     }
+
+    slot3Action = InputSystem.actions.FindAction("UseItem2");
+    if (slot3Action != null)
+    {
+        slot3Action.Enable();
+        slot3Action.performed += ctx => UseItem(2);
+    }
+
+    slot4Action = InputSystem.actions.FindAction("UseItem3");
+    if (slot4Action != null)
+    {
+        slot4Action.Enable();
+        slot4Action.performed += ctx => UseItem(3);
+    }
+
+    slot5Action = InputSystem.actions.FindAction("UseItem4");
+    if (slot5Action != null)
+    {
+        slot5Action.Enable();
+        slot5Action.performed += ctx => UseItem(4);
+    }
+}
 }
