@@ -10,6 +10,7 @@ TagManager:
   - PlayerAttack
   - Wall
   - Ground
+  - WitchDoor
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - PlayerDodge
   - Enemies
-  - 
+  - WitchDoor
   - 
   - 
   - 

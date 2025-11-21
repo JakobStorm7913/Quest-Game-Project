@@ -17,10 +17,10 @@ public class WitchCombatTrigger : MonoBehaviour
     [SerializeField] private float vinesY = -1.76f;
 
     [Header("House")]
-    [SerializeField] private GameObject witchHouse;
-    [SerializeField] private GameObject housePrefab;
-    [SerializeField] private float houseX = 4.16f;
-    [SerializeField] private float houseY = 7.51f;
+    //[SerializeField] private GameObject witchHouse;
+    //[SerializeField] private GameObject housePrefab;
+    //[SerializeField] private float houseX = 4.16f;
+    //[SerializeField] private float houseY = 7.51f;
 
     [Header("SoundFX")]
     [SerializeField] private AudioClip witchEnterSFX;
@@ -31,8 +31,8 @@ public class WitchCombatTrigger : MonoBehaviour
     void Awake() {
         combatManager = WitchCombatManager.Instance;
         vinesPrefab = Resources.Load<GameObject>("Prefabs/Vines");
-        housePrefab = Resources.Load<GameObject>("Prefabs/WitchHouse");
-        witchHouse = GameObject.Find("WitchHouse");
+        //housePrefab = Resources.Load<GameObject>("Prefabs/WitchHouse");
+        //witchHouse = GameObject.Find("WitchHouse");
         witchEnterSFX = Resources.Load<AudioClip>("SoundFX/WitchScream");
     }
     void Start() 
@@ -50,7 +50,7 @@ public class WitchCombatTrigger : MonoBehaviour
         if (combatManager != null)
         {
             //Camera switch
-            Destroy(witchHouse);
+            //Destroy(witchHouse);
             bossCam.Priority = 10;
             playerCam.Priority = 0;
 
@@ -58,7 +58,7 @@ public class WitchCombatTrigger : MonoBehaviour
             Debug.Log("Player entered Witch fight");
             SoundFXManager.Instance.StartBossBattleMusic();
             StartCoroutine(SpawnVines());
-            SoundFXManager.Instance.PlaySoundFX(witchEnterSFX, transform, 2f);
+            SoundFXManager.Instance.PlaySoundFX(witchEnterSFX, transform, 1f);
             combatManager.StartCombat();
             }
         }
@@ -79,7 +79,7 @@ public class WitchCombatTrigger : MonoBehaviour
             
             playerCam.Priority = 10;
             bossCam.Priority = 0;
-            witchHouse = Instantiate(housePrefab, new Vector3(houseX, houseY, 0), Quaternion.identity);
+           // witchHouse = Instantiate(housePrefab, new Vector3(houseX, houseY, 0), Quaternion.identity);
         }
     }
 

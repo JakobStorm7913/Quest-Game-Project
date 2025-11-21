@@ -5,7 +5,7 @@ public class PlayerUseQuestItem : MonoBehaviour
 {
 
     [Header("Hitbox")]
-    [SerializeField] private Collider2D attackHitbox;
+    //[SerializeField] private Collider2D attackHitbox;
 
      [Header("Attack details")]
     [SerializeField] protected float useRadius; // Den radius der må være
@@ -69,7 +69,7 @@ public class PlayerUseQuestItem : MonoBehaviour
         GameObject oldDoor = GameObject.FindWithTag("WitchDoor");
         Vector3 doorPosition = oldDoor.transform.position;
         Destroy(oldDoor);
-        SoundFXManager.Instance.PlaySoundFX(doorOpenSFX, transform, 2f);
+        SoundFXManager.Instance.PlaySoundFX(doorOpenSFX, transform);
         GameObject openDoor = Instantiate(newDoor, doorPosition, Quaternion.identity);
     }
 }
