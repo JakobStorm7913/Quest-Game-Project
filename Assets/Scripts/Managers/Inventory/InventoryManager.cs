@@ -7,7 +7,7 @@ public class InventoryManager : MonoBehaviour
     public static InventoryManager Instance { get; private set; }
 
     [Header("Inventory Settings")]
-    [SerializeField] private int slotCount = 5;
+    [SerializeField] private int slotCount = 4;
     [SerializeField] private int stackLimit = 10;
 
     [SerializeField] private List<InventorySlot> slots;
@@ -26,7 +26,6 @@ public class InventoryManager : MonoBehaviour
     private InputAction slot2Action;
     private InputAction slot3Action;
     private InputAction slot4Action;
-    private InputAction slot5Action;
 
     [Header("References")]
     private PlayerUseQuestItem playerUse;
@@ -166,13 +165,6 @@ void EnableInventoryActions()
     {
         slot4Action.Enable();
         slot4Action.performed += ctx => UseItem(3);
-    }
-
-    slot5Action = InputSystem.actions.FindAction("UseItem4");
-    if (slot5Action != null)
-    {
-        slot5Action.Enable();
-        slot5Action.performed += ctx => UseItem(4);
     }
 }
 }

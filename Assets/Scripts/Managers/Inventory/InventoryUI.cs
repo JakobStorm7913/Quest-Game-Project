@@ -52,7 +52,7 @@ public class InventoryUI : MonoBehaviour
                 if (slot.count > 1)
                 {
                     ui.countText.gameObject.SetActive(true);
-                    ui.countText.text = slot.count.ToString();
+                    ui.countText.text = slot.count.ToString() + "x";
                 }
                 else
                 {
