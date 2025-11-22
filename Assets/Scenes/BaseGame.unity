@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1246315425043660622, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
       propertyPath: whatIsTarget.m_Bits
-      value: 128
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 3216158570553198002, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
       propertyPath: m_Name
@@ -191,7 +191,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5313774922509864694, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -411,32 +412,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &549423469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549423465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b9a79f777bb18409d919c81807138a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Entity_Enemy
-  maxHealth: 25
-  currentHealth: 0
-  damageMaterial: {fileID: 2100000, guid: 66b287b7ffa4e8745ad5bf37a68ca998, type: 2}
-  damageFeedBackDuration: 0.2
-  attackRadius: 0.99
-  attackPoint: {fileID: 877118597}
-  whatIsTarget:
-    serializedVersion: 2
-    m_Bits: 128
-  groundCheckDistance: 2.79
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
+  m_Constraints: 5
 --- !u!212 &549423470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -529,6 +505,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &549423473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549423465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3437b4bf3b68a24db5c75993c2618e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  maxHealth: 25
+  currentHealth: 5
+  damageMaterial: {fileID: 2100000, guid: 66b287b7ffa4e8745ad5bf37a68ca998, type: 2}
+  damageFeedBackDuration: 0.2
+  attackRadius: 1
+  attackPoint: {fileID: 877118597}
+  whatIsTarget:
+    serializedVersion: 2
+    m_Bits: 128
+  groundCheckDistance: 2.22
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  moveSpeed: 2
 --- !u!1 &674344891
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,9 +791,6 @@ PrefabInstance:
       addedObject: {fileID: 549423470}
     - targetCorrespondingSourceObject: {fileID: 2138517496021517070, guid: 40cc359d00d0a8142bffd060bc5953e6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 549423469}
-    - targetCorrespondingSourceObject: {fileID: 2138517496021517070, guid: 40cc359d00d0a8142bffd060bc5953e6, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 549423468}
     - targetCorrespondingSourceObject: {fileID: 2138517496021517070, guid: 40cc359d00d0a8142bffd060bc5953e6, type: 3}
       insertIndex: -1
@@ -802,6 +801,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2138517496021517070, guid: 40cc359d00d0a8142bffd060bc5953e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 549423472}
+    - targetCorrespondingSourceObject: {fileID: 2138517496021517070, guid: 40cc359d00d0a8142bffd060bc5953e6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 549423473}
   m_SourcePrefab: {fileID: 100100000, guid: 40cc359d00d0a8142bffd060bc5953e6, type: 3}
 --- !u!4 &2006694232 stripped
 Transform:

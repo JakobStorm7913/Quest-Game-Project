@@ -70,14 +70,14 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     {
 
-        Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget); // Koden vil detecte enemies colliders. 
+        Collider2D[] enemiesColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget); // Koden vil detecte enemies colliders. 
 
-        foreach (Collider2D enemy in enemyColliders) // Kode til enemy detection/Encapsulation
+        foreach (Collider2D enemies in enemiesColliders) // Kode til enemy detection/Encapsulation
         {
 
-            Entity entityTarget = enemy.GetComponent<Entity>();
+            Entity entityTarget = enemies.GetComponent<Entity>();
             entityTarget.TakeDamage();
-
+            
         }
 
     }
