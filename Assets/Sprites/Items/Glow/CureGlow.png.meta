@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2dce87cf8069f704e93fe526ccaa5724
+guid: 82115633978494443b832b0bca9b8c7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -498183330528110765
-    second: "Modgift gl\xF8d_Fikset_0"
+      213: 3085465337531114141
+    second: "Modgift Gl\xF8d 3. fors\xF8g_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Modgift gl\xF8d_Fikset_0"
+      name: "Modgift Gl\xF8d 3. fors\xF8g_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 700
-        height: 756
+        x: 341
+        y: 163
+        width: 808
+        height: 1175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 357d9de76e81619f0800000000000000
-      internalID: -498183330528110765
+      spriteID: d92a2528066c1da20800000000000000
+      internalID: 3085465337531114141
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Modgift gl\xF8d_Fikset_0": -498183330528110765
+      "Modgift Gl\xF8d 3. fors\xF8g_0": 3085465337531114141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
