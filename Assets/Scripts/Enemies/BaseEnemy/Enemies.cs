@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Enemy : Entity_Enemy
+public class Enemies : Entity_Enemy
 {
 
     private bool playerDetected;

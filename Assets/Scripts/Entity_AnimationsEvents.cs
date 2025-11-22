@@ -3,13 +3,13 @@ using UnityEngine;
 public class Entity_AnimationsEvents : MonoBehaviour
 {
 
-    private Entity entity;
+    private Entity_Enemy entity;
 
     private void Awake()
 
     {
 
-        entity = GetComponentInParent<Entity>();
+        entity = GetComponentInParent<Entity_Enemy>();
 
     }
 

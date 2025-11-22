@@ -88,7 +88,7 @@ public class Entity : MonoBehaviour
 
     public void TakeDamage() // Kode til skade
     {
-        currentHealth -= GameData.Instance.PlayerAttackDamage;
+        currentHealth = currentHealth - 1;
 
         PlayDamageFeedback();
 

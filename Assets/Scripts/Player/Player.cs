@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : Entity
+public class Player : Entity_Enemy
 {
     [Header("Movement details")]
     [SerializeField] protected float moveSpeed = 8f; // Kode til moveSpeed

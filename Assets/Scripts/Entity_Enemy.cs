@@ -80,7 +80,7 @@ public class Entity_Enemy : MonoBehaviour
         foreach (Collider2D enemies in enemiesColliders) // Kode til enemy detection/Encapsulation
         {
             
-            Entity entityTarget = enemies.GetComponent<Entity>();
+            Entity_Enemy entityTarget = enemies.GetComponent<Entity_Enemy>();
             entityTarget.TakeDamage();
         }
 
@@ -88,13 +88,12 @@ public class Entity_Enemy : MonoBehaviour
 
     public void TakeDamage() // Kode til skade
     {
-        currentHealth -= GameData.Instance.PlayerAttackDamage;
+        currentHealth -= 1;
 
         PlayDamageFeedback();
 
         if (currentHealth <= 0)
-        Die();
-        
+            Die();  
     }
 
      protected virtual void Die() // Kode til die
