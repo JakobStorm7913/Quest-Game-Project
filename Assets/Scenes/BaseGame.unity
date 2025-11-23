@@ -599,11 +599,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2457627011055922445, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.66
+      value: -15.3
       objectReference: {fileID: 0}
     - target: {fileID: 2457627011055922445, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.63
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 2457627011055922445, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -639,11 +639,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715529917764301269, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.96
+      value: 1.21
       objectReference: {fileID: 0}
     - target: {fileID: 3715529917764301269, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.17
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876389581753801542, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
+      propertyPath: moveSpeed
+      value: 4.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876389581753801542, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
+      propertyPath: attackRadius
+      value: 1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876389581753801542, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
+      propertyPath: groundCheckDistance
+      value: 2.33
       objectReference: {fileID: 0}
     - target: {fileID: 6910038201521713430, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
       propertyPath: m_Constraints

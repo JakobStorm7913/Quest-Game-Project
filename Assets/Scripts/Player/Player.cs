@@ -56,7 +56,7 @@ public class Player : Entity_Enemy
     protected override void Die()
     {
         base.Die();
-        UI.instance.EnableGameOverUI();
+       
     }
 
 }
