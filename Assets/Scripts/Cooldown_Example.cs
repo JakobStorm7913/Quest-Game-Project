@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 public class Cooldown_Example : MonoBehaviour
-{
 
+{
 private SpriteRenderer sr;
 
     [SerializeField] private float redColorDuration = 1;
