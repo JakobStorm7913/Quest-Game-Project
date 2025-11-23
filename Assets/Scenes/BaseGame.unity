@@ -128,6 +128,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1246315425043660622, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: maxHealth
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246315425043660622, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: currentHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246315425043660622, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
       propertyPath: whatIsTarget.m_Bits
       value: 512
       objectReference: {fileID: 0}
