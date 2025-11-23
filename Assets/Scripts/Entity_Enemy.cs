@@ -81,8 +81,8 @@ public class Entity_Enemy : MonoBehaviour
         foreach (Collider2D enemies in enemiesColliders) // Kode til enemy detection/Encapsulation
         {
             
-            Entity_Enemy entityTarget = enemies.GetComponent<Entity_Enemy>();
-            entityTarget.TakeDamage();
+            Entity_Enemy entity_enemiesTarget = enemies.GetComponent<Entity_Enemy>();
+            entity_enemiesTarget.TakeDamage();
         }
 
     }
