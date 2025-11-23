@@ -38,6 +38,7 @@ public class Entity_Enemy : MonoBehaviour
     protected int facingDir = 1;
     protected bool facingRight = true; // Kode til retning af player
     
+    
     [Header("Collision details")]
     [SerializeField] private float groundCheckDistance;
 

@@ -3,17 +3,17 @@ using UnityEngine;
 public class Entity_AnimationsEvents : MonoBehaviour
 {
 
-    private Entity_Enemy entity;
+    private Entity_Enemy entity_Enemy;
 
     private void Awake()
 
     {
 
-        entity = GetComponentInParent<Entity_Enemy>();
+        entity_Enemy = GetComponentInParent<Entity_Enemy>();
 
     }
 
-    public void DamageTargets() => entity.DamageTargets();
+    public void DamageTargets() => entity_Enemy.DamageTargets();
 
     
 
@@ -22,7 +22,7 @@ public class Entity_AnimationsEvents : MonoBehaviour
 
     {
 
-        entity.EnableMovement(false);
+        entity_Enemy.EnableMovement(false);
         
     }
 
@@ -31,7 +31,7 @@ public class Entity_AnimationsEvents : MonoBehaviour
     
     {
 
-       entity.EnableMovement(true);
+       entity_Enemy.EnableMovement(true);
 
     }
   
