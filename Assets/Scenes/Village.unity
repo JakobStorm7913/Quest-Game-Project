@@ -1011,7 +1011,7 @@ GameObject:
   - component: {fileID: 421064486}
   - component: {fileID: 421064485}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: DialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1033,8 +1033,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.8387, y: 5.495}
-  m_SizeDelta: {x: 180.6011, y: 60.1614}
+  m_AnchoredPosition: {x: 22.6183, y: 13.1366}
+  m_SizeDelta: {x: 337.8377, y: 153.8884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &421064485
 MonoBehaviour:
@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Anders er grim og lugter
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1307,8 +1307,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 154, y: 8}
-  m_SizeDelta: {x: -1605.8458, y: -894.1063}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -1396.1779, y: -770.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &474397036
 MonoBehaviour:
@@ -1486,7 +1486,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 66b287b7ffa4e8745ad5bf37a68ca998, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1528,7 +1528,7 @@ Transform:
   m_GameObject: {fileID: 553760739}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.22, y: 3.78, z: 0}
+  m_LocalPosition: {x: -8.67, y: 3.65, z: 0}
   m_LocalScale: {x: 3.0136, y: 3.0136, z: 3.0136}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2346,6 +2346,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &694625163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3216158570553198002, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+  m_PrefabInstance: {fileID: 1976272140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &694625164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694625163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07acc666c1eb66f4693fc62d152f233a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerActivateDialogue
+  useRadius: 1.5
+  usePoint: {fileID: 854694792}
+  npcTargetLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  targetNpc: {fileID: 1878642636}
 --- !u!1 &698393566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,6 +2981,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765145837}
   m_CullTransparentMesh: 1
+--- !u!4 &854694792 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1303615043910648243, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+  m_PrefabInstance: {fileID: 1976272140}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &930370786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3045,7 +3073,7 @@ GameObject:
   - component: {fileID: 943641702}
   - component: {fileID: 943641701}
   m_Layer: 5
-  m_Name: Icon
+  m_Name: DialogueIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3067,8 +3095,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0029144, y: -0.0018539}
-  m_SizeDelta: {x: 314.16, y: 185.89}
+  m_AnchoredPosition: {x: 0.0024033, y: 0.0043678}
+  m_SizeDelta: {x: 523.83, y: 309.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &943641701
 MonoBehaviour:
@@ -5239,8 +5267,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1878642638}
   - component: {fileID: 1878642637}
-  m_Layer: 0
-  m_Name: 181px-Swamp_Villager_Base_JE2_0
+  - component: {fileID: 1878642640}
+  - component: {fileID: 1878642639}
+  m_Layer: 11
+  m_Name: Swamp Villager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5290,8 +5320,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -550651079
-  m_SortingLayer: 4
+  m_SortingLayerID: -1989753273
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1530654391212439690, guid: 02b26bc4d7f885a40881f1367ba68408, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5319,6 +5349,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1878642639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878642636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6317d2b7fef4b4d8e968d0fdbd0faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueWriter
+  textComponent: {fileID: 421064485}
+  dialogueText: Skibidi toilet
+  charDelay: 0.03
+  autoHideDelay: 1
+--- !u!114 &1878642640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878642636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b64a87e7af4ee4eb6aaec3062ca2a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueFollower
+  targetWorld: {fileID: 0}
+  canvasRectTransform: {fileID: 313698496}
+  dialogueRectTransform: {fileID: 474397035}
+  offset: {x: 5, y: -5}
 --- !u!1 &1948856125
 GameObject:
   m_ObjectHideFlags: 0
@@ -5616,7 +5678,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3216158570553198002, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 694625164}
   m_SourcePrefab: {fileID: 100100000, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
 --- !u!1 &1991681914
 GameObject:

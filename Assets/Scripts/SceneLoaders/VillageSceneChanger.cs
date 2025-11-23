@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VillageSceneChanger : MonoBehaviour
 {
@@ -8,9 +9,12 @@ public class VillageSceneChanger : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+   private void OnTriggerEnter2D(Collider2D other)
     {
+        if (!other.CompareTag("Player")) return;
+
+        SceneManager.LoadScene("WitchBattleScene");
         
-    }
 }
+}
+
