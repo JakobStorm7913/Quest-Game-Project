@@ -5116,7 +5116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4918908288521383453, guid: 52916751dcd149146b28b05e4d96ccdf, type: 3}
       propertyPath: groundCheckDistance
-      value: 0
+      value: 2.16
       objectReference: {fileID: 0}
     - target: {fileID: 4918908288521383453, guid: 52916751dcd149146b28b05e4d96ccdf, type: 3}
       propertyPath: attackAction.m_Flags
