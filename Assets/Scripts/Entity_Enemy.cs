@@ -32,14 +32,10 @@ public class Entity_Enemy : MonoBehaviour
     [Header("Health")]
     [SerializeField] private float maxHealth = 25;
     [SerializeField] private float currentHealth;
-    [SerializeField] private float damageFeedBackDuration = .2f;
 
 
     [Header("Attack details")]
     [SerializeField] private float attackDamage = 5f;
-    [SerializeField] private float attackRadius; // Den radius der må være
-    [SerializeField] private Transform attackPoint; // Hvor detectiuon sker
-    [SerializeField] private LayerMask whatIsTarget; // Hvad den skal registere
 
 
     [Header("Movement")]
@@ -47,12 +43,6 @@ public class Entity_Enemy : MonoBehaviour
     [SerializeField] private int direction; // -1 left | +1 right*
     [SerializeField] private int playerSide; // 0 = left of spawn | 1 = right of spawn
     private bool canMove = true;
-    
-    
-    [Header("Collision details")]
-    [SerializeField] private float groundCheckDistance;
-
-    [SerializeField] private LayerMask whatIsGround;
     
 
     [Header("SoundFX")]
@@ -104,7 +94,7 @@ public class Entity_Enemy : MonoBehaviour
     public void TakeDamage() // Kode til skade
     {
         currentHealth -= GameData.Instance.PlayerAttackDamage;
-        Knockback(0.3f);
+        Knockback(0.4f);
         SoundFXManager.Instance.PlaySoundFX(SpiderDamagedSFX, transform, 3f);
 
         if (currentHealth <= 0)
@@ -115,10 +105,9 @@ public class Entity_Enemy : MonoBehaviour
     {
         SoundFXManager.Instance.PlaySoundFX(SpiderDeathSFX, transform, 3f);
         anim.enabled = false;
-        col.enabled = false;
 
         StartFade(targetAlphaOnExit);
-        Destroy(gameObject, 3);
+        Destroy(gameObject, 2);
     }
 
     void Knockback(float duration)
@@ -173,17 +162,6 @@ public class Entity_Enemy : MonoBehaviour
 
      public void InitializeSpawn(int dir) {
         direction = dir;
-    }
-
-    private void OnDrawGizmos() // Kode til Raytracing på enten enemy eller jord osv. 
-
-    {
-
-        Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundCheckDistance));
-
-        if(attackPoint != null)
-        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
-
     }
 
      void StartFade(float targetAlpha)
