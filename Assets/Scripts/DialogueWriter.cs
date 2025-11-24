@@ -11,7 +11,7 @@ public class DialogueWriter : MonoBehaviour
     [TextArea]
     public string dialogueText;             // NPC's line set in Inspector
     public float charDelay = 0.03f;
-    public float autoHideDelay = 1.0f;      // time after finished before hiding
+    public float autoHideDelay = 10f;      // time after finished before hiding
 
     private Coroutine typingCoroutine;
     private DialogueFollower follower;

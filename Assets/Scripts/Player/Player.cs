@@ -7,6 +7,7 @@ public class Player : Entity_Enemy
     [SerializeField] private float jumpForce = 15f; // Kode til jumpforde
     private float xInput;
     private bool canJump = true;
+    private bool canMove = true;
 
     protected override void Update()
     {
