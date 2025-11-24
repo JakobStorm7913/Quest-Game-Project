@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class WitchHealthManager : MonoBehaviour
 {
-    [SerializeField] private float maxHealth = 100;
-    [SerializeField] private float currentHealth = 100;
+    [SerializeField] public float maxHealth = 100;
+    [SerializeField] public float currentHealth = 100;
     [SerializeField] private bool frozen = true;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
