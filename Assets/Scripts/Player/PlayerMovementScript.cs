@@ -131,6 +131,7 @@ anim.SetBool("walking", false);
 
 if (jumpPressed)
 {
+anim.SetBool("walking", false);
 Vector2 impulse = new Vector2(0, jumpForce); // Vi pakker en Vector2 til AddForce
 rb.AddForce(impulse, ForceMode2D.Impulse); // AddForce får sin Vector2 og får at vide at Impulse er det vi vil have..
 jumpPressed = false; // Vi slår jumpPressed fra, så den kan blive true igen.

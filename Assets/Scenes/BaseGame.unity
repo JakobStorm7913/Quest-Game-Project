@@ -693,7 +693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovementScript
   moveSpeed: 5
-  jumpForce: 5
+  jumpForce: 15
   dodgeDistance: 1
   groundCheck: {fileID: 0}
   groundCheckRadius: 0.2
