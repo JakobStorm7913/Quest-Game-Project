@@ -61,8 +61,8 @@ public class Entity_Enemy : MonoBehaviour
         sr = GetComponentInChildren<SpriteRenderer>();
        
         currentHealth = maxHealth;
-        SpiderDamaged = Resources.Load("SoundFX/SpiderDamagedSFX");
-        SpiderDeath = Resources.Load("SoundFX/SpiderDeathSFX");
+        SpiderDamaged = Resources.Load<AudioClip>("SoundFX/SpiderDamagedSFX");
+        SpiderDeath = Resources.Load<AudioClip>("SoundFX/SpiderDeathSFX");
     }
 
 
