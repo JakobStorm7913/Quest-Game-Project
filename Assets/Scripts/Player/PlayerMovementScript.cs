@@ -34,7 +34,13 @@ private SpriteRenderer spriteRenderer;
 //private AudioSource audioSource;
 private Rigidbody2D rb;
 private PlayerDodge playerDodge;
+
+private PlayerAnimations playerAnimations;
+
+public bool canMove = true;
+public bool canJump = true;
 private void Start()
+
 {
 
 groundCheck = transform.Find("GroundCheck");
@@ -56,11 +62,12 @@ spriteRenderer = GetComponent<SpriteRenderer>();
 
 rb = GetComponent<Rigidbody2D>();
 }
-void Update()
+public void Update()
 {
 isGrounded = Physics2D.OverlapCircle(groundCheck.position,
 groundCheckRadius, groundLayer);
 moveValue = moveAction.ReadValue<Vector2>();
+
 
 if (jumpAction.WasPressedThisFrame() && isGrounded)
 {
@@ -72,6 +79,7 @@ if (dodgeAction.WasPressedThisFrame())
      Debug.Log("Dodge input detected!");
     dodgePressed = true;
 }
+
 
 }
 private void FixedUpdate()
@@ -141,11 +149,50 @@ if (dodgePressed)
     }
 }
 
+
+public virtual void DamageTargets()
+{
+     Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget); // Koden vil detecte enemies colliders. 
+
+        foreach (Collider2D enemy in enemyColliders) // Kode til enemy detection/Encapsulation
+        {
+
+            Entity entityTarget = enemy.GetComponent<Entity>();
+            entityTarget.TakeDamage();
+        }
+
+}
+
+
+
+
+
+public virtual void EnableMovementAndJump(bool enable)
+{
+   canMove = enable;   
+}
+
+
+public virtual void EnableMovement(bool enable) // Movement
+
+    {
+        
+        canJump = enable;
+
+    }
+
+
+public virtual void DisableMovementAndJump()
+{
+   canMove = false;
+}  
+
 public void ApplyKnockback(float duration)
 {
     isKnockedBack = true;
     knockbackTimer = duration;
 }
+
 }
 
 

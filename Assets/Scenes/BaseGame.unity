@@ -209,11 +209,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
---- !u!4 &38192197 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8135227060627488687, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
-  m_PrefabInstance: {fileID: 38192196}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &484522525
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +358,6 @@ GameObject:
   - component: {fileID: 674344895}
   - component: {fileID: 674344894}
   - component: {fileID: 674344893}
-  - component: {fileID: 674344892}
   m_Layer: 0
   m_Name: 'Main Camera '
   m_TagString: Untagged
@@ -371,21 +365,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &674344892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674344891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 906fef386271b864484dd10ccdaac0d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
-  player: {fileID: 38192197}
-  smoothSpeed: 0.125
-  offset: {x: 0, y: 0, z: 0}
 --- !u!114 &674344893
 MonoBehaviour:
   m_ObjectHideFlags: 0
