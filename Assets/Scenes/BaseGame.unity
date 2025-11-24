@@ -152,6 +152,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 66b287b7ffa4e8745ad5bf37a68ca998, type: 2}
     - target: {fileID: 5313774922509864694, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: groundCheckDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313774922509864694, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
       propertyPath: whatIsGround.m_Bits
       value: 64
       objectReference: {fileID: 0}

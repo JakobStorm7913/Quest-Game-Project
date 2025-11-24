@@ -12,7 +12,7 @@ public class PlayerMovementScript : MonoBehaviour
 [SerializeField] private Transform groundCheck;
 [SerializeField] private float groundCheckRadius = 0.2f;
 [SerializeField] private LayerMask groundLayer;
-[SerializeField] private bool isGrounded = true;
+[SerializeField] public bool isGrounded;
 
 [Header("States checker")]
 [SerializeField] private bool jumpPressed = false;
@@ -35,9 +35,12 @@ private SpriteRenderer spriteRenderer;
 private Rigidbody2D rb;
 private PlayerDodge playerDodge;
 
+protected Animator anim;
+
 
 public bool canMove = true;
 public bool canJump = true;
+
 private void Start()
 
 {
@@ -58,11 +61,14 @@ playerDodge = GetComponent<PlayerDodge>();
 //animator = GetComponent<Animator>();
 spriteRenderer = GetComponent<SpriteRenderer>();
 //audioSource = GetComponent<AudioSource>();
+anim = GetComponent<Animator>();
+
 
 rb = GetComponent<Rigidbody2D>();
 }
 public void Update()
 {
+
 isGrounded = Physics2D.OverlapCircle(groundCheck.position,
 groundCheckRadius, groundLayer);
 moveValue = moveAction.ReadValue<Vector2>();
@@ -103,7 +109,8 @@ if (moveX < 0)
 {
 
 rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
-//animator.SetBool("walking", true);
+//animator.SetBool("walking", true); 
+anim.SetBool("walking", true);
 spriteRenderer.flipX = true;
 }
 
@@ -113,12 +120,13 @@ rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
 spriteRenderer.flipX = false;
 // Animation:
 //animator.SetBool("walking", true);
+anim.SetBool("walking", true);
 }
 
 else 
 {
 rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-//animator.SetBool("walking", false);
+anim.SetBool("walking", false);
 }
 
 if (jumpPressed)
@@ -130,6 +138,8 @@ jumpPressed = false; // Vi slår jumpPressed fra, så den kan blive true igen.
 //audioSource.Stop();
 //audioSource.PlayOneShot(sfx_jump);
 //animator.SetBool("walking", false);
+anim.SetTrigger("jump");
+
 
 }
 
@@ -148,7 +158,6 @@ if (dodgePressed)
             }
     }
 }
-
 
 
 public void EnableMovementAndJump(bool enable)
