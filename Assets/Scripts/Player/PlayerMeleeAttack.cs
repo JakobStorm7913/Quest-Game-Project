@@ -1,4 +1,6 @@
+
 using System.Collections;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -33,7 +35,7 @@ public class PlayerMeleeAttack : MonoBehaviour
     [SerializeField] private LayerMask whatIsGround;
     protected bool canMove = true;
     
-    protected bool isGrounded;
+    public bool isGrounded;
 
 
     [Header("Movement details")]
@@ -48,11 +50,11 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     private void Awake()
     {
-        attackAction = InputSystem.actions.FindAction("Attack");
+        attackAction = InputSystem.actions.FindAction("attack");
         attackAction.Enable();
         movementScript = player.GetComponent<PlayerMovementScript>();
-
         sr = GetComponentInChildren<SpriteRenderer>();
+        
     }
 
    
@@ -70,20 +72,24 @@ public class PlayerMeleeAttack : MonoBehaviour
     {
         if (attackAction.WasPressedThisFrame()) 
         {
+            {
+                anim.SetTrigger("attack");   
+            }
+   
             if (attackCooldown > attackTimer)
             {
-            Debug.Log("Attack input detected!");
+            Debug.Log("attack input detected!");
             isAttacking = true;
             }
 
           if (isAttacking)
             {
             attackTimer += Time.fixedDeltaTime;
+            }    
             }
 
-
     }
-    }
+    
     void FixedUpdate()
     {
         if (isAttacking)
@@ -100,11 +106,11 @@ public class PlayerMeleeAttack : MonoBehaviour
 
         foreach (Collider2D enemies in enemiesColliders) // Kode til enemy detection/Encapsulation
         {
-
             Entity_Enemy entityTarget = enemies.GetComponent<Entity_Enemy>();
             entityTarget.TakeDamage();
             SoundFXManager.Instance.PlayPlayerDamageSFX();
         }
+        
         isAttacking = false;
     }
 
