@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovementScript : MonoBehaviour
 {
-    [Header("Movement stats")]
+    [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float dodgeDistance = 2f;
@@ -12,95 +12,72 @@ public class PlayerMovementScript : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] public bool isGrounded;
-
-    [Header("States checker")]
-    [SerializeField] private bool jumpPressed = false;
-    [SerializeField] private bool dodgePressed = false;
-    [SerializeField] public bool isKnockedBack = false;
-    [SerializeField] private float knockbackTimer = 0f;
-
-    [SerializeField] private AudioClip sfx_jump;
 
     [Header("Input")]
     [SerializeField] private InputAction moveAction;
     [SerializeField] private InputAction jumpAction;
     [SerializeField] private InputAction dodgeAction;
-    [SerializeField] private Vector2 moveValue;
 
     [Header("References")]
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] private Transform attackPoint;   // assign your AttackPoint child here
     private Rigidbody2D rb;
-    private PlayerDodge playerDodge;
-    protected Animator anim;
+    private Animator anim;
+    private SpriteRenderer sr;
 
     public bool canMove = true;
     public bool canJump = true;
+    public bool isGrounded { get; private set; }
+    public bool isKnockedBack { get; private set; }
+    private float knockbackTimer;
+
+    private Vector2 moveValue;
+    private bool facingRight = true;
+    private bool jumpPressed;
+    private bool dodgePressed;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+    }
 
     private void Start()
     {
-        if (groundCheck == null)
-            groundCheck = transform.Find("GroundCheck");
-
-        if (groundLayer.value == 0)
-            groundLayer = LayerMask.GetMask("Ground");
+        if (groundCheck == null) groundCheck = transform.Find("GroundCheck");
+        if (groundLayer.value == 0) groundLayer = LayerMask.GetMask("Ground");
 
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
         dodgeAction = InputSystem.actions.FindAction("Dodge");
 
-        moveAction.Enable();
-        jumpAction.Enable();
-        dodgeAction.Enable();
-
-        playerDodge = GetComponent<PlayerDodge>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        moveAction?.Enable();
+        jumpAction?.Enable();
+        dodgeAction?.Enable();
     }
 
-    public void Update()
+    private void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position,
-                                             groundCheckRadius, groundLayer);
-
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         moveValue = moveAction.ReadValue<Vector2>();
 
-        if (jumpAction.WasPressedThisFrame() && isGrounded)
-        {
-            jumpPressed = true;
-        }
-
-        if (dodgeAction.WasPressedThisFrame())
-        {
-            Debug.Log("Dodge input detected!");
-            dodgePressed = true;
-        }
+        if (jumpAction.WasPressedThisFrame() && isGrounded) jumpPressed = true;
+        if (dodgeAction.WasPressedThisFrame()) dodgePressed = true;
     }
 
     private void FixedUpdate()
     {
-        // Knockback stops everything
         if (isKnockedBack)
         {
             knockbackTimer -= Time.fixedDeltaTime;
-            if (knockbackTimer <= 0f)
-            {
-                isKnockedBack = false;
-            }
-
+            if (knockbackTimer <= 0f) isKnockedBack = false;
             return;
         }
 
-        // Dodge has priority over normal movement
-        if (playerDodge != null && playerDodge.isDodging) return;
-
-        // If movement is disabled (e.g. during attack), stop horizontal movement & animations
         if (!canMove)
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             anim.SetBool("walking", false);
-            // also clear inputs so they don't trigger once movement comes back
             jumpPressed = false;
             dodgePressed = false;
             return;
@@ -108,18 +85,14 @@ public class PlayerMovementScript : MonoBehaviour
 
         float moveX = moveValue.x;
 
+        // Flip by scaling so children (attackPoint) follow automatically
+        HandleFlipByScale(moveX);
+
         // Horizontal movement
-        if (moveX < 0)
+        if (Mathf.Abs(moveX) > 0.001f)
         {
             rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
             anim.SetBool("walking", true);
-            spriteRenderer.flipX = true;
-        }
-        else if (moveX > 0)
-        {
-            rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
-            anim.SetBool("walking", true);
-            spriteRenderer.flipX = false;
         }
         else
         {
@@ -132,43 +105,39 @@ public class PlayerMovementScript : MonoBehaviour
         {
             if (canJump && isGrounded)
             {
-                if (Mathf.Abs(rb.linearVelocity.y) > 0.01f)
-                    anim.SetBool("walking", false);
-
-                Vector2 impulse = new Vector2(0, jumpForce);
-                rb.AddForce(impulse, ForceMode2D.Impulse);
-                jumpPressed = false;
-
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 anim.SetTrigger("jump");
-                // play jump sound here if you want
             }
-            else
-            {
-                // if we can't jump now, clear the flag so it doesn't "store" the jump
-                jumpPressed = false;
-            }
+            jumpPressed = false;
         }
 
         // Dodge
         if (dodgePressed)
         {
-            if (canMove)    // extra guard
-            {
-                float moveDir = Mathf.Sign(moveX != 0 ? moveX : (spriteRenderer.flipX ? -1 : 1));
-                transform.Translate(moveDir * dodgeDistance, 0, 0, Space.World);
-
-                dodgePressed = false;
-
-                if (playerDodge != null)
-                {
-                    playerDodge.StartDodge();
-                }
-            }
-            else
-            {
-                dodgePressed = false;
-            }
+            float dir = Mathf.Abs(moveX) > 0.001f ? Mathf.Sign(moveX) : (facingRight ? 1f : -1f);
+            transform.Translate(Vector3.right * dir * dodgeDistance, Space.World);
+            dodgePressed = false;
+            // trigger your dodge animation/effects here if needed
         }
+    }
+
+    private void HandleFlipByScale(float moveX)
+    {
+        if (moveX > 0f && !facingRight)
+            SetFacing(true);
+        else if (moveX < 0f && facingRight)
+            SetFacing(false);
+    }
+
+    private void SetFacing(bool faceRight)
+    {
+        facingRight = faceRight;
+
+        // Flip the entire transform so children (attackPoint) follow
+        Vector3 s = transform.localScale;
+        s.x = faceRight ? Mathf.Abs(s.x) : -Mathf.Abs(s.x);
+        transform.localScale = s;
+
     }
 
     public void EnableMovementAndJump()
@@ -177,7 +146,7 @@ public class PlayerMovementScript : MonoBehaviour
         canJump = true;
     }
 
-    public virtual void DisableMovementAndJump()
+    public void DisableMovementAndJump()
     {
         canMove = false;
         canJump = false;
@@ -189,5 +158,17 @@ public class PlayerMovementScript : MonoBehaviour
         knockbackTimer = duration;
     }
 
-
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+        if (attackPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPoint.position, 0.5f);
+        }
+    }
 }
