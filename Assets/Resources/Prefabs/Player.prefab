@@ -209,7 +209,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1989753273
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -7337306951721638067, guid: 5f022a60d596c93498320c33600b24e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -328,12 +328,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackCooldown: 0.5
-  attackTimer: 0
-  isAttacking: 1
-  groundCheckDistance: 0
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
+  attackDuration: 0.4
   attackAction:
     m_Name: Attack
     m_Type: 0
@@ -470,8 +465,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerActivateDialogue
   useRadius: 1.5
-  usePoint: {fileID: 0}
+  usePoint: {fileID: 3375766593066388023}
   npcTargetLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   targetNpc: {fileID: 0}

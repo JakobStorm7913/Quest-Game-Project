@@ -80,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -550651079
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -6305132657140846530, guid: 1016d72008a25a64c894d84e6d7ce376, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -120,7 +120,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!95 &7255910402845420944
 Animator:
   serializedVersion: 7
@@ -200,23 +200,13 @@ MonoBehaviour:
   knockbackRadius: 5
   playerRB: {fileID: 0}
   isKnockedBack: 0
-  knockbackTimer: 0.2
+  knockbackTimer: 0.3
   maxHealth: 15
   currentHealth: 15
-  damageFeedBackDuration: 0.2
   attackDamage: 5
-  attackRadius: 0
-  attackPoint: {fileID: 0}
-  whatIsTarget:
-    serializedVersion: 2
-    m_Bits: 0
   speed: 1
   direction: 0
   playerSide: 0
-  groundCheckDistance: 0
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
   SpiderDamagedSFX: {fileID: 0}
   SpiderDeathSFX: {fileID: 0}
   fadeSpeed: 1
