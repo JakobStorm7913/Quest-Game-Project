@@ -76,9 +76,7 @@ public class Entity_Enemy : MonoBehaviour
         SpiderDeathSFX = Resources.Load<AudioClip>("SoundFX/SpiderDeathSFX");
 
         player = GameObject.FindWithTag("Player");
-        playerRB = player.GetComponent<Rigidbody2D>();
     }
-
 
     void Update()
     {
@@ -95,11 +93,6 @@ public class Entity_Enemy : MonoBehaviour
     }
 
    void OnCollisionEnter2D(Collision2D collision) {
-        /*if (collision.gameObject.tag == "Wall" ||
-            collision.gameObject.tag == "Ground") {
-                Debug.Log(gameObject.ToString() + " hit " + collision.gameObject.tag.ToString());
-            StartCoroutine(PlayHitAnimation());
-        }*/
         if (collision.gameObject.tag == "Player") {
            PlayerMeleeAttack playerScript = player.GetComponent<PlayerMeleeAttack>();
            playerScript.TakeDamage(attackDamage);
@@ -198,17 +191,23 @@ public class Entity_Enemy : MonoBehaviour
         StartCoroutine(FadeTo(targetAlpha));
     }
 
-    IEnumerator FadeTo(float targetAlpha)
-    {
-        Color c = sr.color;
+   IEnumerator FadeTo(float targetAlpha)
+{
+    Color original = sr.color;
+    Color c = original;
 
-        while (!Mathf.Approximately(c.a, targetAlpha))
-        {
-            c.a = Mathf.MoveTowards(c.a, targetAlpha, fadeSpeed * Time.deltaTime);
-            sr.color = c;
-            yield return null;
-        }
+    while (!Mathf.Approximately(c.a, targetAlpha))
+    {
+        c.a = Mathf.MoveTowards(c.a, targetAlpha, fadeSpeed * Time.deltaTime);
+
+        // Apply overlay: mix original color with red by the fade amount
+        sr.color = Color.Lerp(original, Color.red, 1f - c.a);
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, c.a);
+
+        yield return null;
     }
+}
+
 
 
 

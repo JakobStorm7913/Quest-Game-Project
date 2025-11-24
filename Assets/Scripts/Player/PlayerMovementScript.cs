@@ -6,7 +6,7 @@ public class PlayerMovementScript : MonoBehaviour
 [Header("Movement stats")]
 [SerializeField] private float moveSpeed = 5f;
 [SerializeField] private float jumpForce = 5f;
-[SerializeField] private float dodgeDistance = 1f;
+[SerializeField] private float dodgeDistance = 2f;
 
 [Header("Groundcheck")]
 [SerializeField] private Transform groundCheck;
