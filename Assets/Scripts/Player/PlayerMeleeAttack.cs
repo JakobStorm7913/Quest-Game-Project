@@ -50,7 +50,7 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     private void Awake()
     {
-        attackAction = InputSystem.actions.FindAction("attack");
+        attackAction = InputSystem.actions.FindAction("Attack");
         attackAction.Enable();
         movementScript = player.GetComponent<PlayerMovementScript>();
         sr = GetComponentInChildren<SpriteRenderer>();
