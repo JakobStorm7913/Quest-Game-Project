@@ -126,8 +126,15 @@ public class PlayerMeleeAttack : MonoBehaviour
     public void DamageTargets()
     {
         if (attackPoint == null)
-        {
-            Debug.LogWarning("[Melee] No attackPoint assigned, cannot damage targets.");
+
+
+       { 
+
+        Vector3 localPos = attackPoint.localPosition;
+        localPos.x *= -1;   // mirror horizontally
+        attackPoint.localPosition = localPos;
+   
+          Debug.LogWarning("[Melee] No attackPoint assigned, cannot damage targets.");
             return;
         }
 
@@ -178,4 +185,6 @@ public class PlayerMeleeAttack : MonoBehaviour
             Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
         }
     }
+
+ 
 }
