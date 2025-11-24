@@ -47,6 +47,9 @@ public class Entity_Enemy : MonoBehaviour
     
     protected bool isGrounded;
 
+    [Header("SoundFX")]
+    [SerializeField] private AudioClip SpiderDamaged;
+    [SerializeField] private AudioClip SpiderDeath;
 
     protected virtual void Awake() 
 
@@ -57,9 +60,9 @@ public class Entity_Enemy : MonoBehaviour
         col = GetComponent<Collider2D>();
         sr = GetComponentInChildren<SpriteRenderer>();
        
-
         currentHealth = maxHealth;
-
+        SpiderDamaged = Resources.Load("SoundFX/SpiderDamagedSFX");
+        SpiderDeath = Resources.Load("SoundFX/SpiderDeathSFX");
     }
 
 
@@ -73,7 +76,6 @@ public class Entity_Enemy : MonoBehaviour
     }
 
     public void DamageTargets() // Kode til at se om enemy tager skade eller om enemy bliver ramt
-
     {
 
         Collider2D[] enemiesColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget); // Koden vil detecte enemies colliders. 
@@ -89,7 +91,7 @@ public class Entity_Enemy : MonoBehaviour
 
     public void TakeDamage() // Kode til skade
     {
-        currentHealth -= 1;
+        currentHealth -= GameData.Instance.PlayerAttackDamage;
 
         PlayDamageFeedback();
 
@@ -97,9 +99,9 @@ public class Entity_Enemy : MonoBehaviour
             Die();  
     }
 
-     protected virtual void Die() // Kode til die
-
+    private void Die() // Kode til die
     {
+        SoundFXManager.Instance.PlaySoundFX(SpiderDeath, transform.position, 3f);
         anim.enabled = false;
         col.enabled = false;
 
@@ -120,19 +122,11 @@ public class Entity_Enemy : MonoBehaviour
     }
 
     private IEnumerator DamageFeedbackCo() // Damage Feedback
-
-
     {
-        Material originalMat = sr.material;
-
-        sr.material = damageMaterial;
-
-        yield return new WaitForSeconds(damageFeedBackDuration);
-
-        sr.material = originalMat;
+        SoundFXManager.Instance.PlaySoundFX(SpiderDamaged, transform.position, 3f);
     }
-    public virtual void EnableMovement(bool enable) // Movement
 
+    public virtual void EnableMovement(bool enable) // Movement
     {
         canMove = enable;
     }

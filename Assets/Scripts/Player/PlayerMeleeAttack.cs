@@ -53,9 +53,7 @@ public class PlayerMeleeAttack : MonoBehaviour
     }
 
    
-     private IEnumerator DamageFeedbackCo() // Damage Feedback
-
-
+    /*private IEnumerator DamageFeedbackCo() // Damage Feedback 
     {
         Material originalMat = sr.material;
 
@@ -64,7 +62,7 @@ public class PlayerMeleeAttack : MonoBehaviour
         yield return new WaitForSeconds(damageFeedBackDuration);
 
         sr.material = originalMat;
-    }
+    }*/
 
     public void DamageTargets() // Kode til at se om enemy tager skade eller om enemy bliver ramt
 
@@ -75,9 +73,8 @@ public class PlayerMeleeAttack : MonoBehaviour
         foreach (Collider2D enemies in enemiesColliders) // Kode til enemy detection/Encapsulation
         {
 
-            Entity entityTarget = enemies.GetComponent<Entity>();
+            Entity_Enemy entityTarget = enemies.GetComponent<Entity_Enemy>();
             entityTarget.TakeDamage();
-            
         }
 
     }
