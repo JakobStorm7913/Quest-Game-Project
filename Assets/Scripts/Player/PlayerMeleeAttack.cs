@@ -1,152 +1,181 @@
-
 using System.Collections;
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMeleeAttack : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] private GameObject player;
+    [SerializeField] private PlayerMovementScript movementScript;
+    private SpriteRenderer sr;
+    private Animator anim;
+    private Rigidbody2D rb;
+    private Collider2D col;
 
-
-    protected SpriteRenderer sr;
-    protected Animator anim;
-    protected Rigidbody2D rb;
-    protected Collider2D col;
-    [SerializeField] GameObject player;
-    [SerializeField] PlayerMovementScript movementScript;
-
-   
     [Header("Attack details")]
-    [SerializeField] protected float attackRadius; // Den radius der må være
-    [SerializeField] protected Transform attackPoint; // Hvor detectiuon sker
-    [SerializeField] protected LayerMask whatIsTarget; // Hvad den skal registere
-    [SerializeField] private float attackCooldown = 0.5f;
-    [SerializeField] private float attackTimer = 0f;
-    [SerializeField] private bool isAttacking = true;
+    [SerializeField] private float attackRadius = 0.5f;
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private LayerMask whatIsTarget;
+    [SerializeField] private float attackCooldown = 0.5f;   // time between attacks
+    [SerializeField] private float attackDuration = 0.4f;   // length of attack animation (tweak in inspector)
 
-
-    protected int facingDir = 1;
-    protected bool facingRight = true; // Kode til retning af player
-    
+    private float nextAttackTime = 0f;
+    private bool isAttacking = false;
 
     [Header("Input")]
     [SerializeField] private InputAction attackAction;
 
-
-
-
     private void Awake()
     {
+        if (player == null) player = gameObject;
+
+       
+        movementScript = GetComponentInParent<PlayerMovementScript>();
+        sr  = GetComponentInChildren<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        rb  = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
+    }
+
+    private void Start()
+    {
         attackAction = InputSystem.actions.FindAction("Attack");
-        attackAction.Enable();
-        movementScript = player.GetComponent<PlayerMovementScript>();
-        sr = GetComponentInChildren<SpriteRenderer>();
-        
-    }
 
-   
-    /*private IEnumerator DamageFeedbackCo() // Damage Feedback 
-    {
-        Material originalMat = sr.material;
-
-        sr.material = damageMaterial;
-
-        yield return new WaitForSeconds(damageFeedBackDuration);
-
-        sr.material = originalMat;
-    }*/
-    void Update()
-    {
-        if (attackAction.WasPressedThisFrame()) 
+        if (attackAction == null)
         {
-            {
-                anim.SetTrigger("attack");   
-            }
-   
-            if (attackCooldown > attackTimer)
-            {
-            Debug.Log("attack input detected!");
-            isAttacking = true;
-            }
+            Debug.LogError("[Melee] No Attack InputAction found. " +
+                           "Make sure there is an action named 'Attack' in the same asset used by your movement.");
+            return;
+        }
 
-          if (isAttacking)
-            {
-            attackTimer += Time.fixedDeltaTime;
-            }    
-            }
-
+        attackAction.Enable();
+        Debug.Log("[Melee] Start OK. Using Attack action: " + attackAction.name);
     }
-    
-    void FixedUpdate()
+
+    private void Update()
     {
+        if (attackAction == null)
+            return;
+
+        if (attackAction.WasPressedThisFrame())
+        {
+            Debug.Log("[Melee] Attack button pressed this frame.");
+            TryStartAttack();
+        }
+    }
+
+    private void TryStartAttack()
+    {
+        if (Time.time < nextAttackTime)
+        {
+            Debug.Log("[Melee] Attack blocked by cooldown. Time left: " + (nextAttackTime - Time.time));
+            return;
+        }
+
         if (isAttacking)
         {
-        if (movementScript.isKnockedBack) return;
-        
-        DamageTargets();
+            Debug.Log("[Melee] Attack ignored, already attacking.");
+            return;
         }
+
+        if (movementScript != null && movementScript.isKnockedBack)
+        {
+            Debug.Log("[Melee] Attack blocked, player is knocked back.");
+            return;
+        }
+
+        Debug.Log("[Melee] Attack started.");
+        StartCoroutine(AttackRoutine());
     }
 
-    public void DamageTargets() // Kode til at se om enemy tager skade eller om enemy bliver ramt
+    private IEnumerator AttackRoutine()
     {
-        Collider2D[] enemiesColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget); // Koden vil detecte enemies colliders. 
+        isAttacking = true;
+        nextAttackTime = Time.time + attackCooldown;
 
-        foreach (Collider2D enemies in enemiesColliders) // Kode til enemy detection/Encapsulation
+        // Freeze player during attack
+        if (movementScript != null)
+        {
+            movementScript.DisableMovementAndJump();
+        }
+
+        if (anim != null)
+        {
+            anim.SetTrigger("attack");
+        }
+
+        // Wait until the “hit” moment
+        yield return new WaitForSeconds(attackDuration * 0.5f);
+
+        Debug.Log("[Melee] Dealing damage.");
+        DamageTargets();
+
+        // Wait until the animation is done
+        yield return new WaitForSeconds(attackDuration * 0.5f);
+
+        isAttacking = false;
+
+        if (movementScript != null)
+        {
+            movementScript.EnableMovementAndJump();
+        }
+
+        Debug.Log("[Melee] Attack finished.");
+    }
+
+    public void DamageTargets()
+    {
+        if (attackPoint == null)
+        {
+            Debug.LogWarning("[Melee] No attackPoint assigned, cannot damage targets.");
+            return;
+        }
+
+        Collider2D[] enemiesColliders = Physics2D.OverlapCircleAll(
+            attackPoint.position,
+            attackRadius,
+            whatIsTarget
+        );
+
+        foreach (Collider2D enemies in enemiesColliders)
         {
             Entity_Enemy entityTarget = enemies.GetComponent<Entity_Enemy>();
-            entityTarget.TakeDamage();
-            SoundFXManager.Instance.PlayPlayerDamageSFX();
+            if (entityTarget != null)
+            {
+                entityTarget.TakeDamage();
+                SoundFXManager.Instance.PlayPlayerDamageSFX();
+            }
         }
-        
-        isAttacking = false;
     }
 
-/*
-          private void PlayDamageFeedback() // Kode til damageFeedBack
+    public void TakeDamage(float damage)
     {
-        if (damageFeedbackCoroutine != null)
-            StopCoroutine(damageFeedbackCoroutine);
-        StartCoroutine(DamageFeedbackCo());
-    }
-
-    private IEnumerator DamageFeedbackCo() // Damage Feedback
-    {
-        SoundFXManager.Instance.PlaySoundFX(SpiderDamaged, transform.position, 3f);
-    }*/
-    
-
-    public void TakeDamage(float damage) // Kode til skade
-    {
-        
         GameData.Instance.PlayerHealth -= damage;
 
-        //PlayDamageFeedback();
-
         if (GameData.Instance.PlayerHealth <= 0)
-        Die();
+            Die();
     }
 
-
-     protected virtual void Die() // Kode til die
-
+    protected virtual void Die()
     {
-        anim.enabled = false;
-        col.enabled = false;
+        if (anim != null) anim.enabled = false;
+        if (col != null) col.enabled = false;
 
-        rb.gravityScale = 12;
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
+        if (rb != null)
+        {
+            rb.gravityScale = 12;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
+        }
 
         Destroy(gameObject, 3f);
     }
 
-       private void OnDrawGizmos() // Kode til Raytracing på enten enemy eller jord osv. 
-
+    private void OnDrawGizmos()
     {
-
-        Gizmos.DrawLine(transform.position, transform.position);
-
-        if(attackPoint != null)
-        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
-
+        if (attackPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+        }
     }
 }

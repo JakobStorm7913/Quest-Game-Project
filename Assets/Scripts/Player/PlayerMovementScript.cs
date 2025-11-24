@@ -3,195 +3,189 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovementScript : MonoBehaviour
 {
-[Header("Movement stats")]
-[SerializeField] private float moveSpeed = 5f;
-[SerializeField] private float jumpForce = 5f;
-[SerializeField] private float dodgeDistance = 2f;
+    [Header("Movement stats")]
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float dodgeDistance = 2f;
 
-[Header("Groundcheck")]
-[SerializeField] private Transform groundCheck;
-[SerializeField] private float groundCheckRadius = 0.2f;
-[SerializeField] private LayerMask groundLayer;
-[SerializeField] public bool isGrounded;
+    [Header("Groundcheck")]
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] public bool isGrounded;
 
-[Header("States checker")]
-[SerializeField] private bool jumpPressed = false;
-[SerializeField] private bool dodgePressed = false;
-[SerializeField] public bool isKnockedBack = false;
-[SerializeField] private float knockbackTimer = 0f;
+    [Header("States checker")]
+    [SerializeField] private bool jumpPressed = false;
+    [SerializeField] private bool dodgePressed = false;
+    [SerializeField] public bool isKnockedBack = false;
+    [SerializeField] private float knockbackTimer = 0f;
 
-[SerializeField] private  AudioClip sfx_jump;
+    [SerializeField] private AudioClip sfx_jump;
 
-[Header("Input")]
-[SerializeField] private InputAction moveAction;
-[SerializeField] private InputAction jumpAction;
-[SerializeField] private InputAction dodgeAction;
-[SerializeField] private Vector2 moveValue;
+    [Header("Input")]
+    [SerializeField] private InputAction moveAction;
+    [SerializeField] private InputAction jumpAction;
+    [SerializeField] private InputAction dodgeAction;
+    [SerializeField] private Vector2 moveValue;
 
-[Header("References")]
-//private Animator animator;
-private SpriteRenderer spriteRenderer;
-//private AudioSource audioSource;
-private Rigidbody2D rb;
-private PlayerDodge playerDodge;
+    [Header("References")]
+    private SpriteRenderer spriteRenderer;
+    private Rigidbody2D rb;
+    private PlayerDodge playerDodge;
+    protected Animator anim;
 
-protected Animator anim;
+    public bool canMove = true;
+    public bool canJump = true;
 
-
-public bool canMove = true;
-public bool canJump = true;
-
-private void Start()
-
-{
-
-groundCheck = transform.Find("GroundCheck");
-groundLayer = LayerMask.GetMask("Ground");
-
-moveAction = InputSystem.actions.FindAction("Move");
-jumpAction = InputSystem.actions.FindAction("Jump");
-dodgeAction = InputSystem.actions.FindAction("Dodge");
-
-moveAction.Enable();
-jumpAction.Enable();
-dodgeAction.Enable();
-
-playerDodge = GetComponent<PlayerDodge>();
-
-//animator = GetComponent<Animator>();
-spriteRenderer = GetComponent<SpriteRenderer>();
-//audioSource = GetComponent<AudioSource>();
-anim = GetComponent<Animator>();
-
-
-rb = GetComponent<Rigidbody2D>();
-}
-public void Update()
-{
-
-isGrounded = Physics2D.OverlapCircle(groundCheck.position,
-groundCheckRadius, groundLayer);
-moveValue = moveAction.ReadValue<Vector2>();
-
-
-if (jumpAction.WasPressedThisFrame() && isGrounded)
-{
-    jumpPressed = true;
-}
-
-if (dodgeAction.WasPressedThisFrame()) 
-{
-     Debug.Log("Dodge input detected!");
-    dodgePressed = true;
-}
-
-
-}
-private void FixedUpdate()
-{
-
-    if (isKnockedBack)
+    private void Start()
     {
-        knockbackTimer -= Time.fixedDeltaTime;
-        if (knockbackTimer <= 0f)
+        if (groundCheck == null)
+            groundCheck = transform.Find("GroundCheck");
+
+        if (groundLayer.value == 0)
+            groundLayer = LayerMask.GetMask("Ground");
+
+        moveAction = InputSystem.actions.FindAction("Move");
+        jumpAction = InputSystem.actions.FindAction("Jump");
+        dodgeAction = InputSystem.actions.FindAction("Dodge");
+
+        moveAction.Enable();
+        jumpAction.Enable();
+        dodgeAction.Enable();
+
+        playerDodge = GetComponent<PlayerDodge>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    public void Update()
+    {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position,
+                                             groundCheckRadius, groundLayer);
+
+        moveValue = moveAction.ReadValue<Vector2>();
+
+        if (jumpAction.WasPressedThisFrame() && isGrounded)
         {
-            isKnockedBack = false;
+            jumpPressed = true;
         }
 
-        return;
+        if (dodgeAction.WasPressedThisFrame())
+        {
+            Debug.Log("Dodge input detected!");
+            dodgePressed = true;
+        }
     }
 
-    if (playerDodge != null && playerDodge.isDodging) return;
-
-float moveX = moveValue.x;
-
-if (moveX < 0)
-{
-
-rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
-//animator.SetBool("walking", true); 
-anim.SetBool("walking", true);
-spriteRenderer.flipX = true;
-}
-
-else if (moveX > 0)
-{
-rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
-spriteRenderer.flipX = false;
-// Animation:
-//animator.SetBool("walking", true);
-anim.SetBool("walking", true);
-}
-
-else 
-{
-rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-anim.SetBool("walking", false);
-}
-
-if (jumpPressed)
-{
- 
-if (Mathf.Abs(rb.linearVelocity.y) > 0.01f)
-
-anim.SetBool("walking", false);            
-
-
-Vector2 impulse = new Vector2(0, jumpForce); // Vi pakker en Vector2 til AddForce
-rb.AddForce(impulse, ForceMode2D.Impulse); // AddForce får sin Vector2 og får at vide at Impulse er det vi vil have..
-jumpPressed = false; // Vi slår jumpPressed fra, så den kan blive true igen.
-// Lyd og animation:
-//audioSource.Stop();
-//audioSource.PlayOneShot(sfx_jump);
-//animator.SetBool("walking", false);
-anim.SetTrigger("jump");
-
-
-}
-
-if (dodgePressed)
+    private void FixedUpdate()
     {
-        if (isKnockedBack) return;
-        
-        this.transform.Translate(moveX * dodgeDistance, 0, 0, Space.World);
-        //Vector2 impulse = new Vector2(moveX * dodgeDistance, 0f);
-        //rb.AddForce(impulse, ForceMode2D.Impulse);
-        dodgePressed = false;
-
-        if (playerDodge != null)
+        // Knockback stops everything
+        if (isKnockedBack)
+        {
+            knockbackTimer -= Time.fixedDeltaTime;
+            if (knockbackTimer <= 0f)
             {
-                playerDodge.StartDodge();
+                isKnockedBack = false;
             }
+
+            return;
+        }
+
+        // Dodge has priority over normal movement
+        if (playerDodge != null && playerDodge.isDodging) return;
+
+        // If movement is disabled (e.g. during attack), stop horizontal movement & animations
+        if (!canMove)
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            anim.SetBool("walking", false);
+            // also clear inputs so they don't trigger once movement comes back
+            jumpPressed = false;
+            dodgePressed = false;
+            return;
+        }
+
+        float moveX = moveValue.x;
+
+        // Horizontal movement
+        if (moveX < 0)
+        {
+            rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
+            anim.SetBool("walking", true);
+            spriteRenderer.flipX = true;
+        }
+        else if (moveX > 0)
+        {
+            rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
+            anim.SetBool("walking", true);
+            spriteRenderer.flipX = false;
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            anim.SetBool("walking", false);
+        }
+
+        // Jump
+        if (jumpPressed)
+        {
+            if (canJump && isGrounded)
+            {
+                if (Mathf.Abs(rb.linearVelocity.y) > 0.01f)
+                    anim.SetBool("walking", false);
+
+                Vector2 impulse = new Vector2(0, jumpForce);
+                rb.AddForce(impulse, ForceMode2D.Impulse);
+                jumpPressed = false;
+
+                anim.SetTrigger("jump");
+                // play jump sound here if you want
+            }
+            else
+            {
+                // if we can't jump now, clear the flag so it doesn't "store" the jump
+                jumpPressed = false;
+            }
+        }
+
+        // Dodge
+        if (dodgePressed)
+        {
+            if (canMove)    // extra guard
+            {
+                float moveDir = Mathf.Sign(moveX != 0 ? moveX : (spriteRenderer.flipX ? -1 : 1));
+                transform.Translate(moveDir * dodgeDistance, 0, 0, Space.World);
+
+                dodgePressed = false;
+
+                if (playerDodge != null)
+                {
+                    playerDodge.StartDodge();
+                }
+            }
+            else
+            {
+                dodgePressed = false;
+            }
+        }
     }
-}
 
-
-public void EnableMovementAndJump(bool enable)
-{
-   canMove = enable;   
-}
-
-
-public virtual void EnableMovement(bool enable) // Movement
-
+    public void EnableMovementAndJump()
     {
-        
-        canJump = enable;
-
+        canMove = true;
+        canJump = true;
     }
 
+    public virtual void DisableMovementAndJump()
+    {
+        canMove = false;
+        canJump = false;
+    }
 
-public virtual void DisableMovementAndJump()
-{
-   canMove = false;
-}  
-
-public void ApplyKnockback(float duration)
-{
-    isKnockedBack = true;
-    knockbackTimer = duration;
+    public void ApplyKnockback(float duration)
+    {
+        isKnockedBack = true;
+        knockbackTimer = duration;
+    }
 }
-
-}
-
-
