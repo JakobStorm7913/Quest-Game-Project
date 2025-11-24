@@ -24,23 +24,10 @@ public class PlayerMeleeAttack : MonoBehaviour
     [SerializeField] private float attackTimer = 0f;
     [SerializeField] private bool isAttacking = true;
 
-    
 
     protected int facingDir = 1;
     protected bool facingRight = true; // Kode til retning af player
     
-    [Header("Collision details")]
-    [SerializeField] private float groundCheckDistance;
-
-    [SerializeField] private LayerMask whatIsGround;
-    protected bool canMove = true;
-    
-    public bool isGrounded;
-
-
-    [Header("Movement details")]
-    private float xInput;
-    private bool canJump = true;
 
     [Header("Input")]
     [SerializeField] private InputAction attackAction;
@@ -156,7 +143,7 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     {
 
-        Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundCheckDistance));
+        Gizmos.DrawLine(transform.position, transform.position);
 
         if(attackPoint != null)
         Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
