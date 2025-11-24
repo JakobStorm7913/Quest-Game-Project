@@ -2,15 +2,36 @@ using UnityEngine;
 
 public class PlayerAnimations : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private PlayerMovementScript playerAnimations;
+
+    private void Awake()
+
     {
+
+        playerAnimations = GetComponentInParent<PlayerMovementScript>();
+
+    }
+
+    public void DamageTargets() => playerAnimations.DamageTargets();
+
+
+    private void DisableMovementAndJump()
+
+    {
+
+        playerAnimations.EnableMovement(false);
         
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void EnableMovementAndJump() 
+    
     {
-        
+
+       playerAnimations.EnableMovement(true);
+
     }
+  
+
 }
