@@ -9,6 +9,7 @@ public class PlayerActivateDialogue : MonoBehaviour
     [SerializeField] private LayerMask npcTargetLayer;
 
     [SerializeField] private GameObject targetNpc;
+
     //private InputAction interactAction;
 
    /* void Awake()
