@@ -35,21 +35,17 @@ public class ItemSpawn : MonoBehaviour
         float DropHit = Random.Range(0, 101);
         if (DropHit <= noSpawnChance)
         {
-            break;
         } if (DropHit > noSpawnChance && DropHit <= smallHealthPotionChance)
         {
             GameObject SmallHealthPotion = Instantiate(smallHealthPotionPrefab, transform.position, Quaternion.identity);
-            break;
         } if (DropHit > smallHealthPotionChance && DropHit <= largeHealthPotionChance)
         {
             GameObject LargeHealthPotion = Instantiate(largeHealthPotionPrefab, transform.position, Quaternion.identity);
-            break;
         } if (DropHit > largeHealthPotionChance)
         {
             GameObject WitchKey = Instantiate(witchKeyPrefab, transform.position, Quaternion.identity);
             witchKeyChance = 101f;
             largeHealthPotionChance = 100f;
-            break;
         }
     }  
 }
