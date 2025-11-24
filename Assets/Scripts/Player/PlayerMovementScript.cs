@@ -131,6 +131,7 @@ jumpPressed = false; // Vi slår jumpPressed fra, så den kan blive true igen.
 //audioSource.Stop();
 //audioSource.PlayOneShot(sfx_jump);
 //animator.SetBool("walking", false);
+
 }
 
 if (dodgePressed)
@@ -150,24 +151,8 @@ if (dodgePressed)
 }
 
 
-public virtual void DamageTargets()
-{
-     Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget); // Koden vil detecte enemies colliders. 
 
-        foreach (Collider2D enemy in enemyColliders) // Kode til enemy detection/Encapsulation
-        {
-
-            Entity entityTarget = enemy.GetComponent<Entity>();
-            entityTarget.TakeDamage();
-        }
-
-}
-
-
-
-
-
-public virtual void EnableMovementAndJump(bool enable)
+public void EnableMovementAndJump(bool enable)
 {
    canMove = enable;   
 }
