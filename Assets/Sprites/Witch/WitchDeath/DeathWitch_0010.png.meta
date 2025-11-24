@@ -1,0 +1,5096 @@
+fileFormatVersion: 2
+guid: f49c34b3f930d0049b261efb0fb8f053
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8053147457155302338
+    second: DeathWitch_0010_0
+  - first:
+      213: 1197642124297150902
+    second: DeathWitch_0010_1
+  - first:
+      213: 7165917659508389124
+    second: DeathWitch_0010_2
+  - first:
+      213: -1617427649472524192
+    second: DeathWitch_0010_3
+  - first:
+      213: 8309951661906376427
+    second: DeathWitch_0010_4
+  - first:
+      213: -7689526827848900122
+    second: DeathWitch_0010_5
+  - first:
+      213: 7237753755865957797
+    second: DeathWitch_0010_6
+  - first:
+      213: 5204195463976830502
+    second: DeathWitch_0010_7
+  - first:
+      213: 4874576091138189612
+    second: DeathWitch_0010_8
+  - first:
+      213: -4858488816339872399
+    second: DeathWitch_0010_9
+  - first:
+      213: 6521433663192726974
+    second: DeathWitch_0010_10
+  - first:
+      213: 2755540320292081472
+    second: DeathWitch_0010_11
+  - first:
+      213: -7001125880961875359
+    second: DeathWitch_0010_12
+  - first:
+      213: 6196364829826954539
+    second: DeathWitch_0010_13
+  - first:
+      213: 8606863014011839914
+    second: DeathWitch_0010_14
+  - first:
+      213: 4037390810009963637
+    second: DeathWitch_0010_15
+  - first:
+      213: 4263825200409108128
+    second: DeathWitch_0010_16
+  - first:
+      213: -8024911577215772180
+    second: DeathWitch_0010_17
+  - first:
+      213: -4600194467813956471
+    second: DeathWitch_0010_18
+  - first:
+      213: -6810242803285169353
+    second: DeathWitch_0010_19
+  - first:
+      213: -7285367472633285276
+    second: DeathWitch_0010_20
+  - first:
+      213: 3875292688104084882
+    second: DeathWitch_0010_21
+  - first:
+      213: 3331674489935941848
+    second: DeathWitch_0010_22
+  - first:
+      213: -6631353831981557554
+    second: DeathWitch_0010_23
+  - first:
+      213: -6272943912081946427
+    second: DeathWitch_0010_24
+  - first:
+      213: -6994441621247330470
+    second: DeathWitch_0010_25
+  - first:
+      213: 8266330190333229802
+    second: DeathWitch_0010_26
+  - first:
+      213: 3589412588652812996
+    second: DeathWitch_0010_27
+  - first:
+      213: -1751864010783115842
+    second: DeathWitch_0010_28
+  - first:
+      213: -6704448262695669314
+    second: DeathWitch_0010_29
+  - first:
+      213: 2763871110460235785
+    second: DeathWitch_0010_30
+  - first:
+      213: -7146236841014118516
+    second: DeathWitch_0010_31
+  - first:
+      213: 8626534242553804891
+    second: DeathWitch_0010_32
+  - first:
+      213: -7703620982798991958
+    second: DeathWitch_0010_33
+  - first:
+      213: -1806715656685967641
+    second: DeathWitch_0010_34
+  - first:
+      213: -4188540570865732250
+    second: DeathWitch_0010_35
+  - first:
+      213: 1906247718552554674
+    second: DeathWitch_0010_36
+  - first:
+      213: -5192495198225453421
+    second: DeathWitch_0010_37
+  - first:
+      213: -4269920247378493523
+    second: DeathWitch_0010_38
+  - first:
+      213: 7419575673506611551
+    second: DeathWitch_0010_39
+  - first:
+      213: -8834320146534808321
+    second: DeathWitch_0010_40
+  - first:
+      213: 5062592241533465614
+    second: DeathWitch_0010_41
+  - first:
+      213: 1129493844234167563
+    second: DeathWitch_0010_42
+  - first:
+      213: 8574215007178747381
+    second: DeathWitch_0010_43
+  - first:
+      213: 7069122393509088955
+    second: DeathWitch_0010_44
+  - first:
+      213: 8466838016106089196
+    second: DeathWitch_0010_45
+  - first:
+      213: 3643962435088936066
+    second: DeathWitch_0010_46
+  - first:
+      213: 7205219690028030805
+    second: DeathWitch_0010_47
+  - first:
+      213: -1919238031647974665
+    second: DeathWitch_0010_48
+  - first:
+      213: -5642900347917422035
+    second: DeathWitch_0010_49
+  - first:
+      213: -3250661096756442403
+    second: DeathWitch_0010_50
+  - first:
+      213: 7694196391806030465
+    second: DeathWitch_0010_51
+  - first:
+      213: -7670554822487143487
+    second: DeathWitch_0010_52
+  - first:
+      213: -2078150927387894279
+    second: DeathWitch_0010_53
+  - first:
+      213: 6666211456621234637
+    second: DeathWitch_0010_54
+  - first:
+      213: 8662254140003338819
+    second: DeathWitch_0010_55
+  - first:
+      213: -7488974661929566107
+    second: DeathWitch_0010_56
+  - first:
+      213: -1050298858420764554
+    second: DeathWitch_0010_57
+  - first:
+      213: -8453147349670547397
+    second: DeathWitch_0010_58
+  - first:
+      213: -5056752853166639325
+    second: DeathWitch_0010_59
+  - first:
+      213: -3331597114267935402
+    second: DeathWitch_0010_60
+  - first:
+      213: 4602409266798825266
+    second: DeathWitch_0010_61
+  - first:
+      213: -3996637596367699504
+    second: DeathWitch_0010_62
+  - first:
+      213: -7138684614341999501
+    second: DeathWitch_0010_63
+  - first:
+      213: 7203075589597493420
+    second: DeathWitch_0010_64
+  - first:
+      213: -459276120895276811
+    second: DeathWitch_0010_65
+  - first:
+      213: 5533929334841049869
+    second: DeathWitch_0010_66
+  - first:
+      213: 1675089330698496664
+    second: DeathWitch_0010_67
+  - first:
+      213: -1337311106868057794
+    second: DeathWitch_0010_68
+  - first:
+      213: 1051565968528417938
+    second: DeathWitch_0010_69
+  - first:
+      213: 7426467592760219209
+    second: DeathWitch_0010_70
+  - first:
+      213: -6962884657427112112
+    second: DeathWitch_0010_71
+  - first:
+      213: 146023755802411579
+    second: DeathWitch_0010_72
+  - first:
+      213: -3835786869829909407
+    second: DeathWitch_0010_73
+  - first:
+      213: -1658031512265459851
+    second: DeathWitch_0010_74
+  - first:
+      213: 1073424149490399238
+    second: DeathWitch_0010_75
+  - first:
+      213: 2101483939813591491
+    second: DeathWitch_0010_76
+  - first:
+      213: -581043895538476702
+    second: DeathWitch_0010_77
+  - first:
+      213: -6637661509441162585
+    second: DeathWitch_0010_78
+  - first:
+      213: -6049784396465684702
+    second: DeathWitch_0010_79
+  - first:
+      213: -1589372888739506168
+    second: DeathWitch_0010_80
+  - first:
+      213: -400770052023680745
+    second: DeathWitch_0010_81
+  - first:
+      213: -3861843910939337966
+    second: DeathWitch_0010_82
+  - first:
+      213: -280199073252863041
+    second: DeathWitch_0010_83
+  - first:
+      213: 6512507521532211974
+    second: DeathWitch_0010_84
+  - first:
+      213: -3235456932011021758
+    second: DeathWitch_0010_85
+  - first:
+      213: -5475170191856770437
+    second: DeathWitch_0010_86
+  - first:
+      213: 8489030886595756203
+    second: DeathWitch_0010_87
+  - first:
+      213: -7851311076602896041
+    second: DeathWitch_0010_88
+  - first:
+      213: -933602050506429125
+    second: DeathWitch_0010_89
+  - first:
+      213: -4003474041365559980
+    second: DeathWitch_0010_90
+  - first:
+      213: 1974871655566611030
+    second: DeathWitch_0010_91
+  - first:
+      213: -499159510061916437
+    second: DeathWitch_0010_92
+  - first:
+      213: -5571309861936115916
+    second: DeathWitch_0010_93
+  - first:
+      213: 1163331799174611917
+    second: DeathWitch_0010_94
+  - first:
+      213: 2448981712786650182
+    second: DeathWitch_0010_95
+  - first:
+      213: 576496008066154678
+    second: DeathWitch_0010_96
+  - first:
+      213: 6176133452547788390
+    second: DeathWitch_0010_97
+  - first:
+      213: -3121737968822835691
+    second: DeathWitch_0010_98
+  - first:
+      213: 5796574989100848403
+    second: DeathWitch_0010_99
+  - first:
+      213: 2828127661945708224
+    second: DeathWitch_0010_100
+  - first:
+      213: -2576026486829670398
+    second: DeathWitch_0010_101
+  - first:
+      213: -654783510539543820
+    second: DeathWitch_0010_102
+  - first:
+      213: -3932501759511698969
+    second: DeathWitch_0010_103
+  - first:
+      213: -3247127337636379711
+    second: DeathWitch_0010_104
+  - first:
+      213: 2952114263511415975
+    second: DeathWitch_0010_105
+  - first:
+      213: -8623982293818725316
+    second: DeathWitch_0010_106
+  - first:
+      213: -1367717643521365837
+    second: DeathWitch_0010_107
+  - first:
+      213: 2487677347691833580
+    second: DeathWitch_0010_108
+  - first:
+      213: 7677203008967103950
+    second: DeathWitch_0010_109
+  - first:
+      213: -3991413790530395641
+    second: DeathWitch_0010_110
+  - first:
+      213: -1715356805243841261
+    second: DeathWitch_0010_111
+  - first:
+      213: -6340300501399122717
+    second: DeathWitch_0010_112
+  - first:
+      213: -4660621226666632002
+    second: DeathWitch_0010_113
+  - first:
+      213: -259961745423644974
+    second: DeathWitch_0010_114
+  - first:
+      213: 4018198450870999826
+    second: DeathWitch_0010_115
+  - first:
+      213: 2125880532757268519
+    second: DeathWitch_0010_116
+  - first:
+      213: -7596573862141302063
+    second: DeathWitch_0010_117
+  - first:
+      213: -7478637221750662071
+    second: DeathWitch_0010_118
+  - first:
+      213: -8107095405003204600
+    second: DeathWitch_0010_119
+  - first:
+      213: -4720159667071516625
+    second: DeathWitch_0010_120
+  - first:
+      213: 6386741733800022620
+    second: DeathWitch_0010_121
+  - first:
+      213: 9136567260156673392
+    second: DeathWitch_0010_122
+  - first:
+      213: -6368237962707572739
+    second: DeathWitch_0010_123
+  - first:
+      213: 7795910880382058044
+    second: DeathWitch_0010_124
+  - first:
+      213: -3372540752999351175
+    second: DeathWitch_0010_125
+  - first:
+      213: -1820146584978396936
+    second: DeathWitch_0010_126
+  - first:
+      213: -461349093998997343
+    second: DeathWitch_0010_127
+  - first:
+      213: -6512060182941879589
+    second: DeathWitch_0010_128
+  - first:
+      213: 1881012682089995367
+    second: DeathWitch_0010_129
+  - first:
+      213: -4512087247417006344
+    second: DeathWitch_0010_130
+  - first:
+      213: -589584431287269864
+    second: DeathWitch_0010_131
+  - first:
+      213: -4687439847113245432
+    second: DeathWitch_0010_132
+  - first:
+      213: -3761958284456892778
+    second: DeathWitch_0010_133
+  - first:
+      213: 7101028062077111520
+    second: DeathWitch_0010_134
+  - first:
+      213: -5932266468653233071
+    second: DeathWitch_0010_135
+  - first:
+      213: -7613110611770670938
+    second: DeathWitch_0010_136
+  - first:
+      213: -2821712672248530930
+    second: DeathWitch_0010_137
+  - first:
+      213: -2281580657823832188
+    second: DeathWitch_0010_138
+  - first:
+      213: -1379429862614639618
+    second: DeathWitch_0010_139
+  - first:
+      213: 3813176032139536878
+    second: DeathWitch_0010_140
+  - first:
+      213: 7453147233638542980
+    second: DeathWitch_0010_141
+  - first:
+      213: -8822368278510037298
+    second: DeathWitch_0010_142
+  - first:
+      213: -6774318821982877658
+    second: DeathWitch_0010_143
+  - first:
+      213: -2753659151953110106
+    second: DeathWitch_0010_144
+  - first:
+      213: -3476218772384330346
+    second: DeathWitch_0010_145
+  - first:
+      213: 7554678916351272344
+    second: DeathWitch_0010_146
+  - first:
+      213: 2554829514664329364
+    second: DeathWitch_0010_147
+  - first:
+      213: -4012192538971618935
+    second: DeathWitch_0010_148
+  - first:
+      213: 7490587820344710555
+    second: DeathWitch_0010_149
+  - first:
+      213: 6199492994935201414
+    second: DeathWitch_0010_150
+  - first:
+      213: -4007356516102117675
+    second: DeathWitch_0010_151
+  - first:
+      213: 8300286617236596102
+    second: DeathWitch_0010_152
+  - first:
+      213: -4439472664004525322
+    second: DeathWitch_0010_153
+  - first:
+      213: 5202168326750632757
+    second: DeathWitch_0010_154
+  - first:
+      213: -7710409917761634212
+    second: DeathWitch_0010_155
+  - first:
+      213: -5212444124368641818
+    second: DeathWitch_0010_156
+  - first:
+      213: 2758579631232758798
+    second: DeathWitch_0010_157
+  - first:
+      213: 1316498050665723889
+    second: DeathWitch_0010_158
+  - first:
+      213: -8072877837807896238
+    second: DeathWitch_0010_159
+  - first:
+      213: 3425549525831976879
+    second: DeathWitch_0010_160
+  - first:
+      213: 3326535271359526975
+    second: DeathWitch_0010_161
+  - first:
+      213: -9149586247920164614
+    second: DeathWitch_0010_162
+  - first:
+      213: 3386397318263426554
+    second: DeathWitch_0010_163
+  - first:
+      213: -4506733800398778470
+    second: DeathWitch_0010_164
+  - first:
+      213: -7146364406449470104
+    second: DeathWitch_0010_165
+  - first:
+      213: 2388351160724024005
+    second: DeathWitch_0010_166
+  - first:
+      213: -2321652838963410415
+    second: DeathWitch_0010_167
+  - first:
+      213: -9121536880058502972
+    second: DeathWitch_0010_168
+  - first:
+      213: -7771254985764217441
+    second: DeathWitch_0010_169
+  - first:
+      213: 6240203700629133691
+    second: DeathWitch_0010_170
+  - first:
+      213: -3849667848680239689
+    second: DeathWitch_0010_171
+  - first:
+      213: -2109356276174256482
+    second: DeathWitch_0010_172
+  - first:
+      213: 1177567533083427022
+    second: DeathWitch_0010_173
+  - first:
+      213: -6232604012343585380
+    second: DeathWitch_0010_174
+  - first:
+      213: -8686328340503021368
+    second: DeathWitch_0010_175
+  - first:
+      213: -1560780043352557092
+    second: DeathWitch_0010_176
+  - first:
+      213: 1833325748974804628
+    second: DeathWitch_0010_177
+  - first:
+      213: -983411181629268202
+    second: DeathWitch_0010_178
+  - first:
+      213: -2682679504175824581
+    second: DeathWitch_0010_179
+  - first:
+      213: 78781165194271518
+    second: DeathWitch_0010_180
+  - first:
+      213: -4114787802624363447
+    second: DeathWitch_0010_181
+  - first:
+      213: 834007095534713437
+    second: DeathWitch_0010_182
+  - first:
+      213: -4592813308938234840
+    second: DeathWitch_0010_183
+  - first:
+      213: -1519307875652741182
+    second: DeathWitch_0010_184
+  - first:
+      213: -8199782366569994703
+    second: DeathWitch_0010_185
+  - first:
+      213: -1820139231900574841
+    second: DeathWitch_0010_186
+  - first:
+      213: -2200316774211892436
+    second: DeathWitch_0010_187
+  - first:
+      213: -3994547251107903483
+    second: DeathWitch_0010_188
+  - first:
+      213: -2139759484183553686
+    second: DeathWitch_0010_189
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DeathWitch_0010_0
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 30
+        width: 526
+        height: 1078
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3cfa6c1e097d3090800000000000000
+      internalID: -8053147457155302338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_1
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1082
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1a6caaa21ee9010800000000000000
+      internalID: 1197642124297150902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_2
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1064
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40532b80524727360800000000000000
+      internalID: 7165917659508389124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 969
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0609b4f4f1ebd89e0800000000000000
+      internalID: -1617427649472524192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 976
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6b89c2201e25370800000000000000
+      internalID: 8309951661906376427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_5
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 940
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1ea374710594590800000000000000
+      internalID: -7689526827848900122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_6
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 946
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5c32691baa17460800000000000000
+      internalID: 7237753755865957797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_7
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 932
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626c9049334093840800000000000000
+      internalID: 5204195463976830502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_8
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 897
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2967e6d029f5a340800000000000000
+      internalID: 4874576091138189612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_9
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 924
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1759ad4b92e239cb0800000000000000
+      internalID: -4858488816339872399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_10
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 879
+        width: 38
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd70e85d59c08a50800000000000000
+      internalID: 6521433663192726974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_11
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 858
+        width: 42
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f86436255ad3620800000000000000
+      internalID: 2755540320292081472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_12
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 835
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1624975da1107de90800000000000000
+      internalID: -7001125880961875359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_13
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 848
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b253f84abf8edf550800000000000000
+      internalID: 6196364829826954539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_14
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 817
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5af946f48b17770800000000000000
+      internalID: 8606863014011839914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_15
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 817
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c021afc81b70830800000000000000
+      internalID: 4037390810009963637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_16
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 802
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae5eb6dd662c2b30800000000000000
+      internalID: 4263825200409108128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_17
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 823
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce952263079c1a090800000000000000
+      internalID: -8024911577215772180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_18
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 819
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9846b302183d820c0800000000000000
+      internalID: -4600194467813956471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_19
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 816
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73be60ca0482d71a0800000000000000
+      internalID: -6810242803285169353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_20
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 802
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465f18712ec25ea90800000000000000
+      internalID: -7285367472633285276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_21
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 808
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295dc1bea2ec7c530800000000000000
+      internalID: 3875292688104084882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_22
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 777
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0dcdfeb4c7c3e20800000000000000
+      internalID: 3331674489935941848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_23
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 779
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec850d003d2b8f3a0800000000000000
+      internalID: -6631353831981557554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_24
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 766
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c808685fb602f8a0800000000000000
+      internalID: -6272943912081946427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 784
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5778535760ceee90800000000000000
+      internalID: -6994441621247330470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_26
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 779
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea36eed287e7b270800000000000000
+      internalID: 8266330190333229802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_27
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 779
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca57fa5bb720d130800000000000000
+      internalID: 3589412588652812996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_28
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 767
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb53b76c6f020b7e0800000000000000
+      internalID: -1751864010783115842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_29
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 775
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb13a07a3d305f2a0800000000000000
+      internalID: -6704448262695669314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_30
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 762
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90062ff912e3b5620800000000000000
+      internalID: 2763871110460235785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_31
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 652
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c873b8a947773dc90800000000000000
+      internalID: -7146236841014118516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_32
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 639
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58b922303b97b770800000000000000
+      internalID: 8626534242553804891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_33
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 632
+        width: 51
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad350c188d371590800000000000000
+      internalID: -7703620982798991958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_34
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 659
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6a811cea14de6e0800000000000000
+      internalID: -1806715656685967641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_35
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 653
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6657c3aea805fd5c0800000000000000
+      internalID: -4188540570865732250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_36
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 659
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc4936433a547a10800000000000000
+      internalID: 1906247718552554674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_37
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 659
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ea9d3d02d80f7b0800000000000000
+      internalID: -5192495198225453421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_38
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 652
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafb1c378223eb4c0800000000000000
+      internalID: -4269920247378493523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_39
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 656
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51cd73b3c0a7f660800000000000000
+      internalID: 7419575673506611551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_40
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 658
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff447b902a0366580800000000000000
+      internalID: -8834320146534808321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_41
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 655
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04304722d0f14640800000000000000
+      internalID: 5062592241533465614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_42
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 657
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b056191caa4ccaf00800000000000000
+      internalID: 1129493844234167563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_43
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 660
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd66b2fe1bbdf670800000000000000
+      internalID: 8574215007178747381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_44
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 658
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe4ed2fc519a1260800000000000000
+      internalID: 7069122393509088955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_45
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 650
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceac6c00150408570800000000000000
+      internalID: 8466838016106089196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_46
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 644
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ce7563784f19230800000000000000
+      internalID: 3643962435088936066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_47
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 636
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b55c812251ef360800000000000000
+      internalID: 7205219690028030805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_48
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 638
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fad334cd2f7d55e0800000000000000
+      internalID: -1919238031647974665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_49
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 642
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22347be70460b1b0800000000000000
+      internalID: -5642900347917422035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_50
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 642
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda86aa84f453e2d0800000000000000
+      internalID: -3250661096756442403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_51
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 641
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182d0bd4ad647ca60800000000000000
+      internalID: 7694196391806030465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_52
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 638
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb8e7f7707bc8590800000000000000
+      internalID: -7670554822487143487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_53
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 646
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd5567fdbce823e0800000000000000
+      internalID: -2078150927387894279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_54
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 632
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc94c8d2004238c50800000000000000
+      internalID: 6666211456621234637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_55
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 648
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a4e09ee32863870800000000000000
+      internalID: 8662254140003338819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_56
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 637
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56089c72931d11890800000000000000
+      internalID: -7488974661929566107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_57
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 639
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67005d3c0c69c61f0800000000000000
+      internalID: -1050298858420764554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_58
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 633
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b303adca54360ba80800000000000000
+      internalID: -8453147349670547397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_59
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 639
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3273f06621ec2d9b0800000000000000
+      internalID: -5056752853166639325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_60
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 627
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65dd75d731ac3c1d0800000000000000
+      internalID: -3331597114267935402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_61
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 628
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f8282f7da0fdf30800000000000000
+      internalID: 4602409266798825266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_62
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 635
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1488cf7471988c0800000000000000
+      internalID: -3996637596367699504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_63
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 633
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37449966a2c4eec90800000000000000
+      internalID: -7138684614341999501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_64
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 629
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8fe30d51776f360800000000000000
+      internalID: 7203075589597493420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_65
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 631
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8b7382dc250a9f0800000000000000
+      internalID: -459276120895276811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_66
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 620
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d038057f8677ccc40800000000000000
+      internalID: 5533929334841049869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_67
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 626
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89aa45b0fdc1f3710800000000000000
+      internalID: 1675089330698496664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_68
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 617
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39e1f832aae07de0800000000000000
+      internalID: -1337311106868057794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_69
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 628
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294a60c4da9e79e00800000000000000
+      internalID: 1051565968528417938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_70
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 629
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9465c62bdec101760800000000000000
+      internalID: 7426467592760219209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_71
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 626
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f1a068b4dde5f90800000000000000
+      internalID: -6962884657427112112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_72
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 621
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b320f5d05d7c60200800000000000000
+      internalID: 146023755802411579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_73
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 629
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1644ead2a2c84cac0800000000000000
+      internalID: -3835786869829909407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_74
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 616
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577730dcf1d7df8e0800000000000000
+      internalID: -1658031512265459851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_75
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 616
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60873b3a39195ee00800000000000000
+      internalID: 1073424149490399238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_76
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 603
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c907c55288f92d10800000000000000
+      internalID: 2101483939813591491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_77
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 616
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269158fc7a7bfe7f0800000000000000
+      internalID: -581043895538476702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_78
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 610
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2f976660a42e3a0800000000000000
+      internalID: -6637661509441162585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_79
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 601
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f36f00529da0ca0800000000000000
+      internalID: -6049784396465684702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_80
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 609
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8089b0f47c961f9e0800000000000000
+      internalID: -1589372888739506168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_81
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 605
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7118384d2cd207af0800000000000000
+      internalID: -400770052023680745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_82
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 587
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b94768c69f76ac0800000000000000
+      internalID: -3861843910939337966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_83
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 608
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb39e5c6d688c1cf0800000000000000
+      internalID: -280199073252863041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_84
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 605
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603bcf90613116a50800000000000000
+      internalID: 6512507521532211974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_85
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 598
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a686100195913d0800000000000000
+      internalID: -3235456932011021758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_86
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 604
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72e19d18b94404b0800000000000000
+      internalID: -5475170191856770437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_87
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 606
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba00cd25d981fc570800000000000000
+      internalID: 8489030886595756203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_88
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 608
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751aef18c2a8a0390800000000000000
+      internalID: -7851311076602896041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_89
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 593
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3decf9a1ed2b03f0800000000000000
+      internalID: -933602050506429125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_90
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 597
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45588e8129dc078c0800000000000000
+      internalID: -4003474041365559980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_91
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 594
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6521903be47286b10800000000000000
+      internalID: 1974871655566611030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_92
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 596
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee508cf111a219f0800000000000000
+      internalID: -499159510061916437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_93
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 579
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43fcaa9d23bbea2b0800000000000000
+      internalID: -5571309861936115916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_94
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 570
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc308b59b1cf42010800000000000000
+      internalID: 1163331799174611917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_95
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 576
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644731c74e78cf120800000000000000
+      internalID: 2448981712786650182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_96
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 579
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0c63f9010200800800000000000000
+      internalID: 576496008066154678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_97
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 560
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e848c07a806b550800000000000000
+      internalID: 6176133452547788390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_98
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 568
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51627766bdb5da4d0800000000000000
+      internalID: -3121737968822835691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_99
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 553
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3151543bd32917050800000000000000
+      internalID: 5796574989100848403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_100
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 556
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cedabddf178f3720800000000000000
+      internalID: 2828127661945708224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_101
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 564
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20025800f8d104cd0800000000000000
+      internalID: -2576026486829670398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_102
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 566
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fad189cdddb9e6f0800000000000000
+      internalID: -654783510539543820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_103
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 563
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1e4b92c72fc69c0800000000000000
+      internalID: -3932501759511698969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_104
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 557
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c349b3f3e2efe2d0800000000000000
+      internalID: -3247127337636379711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_105
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 563
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac36fc184408f820800000000000000
+      internalID: 2952114263511415975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_106
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 551
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c2dababc5715880800000000000000
+      internalID: -8623982293818725316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_107
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 535
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8efd8bc04e40de0800000000000000
+      internalID: -1367717643521365837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_108
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 547
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce825f01e51068220800000000000000
+      internalID: 2487677347691833580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_109
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 550
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec55b0a0677ea8a60800000000000000
+      internalID: 7677203008967103950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_110
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 527
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70227df0e46ab98c0800000000000000
+      internalID: -3991413790530395641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_111
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 538
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3155460f214d138e0800000000000000
+      internalID: -1715356805243841261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_112
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 534
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eccfdc494ab208a0800000000000000
+      internalID: -6340300501399122717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_113
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 514
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcd3e7ffa5225fb0800000000000000
+      internalID: -4660621226666632002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_114
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 523
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d645dc7b2e646cf0800000000000000
+      internalID: -259961745423644974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_115
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 525
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21bd035a33283c730800000000000000
+      internalID: 4018198450870999826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_116
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 509
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7284ae5c415a08d10800000000000000
+      internalID: 2125880532757268519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_117
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 510
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1daec0d125c839690800000000000000
+      internalID: -7596573862141302063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_118
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 508
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c9981021b863890800000000000000
+      internalID: -7478637221750662071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_119
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 516
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8081590beafcd7f80800000000000000
+      internalID: -8107095405003204600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_120
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 512
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2083119acf9e7eb0800000000000000
+      internalID: -4720159667071516625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_121
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 510
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52105bb4c342a850800000000000000
+      internalID: 6386741733800022620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_122
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 513
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d3a18f38b9bce70800000000000000
+      internalID: 9136567260156673392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_123
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 495
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df768a330597f97a0800000000000000
+      internalID: -6368237962707572739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_124
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 500
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e76c524a3a03c60800000000000000
+      internalID: 7795910880382058044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_125
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 490
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97cf1fabd045231d0800000000000000
+      internalID: -3372540752999351175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_126
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 497
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8e833135a8db6e0800000000000000
+      internalID: -1820146584978396936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_127
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 493
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0ddbe7175f899f0800000000000000
+      internalID: -461349093998997343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_128
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 482
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2b8c714c380a5a0800000000000000
+      internalID: -6512060182941879589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_129
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 479
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c9afd7113ba1a10800000000000000
+      internalID: 1881012682089995367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_130
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 486
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6a326fd88d161c0800000000000000
+      internalID: -4512087247417006344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_131
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 487
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8168500651061d7f0800000000000000
+      internalID: -589584431287269864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_132
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 484
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80dbdce4b4ed2feb0800000000000000
+      internalID: -4687439847113245432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_133
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 484
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696eb1b3fd6dacbc0800000000000000
+      internalID: -3761958284456892778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_134
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 484
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eccf2c466beb8260800000000000000
+      internalID: 7101028062077111520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_135
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 473
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c86f6c31b5cada0800000000000000
+      internalID: -5932266468653233071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_136
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 479
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a007ad0c3cc85690800000000000000
+      internalID: -7613110611770670938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_137
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 448
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e087860564347d8d0800000000000000
+      internalID: -2821712672248530930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_138
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 448
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4872204ea723650e0800000000000000
+      internalID: -2281580657823832188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_139
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 445
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbd94639d74bdce0800000000000000
+      internalID: -1379429862614639618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_140
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 435
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9e5bde56f1be430800000000000000
+      internalID: 3813176032139536878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_141
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 428
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ee5b7abe5ee6760800000000000000
+      internalID: 7453147233638542980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_142
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 424
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec61cb92bc6a09580800000000000000
+      internalID: -8822368278510037298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_143
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 428
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628c77c5ce8ccf1a0800000000000000
+      internalID: -6774318821982877658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_144
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 420
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abd45f379909c9d0800000000000000
+      internalID: -2753659151953110106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_145
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 419
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69dcc7eb17df1cfc0800000000000000
+      internalID: -3476218772384330346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_146
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 427
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8952041b27c97d860800000000000000
+      internalID: 7554678916351272344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_147
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 415
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490404358e3947320800000000000000
+      internalID: 2554829514664329364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_148
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 414
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981cf10b424d158c0800000000000000
+      internalID: -4012192538971618935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_149
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 395
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95938e8fe9e3f760800000000000000
+      internalID: 7490587820344710555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_150
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 392
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e92a65806090650800000000000000
+      internalID: 6199492994935201414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_151
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 398
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6e2610b720368c0800000000000000
+      internalID: -4007356516102117675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_152
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 384
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685e05a93ba803370800000000000000
+      internalID: 8300286617236596102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_153
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 386
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f204f72223d362c0800000000000000
+      internalID: -4439472664004525322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_154
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 382
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b72c9e780d13840800000000000000
+      internalID: 5202168326750632757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_155
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 386
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c504b23080f1ff490800000000000000
+      internalID: -7710409917761634212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_156
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 384
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e06f638fada9a7b0800000000000000
+      internalID: -5212444124368641818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_157
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 377
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04b14c1f81784620800000000000000
+      internalID: 2758579631232758798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_158
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 353
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7bc618004254210800000000000000
+      internalID: 1316498050665723889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_159
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 357
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2593652e06067ff80800000000000000
+      internalID: -8072877837807896238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_160
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 342
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa709b7f42ff98f20800000000000000
+      internalID: 3425549525831976879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_161
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 343
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38313e543a3a2e20800000000000000
+      internalID: 3326535271359526975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_162
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 332
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af06beab8c3260180800000000000000
+      internalID: -9149586247920164614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_163
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 308
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd4d674b66eefe20800000000000000
+      internalID: 3386397318263426554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_164
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 323
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f0cf97c7dd471c0800000000000000
+      internalID: -4506733800398778470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_165
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 303
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86585167f6303dc90800000000000000
+      internalID: -7146364406449470104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_166
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 286
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cae8d50ab0252120800000000000000
+      internalID: 2388351160724024005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_167
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 231
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a0fc92b05d7cfd0800000000000000
+      internalID: -2321652838963410415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_168
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 200
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0fc7a198ac96180800000000000000
+      internalID: -9121536880058502972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_169
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 176
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d5a8aa3c4f62490800000000000000
+      internalID: -7771254985764217441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_170
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 161
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79d3162438a99650800000000000000
+      internalID: 6240203700629133691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_171
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 155
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd0c20fc7b339ac0800000000000000
+      internalID: -3849667848680239689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_172
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 114
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9684e584af0ab2e0800000000000000
+      internalID: -2109356276174256482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_173
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 106
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0887cae6f875010800000000000000
+      internalID: 1177567533083427022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_174
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 123
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95169a2ca75189a0800000000000000
+      internalID: -6232604012343585380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_175
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 110
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8b8ed7566f37780800000000000000
+      internalID: -8686328340503021368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_176
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 90
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9b377e1def65ae0800000000000000
+      internalID: -1560780043352557092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_177
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 90
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e58392e08417910800000000000000
+      internalID: 1833325748974804628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_178
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f17da9db83a52f0800000000000000
+      internalID: -983411181629268202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_179
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 98
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b310163543535cad0800000000000000
+      internalID: -2682679504175824581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_180
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b55666d03e71100800000000000000
+      internalID: 78781165194271518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_181
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 85
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944f67a6b4655e6c0800000000000000
+      internalID: -4114787802624363447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_182
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 81
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a708dd80df29b00800000000000000
+      internalID: 834007095534713437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_183
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 60
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824dc0911ac0340c0800000000000000
+      internalID: -4592813308938234840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_184
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 65
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7d34769855aeae0800000000000000
+      internalID: -1519307875652741182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_185
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 48
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1366515c165843e80800000000000000
+      internalID: -8199782366569994703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_186
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 64
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b50d813019db6e0800000000000000
+      internalID: -1820139231900574841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_187
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 53
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b44c73d87e671e0800000000000000
+      internalID: -2200316774211892436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_188
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 51
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508433b60748098c0800000000000000
+      internalID: -3994547251107903483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathWitch_0010_189
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 42
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a695778061c0e42e0800000000000000
+      internalID: -2139759484183553686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DeathWitch_0010_0: -8053147457155302338
+      DeathWitch_0010_1: 1197642124297150902
+      DeathWitch_0010_10: 6521433663192726974
+      DeathWitch_0010_100: 2828127661945708224
+      DeathWitch_0010_101: -2576026486829670398
+      DeathWitch_0010_102: -654783510539543820
+      DeathWitch_0010_103: -3932501759511698969
+      DeathWitch_0010_104: -3247127337636379711
+      DeathWitch_0010_105: 2952114263511415975
+      DeathWitch_0010_106: -8623982293818725316
+      DeathWitch_0010_107: -1367717643521365837
+      DeathWitch_0010_108: 2487677347691833580
+      DeathWitch_0010_109: 7677203008967103950
+      DeathWitch_0010_11: 2755540320292081472
+      DeathWitch_0010_110: -3991413790530395641
+      DeathWitch_0010_111: -1715356805243841261
+      DeathWitch_0010_112: -6340300501399122717
+      DeathWitch_0010_113: -4660621226666632002
+      DeathWitch_0010_114: -259961745423644974
+      DeathWitch_0010_115: 4018198450870999826
+      DeathWitch_0010_116: 2125880532757268519
+      DeathWitch_0010_117: -7596573862141302063
+      DeathWitch_0010_118: -7478637221750662071
+      DeathWitch_0010_119: -8107095405003204600
+      DeathWitch_0010_12: -7001125880961875359
+      DeathWitch_0010_120: -4720159667071516625
+      DeathWitch_0010_121: 6386741733800022620
+      DeathWitch_0010_122: 9136567260156673392
+      DeathWitch_0010_123: -6368237962707572739
+      DeathWitch_0010_124: 7795910880382058044
+      DeathWitch_0010_125: -3372540752999351175
+      DeathWitch_0010_126: -1820146584978396936
+      DeathWitch_0010_127: -461349093998997343
+      DeathWitch_0010_128: -6512060182941879589
+      DeathWitch_0010_129: 1881012682089995367
+      DeathWitch_0010_13: 6196364829826954539
+      DeathWitch_0010_130: -4512087247417006344
+      DeathWitch_0010_131: -589584431287269864
+      DeathWitch_0010_132: -4687439847113245432
+      DeathWitch_0010_133: -3761958284456892778
+      DeathWitch_0010_134: 7101028062077111520
+      DeathWitch_0010_135: -5932266468653233071
+      DeathWitch_0010_136: -7613110611770670938
+      DeathWitch_0010_137: -2821712672248530930
+      DeathWitch_0010_138: -2281580657823832188
+      DeathWitch_0010_139: -1379429862614639618
+      DeathWitch_0010_14: 8606863014011839914
+      DeathWitch_0010_140: 3813176032139536878
+      DeathWitch_0010_141: 7453147233638542980
+      DeathWitch_0010_142: -8822368278510037298
+      DeathWitch_0010_143: -6774318821982877658
+      DeathWitch_0010_144: -2753659151953110106
+      DeathWitch_0010_145: -3476218772384330346
+      DeathWitch_0010_146: 7554678916351272344
+      DeathWitch_0010_147: 2554829514664329364
+      DeathWitch_0010_148: -4012192538971618935
+      DeathWitch_0010_149: 7490587820344710555
+      DeathWitch_0010_15: 4037390810009963637
+      DeathWitch_0010_150: 6199492994935201414
+      DeathWitch_0010_151: -4007356516102117675
+      DeathWitch_0010_152: 8300286617236596102
+      DeathWitch_0010_153: -4439472664004525322
+      DeathWitch_0010_154: 5202168326750632757
+      DeathWitch_0010_155: -7710409917761634212
+      DeathWitch_0010_156: -5212444124368641818
+      DeathWitch_0010_157: 2758579631232758798
+      DeathWitch_0010_158: 1316498050665723889
+      DeathWitch_0010_159: -8072877837807896238
+      DeathWitch_0010_16: 4263825200409108128
+      DeathWitch_0010_160: 3425549525831976879
+      DeathWitch_0010_161: 3326535271359526975
+      DeathWitch_0010_162: -9149586247920164614
+      DeathWitch_0010_163: 3386397318263426554
+      DeathWitch_0010_164: -4506733800398778470
+      DeathWitch_0010_165: -7146364406449470104
+      DeathWitch_0010_166: 2388351160724024005
+      DeathWitch_0010_167: -2321652838963410415
+      DeathWitch_0010_168: -9121536880058502972
+      DeathWitch_0010_169: -7771254985764217441
+      DeathWitch_0010_17: -8024911577215772180
+      DeathWitch_0010_170: 6240203700629133691
+      DeathWitch_0010_171: -3849667848680239689
+      DeathWitch_0010_172: -2109356276174256482
+      DeathWitch_0010_173: 1177567533083427022
+      DeathWitch_0010_174: -6232604012343585380
+      DeathWitch_0010_175: -8686328340503021368
+      DeathWitch_0010_176: -1560780043352557092
+      DeathWitch_0010_177: 1833325748974804628
+      DeathWitch_0010_178: -983411181629268202
+      DeathWitch_0010_179: -2682679504175824581
+      DeathWitch_0010_18: -4600194467813956471
+      DeathWitch_0010_180: 78781165194271518
+      DeathWitch_0010_181: -4114787802624363447
+      DeathWitch_0010_182: 834007095534713437
+      DeathWitch_0010_183: -4592813308938234840
+      DeathWitch_0010_184: -1519307875652741182
+      DeathWitch_0010_185: -8199782366569994703
+      DeathWitch_0010_186: -1820139231900574841
+      DeathWitch_0010_187: -2200316774211892436
+      DeathWitch_0010_188: -3994547251107903483
+      DeathWitch_0010_189: -2139759484183553686
+      DeathWitch_0010_19: -6810242803285169353
+      DeathWitch_0010_2: 7165917659508389124
+      DeathWitch_0010_20: -7285367472633285276
+      DeathWitch_0010_21: 3875292688104084882
+      DeathWitch_0010_22: 3331674489935941848
+      DeathWitch_0010_23: -6631353831981557554
+      DeathWitch_0010_24: -6272943912081946427
+      DeathWitch_0010_25: -6994441621247330470
+      DeathWitch_0010_26: 8266330190333229802
+      DeathWitch_0010_27: 3589412588652812996
+      DeathWitch_0010_28: -1751864010783115842
+      DeathWitch_0010_29: -6704448262695669314
+      DeathWitch_0010_3: -1617427649472524192
+      DeathWitch_0010_30: 2763871110460235785
+      DeathWitch_0010_31: -7146236841014118516
+      DeathWitch_0010_32: 8626534242553804891
+      DeathWitch_0010_33: -7703620982798991958
+      DeathWitch_0010_34: -1806715656685967641
+      DeathWitch_0010_35: -4188540570865732250
+      DeathWitch_0010_36: 1906247718552554674
+      DeathWitch_0010_37: -5192495198225453421
+      DeathWitch_0010_38: -4269920247378493523
+      DeathWitch_0010_39: 7419575673506611551
+      DeathWitch_0010_4: 8309951661906376427
+      DeathWitch_0010_40: -8834320146534808321
+      DeathWitch_0010_41: 5062592241533465614
+      DeathWitch_0010_42: 1129493844234167563
+      DeathWitch_0010_43: 8574215007178747381
+      DeathWitch_0010_44: 7069122393509088955
+      DeathWitch_0010_45: 8466838016106089196
+      DeathWitch_0010_46: 3643962435088936066
+      DeathWitch_0010_47: 7205219690028030805
+      DeathWitch_0010_48: -1919238031647974665
+      DeathWitch_0010_49: -5642900347917422035
+      DeathWitch_0010_5: -7689526827848900122
+      DeathWitch_0010_50: -3250661096756442403
+      DeathWitch_0010_51: 7694196391806030465
+      DeathWitch_0010_52: -7670554822487143487
+      DeathWitch_0010_53: -2078150927387894279
+      DeathWitch_0010_54: 6666211456621234637
+      DeathWitch_0010_55: 8662254140003338819
+      DeathWitch_0010_56: -7488974661929566107
+      DeathWitch_0010_57: -1050298858420764554
+      DeathWitch_0010_58: -8453147349670547397
+      DeathWitch_0010_59: -5056752853166639325
+      DeathWitch_0010_6: 7237753755865957797
+      DeathWitch_0010_60: -3331597114267935402
+      DeathWitch_0010_61: 4602409266798825266
+      DeathWitch_0010_62: -3996637596367699504
+      DeathWitch_0010_63: -7138684614341999501
+      DeathWitch_0010_64: 7203075589597493420
+      DeathWitch_0010_65: -459276120895276811
+      DeathWitch_0010_66: 5533929334841049869
+      DeathWitch_0010_67: 1675089330698496664
+      DeathWitch_0010_68: -1337311106868057794
+      DeathWitch_0010_69: 1051565968528417938
+      DeathWitch_0010_7: 5204195463976830502
+      DeathWitch_0010_70: 7426467592760219209
+      DeathWitch_0010_71: -6962884657427112112
+      DeathWitch_0010_72: 146023755802411579
+      DeathWitch_0010_73: -3835786869829909407
+      DeathWitch_0010_74: -1658031512265459851
+      DeathWitch_0010_75: 1073424149490399238
+      DeathWitch_0010_76: 2101483939813591491
+      DeathWitch_0010_77: -581043895538476702
+      DeathWitch_0010_78: -6637661509441162585
+      DeathWitch_0010_79: -6049784396465684702
+      DeathWitch_0010_8: 4874576091138189612
+      DeathWitch_0010_80: -1589372888739506168
+      DeathWitch_0010_81: -400770052023680745
+      DeathWitch_0010_82: -3861843910939337966
+      DeathWitch_0010_83: -280199073252863041
+      DeathWitch_0010_84: 6512507521532211974
+      DeathWitch_0010_85: -3235456932011021758
+      DeathWitch_0010_86: -5475170191856770437
+      DeathWitch_0010_87: 8489030886595756203
+      DeathWitch_0010_88: -7851311076602896041
+      DeathWitch_0010_89: -933602050506429125
+      DeathWitch_0010_9: -4858488816339872399
+      DeathWitch_0010_90: -4003474041365559980
+      DeathWitch_0010_91: 1974871655566611030
+      DeathWitch_0010_92: -499159510061916437
+      DeathWitch_0010_93: -5571309861936115916
+      DeathWitch_0010_94: 1163331799174611917
+      DeathWitch_0010_95: 2448981712786650182
+      DeathWitch_0010_96: 576496008066154678
+      DeathWitch_0010_97: 6176133452547788390
+      DeathWitch_0010_98: -3121737968822835691
+      DeathWitch_0010_99: 5796574989100848403
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
