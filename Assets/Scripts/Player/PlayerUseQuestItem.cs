@@ -19,7 +19,7 @@ public class PlayerUseQuestItem : MonoBehaviour
 
     void Awake()
     {
-        newDoor = Resources.Load<GameObject>("Prefabs/openDoor");
+        newDoor = Resources.Load<GameObject>("Prefabs/WitchDoorOpen");
         doorOpenSFX = Resources.Load<AudioClip>("SoundFX/DoorOpenSFX");
     }
 

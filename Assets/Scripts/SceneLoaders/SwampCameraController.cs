@@ -7,11 +7,13 @@ public class SwampCameraController : MonoBehaviour
     [SerializeField] private CinemachineCamera playerCam;
     [SerializeField] private CinemachineCamera swampStartCam;
     [SerializeField] private CinemachineCamera endOfRoadCam;
+    [SerializeField] private CinemachineCamera witchBattleCam;
   private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-            playerCam.Priority = 1;
-            endOfRoadCam.Priority = 0;
+            playerCam.Priority = 2;
+            endOfRoadCam.Priority = 1;
+            witchBattleCam.Priority = 0;
             swampStartCam.Priority = 10;
     }
 
@@ -19,7 +21,8 @@ public class SwampCameraController : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
             playerCam.Priority = 10;
-            endOfRoadCam.Priority = 1;
-            swampStartCam.Priority = 0;
+            endOfRoadCam.Priority = 2;
+            swampStartCam.Priority = 1;
+            witchBattleCam.Priority = 0;
         }
     }
