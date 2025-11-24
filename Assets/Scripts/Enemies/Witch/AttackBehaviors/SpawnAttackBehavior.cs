@@ -24,9 +24,12 @@ public class SpawnAttackBehavior : MonoBehaviour
 
     [SerializeField] private GameObject player;
 
+    [SerializeField] private ItemSpawn itemSpawn;
+
 
     void Awake() {
         //hitSFX= Resources.Load<AudioClip>("SoundFX/");
+        itemSpawn = GetComponent<ItemSpawn>();
     }
 
     void Start() {
@@ -100,7 +103,7 @@ public class SpawnAttackBehavior : MonoBehaviour
     }
 
     void Die() {
-        //Add goob
+        itemSpawn.SpawnRandomItem();
         Destroy(gameObject);
         SoundFXManager.Instance.PlaySoundFX(deathClip, transform);
         if (isInitialWave)
