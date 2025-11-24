@@ -32,10 +32,10 @@ public class WitchAttackScript : MonoBehaviour
     [SerializeField] private float MagicYOffset = -0.1f;
     [SerializeField] private float MagicXOffset = 0.5f;
 
-    [Header ("Potion Spawn Variables")]
+    /*[Header ("Potion Spawn Variables")]
     [SerializeField] private float PotionYOffset = 0.5f;
     [SerializeField] private float PotionXOffset = 0.5f;
-
+    */
     [Header ("Enemy Spawn Variables")]
     [SerializeField] private float SpawnYOffset = 0f;
     [SerializeField] private float SpawnXOffset = 2f;
@@ -97,7 +97,6 @@ public class WitchAttackScript : MonoBehaviour
         } */
         player = GameObject.FindWithTag("Player");
         animator = this.GetComponent<Animator>();
-
     }
 
     // Update is called once per frame
@@ -136,7 +135,7 @@ public class WitchAttackScript : MonoBehaviour
     }
 
     void DoRandomAttack() {
-        AttackID = Random.Range(0, 4); // 0 = (Base) Magic atk | 1 = Splashpotion attack | 2 = Mob spawn attack | 3 = Bat spawn attack --- 4 will never trigger, chooses random between 0-3
+        AttackID = Random.Range(0, 3); // 0 = (Base) Magic atk | 1 = Splashpotion attack | 2 = Mob spawn attack | 3 = Bat spawn attack --- 4 will never trigger, chooses random between 0-3
 
         switch (AttackID) {
             case 0:
@@ -144,12 +143,9 @@ public class WitchAttackScript : MonoBehaviour
                 //Explode();
                 break;
             case 1:
-                StartCoroutine(SplashPotionAttack());
-                break;
-            case 2:
                 StartCoroutine(EnemySpawnAttack());
                 break;
-            case 3:
+            case 2:
                 StartCoroutine(BatAttack());
                 break;
         }
@@ -198,7 +194,7 @@ public class WitchAttackScript : MonoBehaviour
 
     }
 
-    IEnumerator SplashPotionAttack() {
+   /* IEnumerator SplashPotionAttack() {
         if (animator != null) {
             animator.SetTrigger("PotionAttack");
         }
@@ -224,7 +220,7 @@ public class WitchAttackScript : MonoBehaviour
             PotionAttack.InitializePotion(dir);
          }
         
-    }
+    }*/
 
     IEnumerator EnemySpawnAttack() {
         if (animator != null) {

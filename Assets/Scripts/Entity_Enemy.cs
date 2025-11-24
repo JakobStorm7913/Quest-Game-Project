@@ -14,86 +14,105 @@ public class Entity_Enemy : MonoBehaviour
 
     // Overordnet kode der skal bruges enten inden eller når spil er igang sat
 
-    protected Animator anim;
-    protected Rigidbody2D rb;
-    protected Collider2D col;
-    protected SpriteRenderer sr;
+    [Header("References")]
+    [SerializeField] private Animator anim;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Collider2D col;
+    [SerializeField] private SpriteRenderer sr;
+    [SerializeField] private GameObject player;
+    
+     
+    [Header("KnockBack")]
+    [SerializeField] private float knockbackForce = 5f;
+    [SerializeField] private float knockbackRadius = 5f;
+    [SerializeField] private Rigidbody2D playerRB;
+    [SerializeField] private bool isKnockedBack = false;
+    [SerializeField] private float knockbackTimer = 0.2f;
 
     [Header("Health")]
     [SerializeField] private float maxHealth = 25;
     [SerializeField] private float currentHealth;
-    [SerializeField] private Material damageMaterial;
     [SerializeField] private float damageFeedBackDuration = .2f;
-    private Coroutine damageFeedbackCoroutine;
-
 
 
     [Header("Attack details")]
-    [SerializeField] protected float attackRadius; // Den radius der må være
-    [SerializeField] protected Transform attackPoint; // Hvor detectiuon sker
-    [SerializeField] protected LayerMask whatIsTarget; // Hvad den skal registere
+    [SerializeField] private float attackDamage = 5f;
+    [SerializeField] private float attackRadius; // Den radius der må være
+    [SerializeField] private Transform attackPoint; // Hvor detectiuon sker
+    [SerializeField] private LayerMask whatIsTarget; // Hvad den skal registere
 
-    
 
-    protected int facingDir = 1;
-    protected bool facingRight = true; // Kode til retning af player
+    [Header("Movement")]
+    [SerializeField] private float speed = 1f;
+    [SerializeField] private int direction; // -1 left | +1 right*
+    [SerializeField] private int playerSide; // 0 = left of spawn | 1 = right of spawn
+    private bool canMove = true;
     
     
     [Header("Collision details")]
     [SerializeField] private float groundCheckDistance;
 
     [SerializeField] private LayerMask whatIsGround;
-    protected bool canMove = true;
     
-    protected bool isGrounded;
 
     [Header("SoundFX")]
-    [SerializeField] private AudioClip SpiderDamaged;
-    [SerializeField] private AudioClip SpiderDeath;
+    [SerializeField] private AudioClip SpiderDamagedSFX;
+    [SerializeField] private AudioClip SpiderDeathSFX;
 
+    [Header("Visual effects")]
+    public float fadeSpeed = 1f;          // Higher = faster fade
+    public float targetAlphaOnEnter = 0f; // Fully transparent
+    public float targetAlphaOnExit = 1f;  // Fully opaque
     protected virtual void Awake() 
 
     {
-
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponentInChildren<Animator>();
+        anim = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
-        sr = GetComponentInChildren<SpriteRenderer>();
+        sr = GetComponent<SpriteRenderer>();
        
         currentHealth = maxHealth;
-        SpiderDamaged = Resources.Load<AudioClip>("SoundFX/SpiderDamagedSFX");
-        SpiderDeath = Resources.Load<AudioClip>("SoundFX/SpiderDeathSFX");
+        SpiderDamagedSFX = Resources.Load<AudioClip>("SoundFX/SpiderDamagedSFX");
+        SpiderDeathSFX = Resources.Load<AudioClip>("SoundFX/SpiderDeathSFX");
+
+        player = GameObject.FindWithTag("Player");
+        playerRB = player.GetComponent<Rigidbody2D>();
     }
 
 
-    protected virtual void Update()
-
+    void Update()
     {
-        HandleCollision();
-        HandleMovement();
-        HandleAnimations();
-        HandleFlip();
-    }
-
-    public void DamageTargets() // Kode til at se om enemy tager skade eller om enemy bliver ramt
-    {
-
-        Collider2D[] enemiesColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget); // Koden vil detecte enemies colliders. 
-
-        foreach (Collider2D enemies in enemiesColliders) // Kode til enemy detection/Encapsulation
+        if (isKnockedBack)
         {
-            
-            Entity_Enemy entity_enemiesTarget = enemies.GetComponent<Entity_Enemy>();
-            entity_enemiesTarget.TakeDamage();
+        knockbackTimer -= Time.fixedDeltaTime;
+        if (knockbackTimer <= 0f)
+        {
+            isKnockedBack = false;
         }
-
+        return;
+        }
+        ChasePlayer();
     }
+
+   void OnCollisionEnter2D(Collision2D collision) {
+        /*if (collision.gameObject.tag == "Wall" ||
+            collision.gameObject.tag == "Ground") {
+                Debug.Log(gameObject.ToString() + " hit " + collision.gameObject.tag.ToString());
+            StartCoroutine(PlayHitAnimation());
+        }*/
+        if (collision.gameObject.tag == "Player") {
+           PlayerMeleeAttack playerScript = player.GetComponent<PlayerMeleeAttack>();
+           playerScript.TakeDamage(attackDamage);
+            Debug.Log(gameObject.ToString() + " hit the player: Player health = " + GameData.Instance.PlayerHealth);
+            SoundFXManager.Instance.PlayPlayerDamageSFX();
+        }
+     }
 
     public void TakeDamage() // Kode til skade
     {
         currentHealth -= GameData.Instance.PlayerAttackDamage;
-
-        PlayDamageFeedback();
+        Knockback(0.3f);
+        SoundFXManager.Instance.PlaySoundFX(SpiderDamagedSFX, transform, 3f);
 
         if (currentHealth <= 0)
             Die();  
@@ -101,85 +120,66 @@ public class Entity_Enemy : MonoBehaviour
 
     private void Die() // Kode til die
     {
-        SoundFXManager.Instance.PlaySoundFX(SpiderDeath, transform, 3f);
+        SoundFXManager.Instance.PlaySoundFX(SpiderDeathSFX, transform, 3f);
         anim.enabled = false;
         col.enabled = false;
 
-        rb.gravityScale = 12;
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
-
+        StartFade(targetAlphaOnExit);
         Destroy(gameObject, 3);
     }
 
-
-
-    private void PlayDamageFeedback() // Kode til damageFeedBack
+    void Knockback(float duration)
     {
-        if (damageFeedbackCoroutine != null)
-            StopCoroutine(damageFeedbackCoroutine);
-
-        StartCoroutine(DamageFeedbackCo());
-       
+    Debug.Log("knockback triggered");
+    Vector3 knockbackPosition = player.transform.position;
+    //explosionPosition.y -= 0.5f;
+    rb.AddExplosionForce2D(knockbackPosition, knockbackForce, knockbackRadius);
+    isKnockedBack = true;
+    knockbackTimer = duration;
     }
 
-    private IEnumerator DamageFeedbackCo() // Damage Feedback
+    public void EnableMovement() // Movement
     {
-        SoundFXManager.Instance.PlaySoundFX(SpiderDamaged, transform, 3f);
-         yield return new WaitForSeconds(damageFeedBackDuration);
+        canMove = true;
     }
 
-    public virtual void EnableMovement(bool enable) // Movement
+    public void DisableMovement()
     {
-        canMove = enable;
+        canMove = false;
     }
 
-    protected virtual void HandleMovement() // Movement
-    {
-       
+        void CheckPlayerSide() {
+        
+        Vector3 playerPosition = player.transform.position;
+        
+        if (playerPosition.x < transform.position.x) {
+            playerSide = 0;
+        } else {
+            playerSide = 1;
+        }
     }
 
-    protected void HandleAnimations() // Kode til animations
+    void ChasePlayer()
     {
-        bool isMoving = rb.linearVelocity.x != 0;
+        if(canMove) {
+        Vector2 direction = player.transform.position - transform.position;
 
-        anim.SetBool("isGrounded", isGrounded);
-        anim.SetFloat("yVelocity", rb.linearVelocity.y);
-        anim.SetFloat("xVelocity", rb.linearVelocity.x);
+        direction.y = 0;
+        direction.Normalize();
 
+        transform.Translate(direction * speed * Time.deltaTime);
+
+        CheckPlayerSide();
+        if (playerSide == 0) {
+            sr.flipX = true;
+        } else if (playerSide == 1) {
+            sr.flipX = false;
+        }
+        }
     }
 
-    
-    protected virtual void HandleAttack() // Kode til attack
-    {
-        if (isGrounded)
-            anim.SetTrigger("attack");
-        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-    }
-
-
-    protected virtual void HandleCollision() // Kode til 1 jump effect
-
-    {
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, whatIsGround);
-    }
-
-    protected virtual void HandleFlip() // Kode til flip af player
-
-    {
-
-        if (rb.linearVelocity.x > 0 && facingRight == false)
-            Flip();
-        else if (rb.linearVelocity.x < 0 && facingRight == true)
-            Flip();
-
-    }
-    public void Flip() // Flip
-
-    {
-        transform.Rotate(0, 180, 0);
-        facingRight = !facingRight;
-        facingDir = facingDir * -1;
-
+     public void InitializeSpawn(int dir) {
+        direction = dir;
     }
 
     private void OnDrawGizmos() // Kode til Raytracing på enten enemy eller jord osv. 
@@ -191,6 +191,23 @@ public class Entity_Enemy : MonoBehaviour
         if(attackPoint != null)
         Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
 
+    }
+
+     void StartFade(float targetAlpha)
+    {
+        StartCoroutine(FadeTo(targetAlpha));
+    }
+
+    IEnumerator FadeTo(float targetAlpha)
+    {
+        Color c = sr.color;
+
+        while (!Mathf.Approximately(c.a, targetAlpha))
+        {
+            c.a = Mathf.MoveTowards(c.a, targetAlpha, fadeSpeed * Time.deltaTime);
+            sr.color = c;
+            yield return null;
+        }
     }
 
 

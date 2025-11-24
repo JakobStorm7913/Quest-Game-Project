@@ -10,12 +10,17 @@ public class PlayerMeleeAttack : MonoBehaviour
     protected Animator anim;
     protected Rigidbody2D rb;
     protected Collider2D col;
+    [SerializeField] GameObject player;
+    [SerializeField] PlayerMovementScript movementScript;
 
    
     [Header("Attack details")]
     [SerializeField] protected float attackRadius; // Den radius der må være
     [SerializeField] protected Transform attackPoint; // Hvor detectiuon sker
     [SerializeField] protected LayerMask whatIsTarget; // Hvad den skal registere
+    [SerializeField] private float attackCooldown = 0.5f;
+    [SerializeField] private float attackTimer = 0f;
+    [SerializeField] private bool isAttacking = true;
 
     [Header("Health")] // Ellers du Attack details ikke
     [SerializeField] private int maxHealth = 1;
@@ -37,18 +42,21 @@ public class PlayerMeleeAttack : MonoBehaviour
 
 
     [Header("Movement details")]
-    [SerializeField] protected float moveSpeed = 8f; // Kode til moveSpeed
-    [SerializeField] private float jumpForce = 15f; // Kode til jumpforde
     private float xInput;
     private bool canJump = true;
+
+    [Header("Input")]
+    [SerializeField] private InputAction attackAction;
 
 
 
 
     private void Awake()
     {
-        
-        currentHealth = maxHealth;
+        attackAction = InputSystem.actions.FindAction("Attack");
+        attackAction.Enable();
+        movementScript = player.GetComponent<PlayerMovementScript>();
+
         sr = GetComponentInChildren<SpriteRenderer>();
     }
 
@@ -63,11 +71,34 @@ public class PlayerMeleeAttack : MonoBehaviour
 
         sr.material = originalMat;
     }*/
+    void Update()
+    {
+        if (attackAction.WasPressedThisFrame()) 
+        {
+            if (attackCooldown > attackTimer)
+            {
+            Debug.Log("Attack input detected!");
+            isAttacking = true;
+            }
+
+          if (isAttacking)
+            {
+            attackTimer += Time.fixedDeltaTime;
+            }
+    }
+    }
+    void FixedUpdate()
+    {
+        if (isAttacking)
+        {
+        if (movementScript.isKnockedBack) return;
+        
+        DamageTargets();
+        }
+    }
 
     public void DamageTargets() // Kode til at se om enemy tager skade eller om enemy bliver ramt
-
     {
-
         Collider2D[] enemiesColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget); // Koden vil detecte enemies colliders. 
 
         foreach (Collider2D enemies in enemiesColliders) // Kode til enemy detection/Encapsulation
@@ -75,37 +106,34 @@ public class PlayerMeleeAttack : MonoBehaviour
 
             Entity_Enemy entityTarget = enemies.GetComponent<Entity_Enemy>();
             entityTarget.TakeDamage();
+            SoundFXManager.Instance.PlayPlayerDamageSFX();
         }
-
+        isAttacking = false;
     }
 
-
+/*
           private void PlayDamageFeedback() // Kode til damageFeedBack
     {
         if (damageFeedbackCoroutine != null)
             StopCoroutine(damageFeedbackCoroutine);
-
         StartCoroutine(DamageFeedbackCo());
     }
 
-
     private IEnumerator DamageFeedbackCo() // Damage Feedback
     {
-       yield return null;
-    }
+        SoundFXManager.Instance.PlaySoundFX(SpiderDamaged, transform.position, 3f);
+    }*/
     
 
-    public void TakeDamage() // Kode til skade
-
+    public void TakeDamage(float damage) // Kode til skade
     {
         
-        currentHealth = currentHealth - 1;
+        GameData.Instance.PlayerHealth -= damage;
 
-        PlayDamageFeedback();
+        //PlayDamageFeedback();
 
         if (currentHealth <= 0)
         Die();
-        
     }
 
 
@@ -118,9 +146,6 @@ public class PlayerMeleeAttack : MonoBehaviour
         rb.gravityScale = 12;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
 
-        Destroy(gameObject, 3);
+        Destroy(gameObject, 3f);
     }
-
-    
-
 }

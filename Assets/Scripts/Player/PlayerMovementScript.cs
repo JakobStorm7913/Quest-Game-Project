@@ -17,7 +17,7 @@ public class PlayerMovementScript : MonoBehaviour
 [Header("States checker")]
 [SerializeField] private bool jumpPressed = false;
 [SerializeField] private bool dodgePressed = false;
-[SerializeField] private bool isKnockedBack = false;
+[SerializeField] public bool isKnockedBack = false;
 [SerializeField] private float knockbackTimer = 0f;
 
 [SerializeField] private  AudioClip sfx_jump;

@@ -7,6 +7,7 @@ public class ItemSpawn : MonoBehaviour
     [SerializeField] private float smallHealthPotionChance = 80f; // = 60-80 to get Small Health Potion
     [SerializeField] private float largeHealthPotionChance = 95f; // = 80-95 to get Big Health Potion
     [SerializeField] private float witchKeyChance = 100f; // 95-100 to get the Witch Key
+    [SerializeField] private float DropHit;
     [SerializeField] private GameObject smallHealthPotionPrefab;
     [SerializeField] private GameObject largeHealthPotionPrefab;
     [SerializeField] private GameObject witchKeyPrefab;
@@ -21,7 +22,7 @@ public class ItemSpawn : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        float dropHit = Random.Range(0, 100);
+        DropHit = Random.Range(0, 100);
     }
 
     // Update is called once per frame
@@ -32,9 +33,9 @@ public class ItemSpawn : MonoBehaviour
 
     public void SpawnRandomItem()
     {
-        float DropHit = Random.Range(0, 101);
         if (DropHit <= noSpawnChance)
         {
+            
         } if (DropHit > noSpawnChance && DropHit <= smallHealthPotionChance)
         {
             GameObject SmallHealthPotion = Instantiate(smallHealthPotionPrefab, transform.position, Quaternion.identity);
