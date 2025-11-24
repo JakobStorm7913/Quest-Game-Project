@@ -22,12 +22,7 @@ public class PlayerMeleeAttack : MonoBehaviour
     [SerializeField] private float attackTimer = 0f;
     [SerializeField] private bool isAttacking = true;
 
-    [Header("Health")] // Ellers du Attack details ikke
-    [SerializeField] private int maxHealth = 1;
-    [SerializeField] private int currentHealth;
-    [SerializeField] private Material damageMaterial;
-    [SerializeField] private float damageFeedBackDuration = .2f;
-    private Coroutine damageFeedbackCoroutine;
+    
 
     protected int facingDir = 1;
     protected bool facingRight = true; // Kode til retning af player
@@ -85,6 +80,8 @@ public class PlayerMeleeAttack : MonoBehaviour
             {
             attackTimer += Time.fixedDeltaTime;
             }
+
+
     }
     }
     void FixedUpdate()
@@ -132,7 +129,7 @@ public class PlayerMeleeAttack : MonoBehaviour
 
         //PlayDamageFeedback();
 
-        if (currentHealth <= 0)
+        if (GameData.Instance.PlayerHealth <= 0)
         Die();
     }
 
@@ -147,5 +144,16 @@ public class PlayerMeleeAttack : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
 
         Destroy(gameObject, 3f);
+    }
+
+       private void OnDrawGizmos() // Kode til Raytracing på enten enemy eller jord osv. 
+
+    {
+
+        Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundCheckDistance));
+
+        if(attackPoint != null)
+        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+
     }
 }

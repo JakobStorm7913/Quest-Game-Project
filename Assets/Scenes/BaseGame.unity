@@ -139,6 +139,14 @@ PrefabInstance:
       propertyPath: whatIsTarget.m_Bits
       value: 512
       objectReference: {fileID: 0}
+    - target: {fileID: 1303615043910648243, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303615043910648243, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3216158570553198002, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
       propertyPath: m_Name
       value: Player
@@ -148,9 +156,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2006694232}
     - target: {fileID: 5313774922509864694, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: attackRadius
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313774922509864694, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: attackCooldown
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313774922509864694, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
       propertyPath: damageMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 66b287b7ffa4e8745ad5bf37a68ca998, type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313774922509864694, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: attackAction.m_Id
+      value: bbaba55c-b249-4554-bb8f-7adf1bf1830d
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313774922509864694, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: attackAction.m_Name
+      value: Attack
+      objectReference: {fileID: 0}
     - target: {fileID: 5313774922509864694, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
       propertyPath: groundCheckDistance
       value: 0
@@ -204,10 +228,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8646870180956314245, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646870180956314245, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1989753273
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646870180956314245, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1246315425043660622, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+    - {fileID: 1472943524133165037, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8135227060627488687, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
@@ -604,6 +638,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3216158570553198002, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
   m_PrefabInstance: {fileID: 38192196}
   m_PrefabAsset: {fileID: 0}
+--- !u!70 &1997248592 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 585639690525484772, guid: 4a9d2a0b508c31c41a154c972f53d536, type: 3}
+  m_PrefabInstance: {fileID: 38192196}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1997248597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,10 +674,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerUseQuestItem
   useRadius: 0
-  usePoint: {fileID: 0}
+  usePoint: {fileID: 2006694232}
   doorTargetLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   newDoor: {fileID: 0}
   wellTargetLayer:
     serializedVersion: 2
@@ -656,9 +695,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80188d45e6c216148b6b142d38018d81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMaterialSwitcher
-  playerCollider: {fileID: 0}
-  normalMat: {fileID: 0}
-  lowFrictionMat: {fileID: 0}
+  playerCollider: {fileID: 1997248592}
+  normalMat: {fileID: 6200000, guid: df8ddc063645e204cb05f2a73aef304d, type: 2}
+  lowFrictionMat: {fileID: 6200000, guid: 1c0b800480c0ccd42b7ebfbcd9a93591, type: 2}
 --- !u!114 &1997248600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,7 +734,7 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 15
   dodgeDistance: 1
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 568647559}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
@@ -902,7 +941,8 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 9064125057114163875, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b03a54b703445aa4d84aca9a67d28b4f, type: 3}
