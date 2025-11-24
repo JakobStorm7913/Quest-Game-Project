@@ -35,7 +35,6 @@ private SpriteRenderer spriteRenderer;
 private Rigidbody2D rb;
 private PlayerDodge playerDodge;
 
-private PlayerAnimations playerAnimations;
 
 public bool canMove = true;
 public bool canJump = true;

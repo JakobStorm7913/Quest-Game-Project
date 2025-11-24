@@ -91,7 +91,7 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     private IEnumerator DamageFeedbackCo() // Damage Feedback
     {
-        SoundFXManager.Instance.PlaySoundFX(SpiderDamaged, transform.position, 3f);
+       yield return null;
     }
     
 

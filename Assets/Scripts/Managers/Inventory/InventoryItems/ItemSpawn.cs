@@ -30,7 +30,7 @@ public class ItemSpawn : MonoBehaviour
         
     }
 
-    public IEnumerator SpawnRandomItem()
+    public void SpawnRandomItem()
     {
         float DropHit = Random.Range(0, 101);
         if (DropHit <= noSpawnChance)

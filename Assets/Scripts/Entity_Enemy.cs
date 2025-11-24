@@ -101,7 +101,7 @@ public class Entity_Enemy : MonoBehaviour
 
     private void Die() // Kode til die
     {
-        SoundFXManager.Instance.PlaySoundFX(SpiderDeath, transform.position, 3f);
+        SoundFXManager.Instance.PlaySoundFX(SpiderDeath, transform, 3f);
         anim.enabled = false;
         col.enabled = false;
 
@@ -119,11 +119,13 @@ public class Entity_Enemy : MonoBehaviour
             StopCoroutine(damageFeedbackCoroutine);
 
         StartCoroutine(DamageFeedbackCo());
+       
     }
 
     private IEnumerator DamageFeedbackCo() // Damage Feedback
     {
-        SoundFXManager.Instance.PlaySoundFX(SpiderDamaged, transform.position, 3f);
+        SoundFXManager.Instance.PlaySoundFX(SpiderDamaged, transform, 3f);
+         yield return new WaitForSeconds(damageFeedBackDuration);
     }
 
     public virtual void EnableMovement(bool enable) // Movement
