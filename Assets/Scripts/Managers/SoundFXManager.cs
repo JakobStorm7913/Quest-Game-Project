@@ -14,6 +14,8 @@ public class SoundFXManager : MonoBehaviour
     [SerializeField] private AudioClip mainMusicClip;
     [SerializeField] private AudioSource bossMusicSource;
     [SerializeField] private AudioClip bossMusicClip;
+    [SerializeField] private AudioSource villageSavedMusicSource;
+    [SerializeField] private AudioClip villageSavedMusicClip;
     [SerializeField] private float musicFadeTime = 3f;
 
     [Header("Player SFX")]
@@ -90,6 +92,11 @@ public class SoundFXManager : MonoBehaviour
             bossMusicSource.loop = true;
             bossMusicSource.playOnAwake = false;
         }
+         if(villageSavedMusicSource != null)
+        {
+            villageSavedMusicSource.loop = true;
+            villageSavedMusicSource.playOnAwake = false;
+        }
     }
 
     public void PlaySoundFX(AudioClip audioClip, Transform spawnTransform)
@@ -123,6 +130,7 @@ public class SoundFXManager : MonoBehaviour
 
         npcTalkSource.Stop();      // ensures no overlap
         npcTalkSource.clip = NPCTalkClip;
+        npcTalkSource.volume = 0.5f;
         npcTalkSource.Play();
     }
 
@@ -170,6 +178,11 @@ public class SoundFXManager : MonoBehaviour
     public void StopBossBattleMusic()
     {
         StartCoroutine(CrossfadeMusic(bossMusicSource, mainMusicSource, mainMusicClip, musicFadeTime));
+    }
+
+    public void StartVillageSavedMusic()
+    {
+        StartCoroutine(CrossfadeMusic(mainMusicSource, villageSavedMusicSource, villageSavedMusicClip, musicFadeTime));
     }
 
     private IEnumerator CrossfadeMusic(AudioSource fromSource, AudioSource toSource, AudioClip newClip, float fadeDuration)
@@ -237,10 +250,12 @@ public class SoundFXManager : MonoBehaviour
         sfxPrefab = Resources.Load<AudioSource>("SoundFX/SFXPrefab");
         mainMusicSource = transform.Find("MainMusicSource").GetComponent<AudioSource>();
         bossMusicSource = transform.Find("BossMusicSource").GetComponent<AudioSource>();
+        villageSavedMusicSource = transform.Find("VillageSavedMusicSource").GetComponent<AudioSource>();
 
         //Music
         mainMusicClip = Resources.Load<AudioClip>("SoundFX/MainMusic");
         bossMusicClip = Resources.Load<AudioClip>("SoundFX/WitchBattleMusic");
+        villageSavedMusicClip = Resources.Load<AudioClip>("SoundFX/VillageSavedMusic");
 
         //Player
         playerAttackClip = Resources.Load<AudioClip>("SoundFX/PlayerAttackSFX");

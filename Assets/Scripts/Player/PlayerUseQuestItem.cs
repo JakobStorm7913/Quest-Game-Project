@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using System.Collections;
+using Unity.Cinemachine;
 
 public class PlayerUseQuestItem : MonoBehaviour
 {
@@ -17,13 +19,30 @@ public class PlayerUseQuestItem : MonoBehaviour
     [SerializeField] protected LayerMask wellTargetLayer;
     [SerializeField] private GameObject targetTriggerZone;
 
+    [Header("Curse fog effects")]
+    [SerializeField] private GameObject villageCurseFog;
+    [SerializeField] private CurseFogRemover fog;
+    [SerializeField] private GameObject redFogPrefab2;
+
     [Header("SoundFX")]
     [SerializeField] private AudioClip doorOpenSFX;
+
+    [Header("Camera")]
+    [SerializeField] private CinemachineCamera playerCam;
+    [SerializeField] private CinemachineCamera leftSideCam;
+    [SerializeField] private CinemachineCamera rightSideCam;
+    [SerializeField] private CinemachineCamera fullVillageCam;
+
+    [Header("Camera Zones to disable")]
+    [SerializeField] private RightSideVillageBorder rightSideZone;
+    [SerializeField] private LeftSideVillageBorder leftSideZone;
 
     void Awake()
     {
         newDoor = Resources.Load<GameObject>("Prefabs/WitchDoorOpen");
         doorOpenSFX = Resources.Load<AudioClip>("SoundFX/DoorOpenSFX");
+        villageCurseFog = GameObject.Find("VillageCurseFog");
+        fog = GameObject.Find("VillageCurseFog").GetComponent<CurseFogRemover>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -53,8 +72,10 @@ public class PlayerUseQuestItem : MonoBehaviour
     {
         bool antidoteWasUsed = false;
         Collider2D targetCollider = Physics2D.OverlapCircle(usePoint.position, useRadius, wellTargetLayer);
+        
             if (targetCollider != null)
             {
+                targetTriggerZone = targetCollider.gameObject;
                 DialogueFollower follower = targetTriggerZone.GetComponent<DialogueFollower>();
                 DialogueWriter   writer   = targetTriggerZone.GetComponent<DialogueWriter>();
 
@@ -68,6 +89,7 @@ public class PlayerUseQuestItem : MonoBehaviour
         {
             writer.StartDialogue();                        // start typewriter text
         }
+        StartCoroutine(StartCurseLiftedCo());
                 // Code for what happens when everything is saved
                 // Maybe:
                 // Dissable player movement
@@ -78,6 +100,8 @@ public class PlayerUseQuestItem : MonoBehaviour
             }
         return antidoteWasUsed;
     }
+
+
     
 
     void ChangeDoorPrefab()
@@ -87,5 +111,23 @@ public class PlayerUseQuestItem : MonoBehaviour
         Destroy(oldDoor);
         SoundFXManager.Instance.PlaySoundFX(doorOpenSFX, transform);
         GameObject NewDoor = Instantiate(newDoor, doorPos, Quaternion.identity);
+    }
+
+    IEnumerator StartCurseLiftedCo()
+    {
+        SoundFXManager.Instance.StartVillageSavedMusic();
+        yield return new WaitForSeconds(9);
+        leftSideZone.DisableZone();
+        rightSideZone.DisableZone();
+        playerCam.Priority = 2;
+        leftSideCam.Priority = 0;
+        rightSideCam.Priority = 1;
+        fullVillageCam.Priority = 10;
+        yield return new WaitForSeconds(1);
+        fog.StartFade();
+
+        yield return new WaitForSeconds(5);
+        leftSideZone.EnableZone();
+        rightSideZone.EnableZone();
     }
 }
