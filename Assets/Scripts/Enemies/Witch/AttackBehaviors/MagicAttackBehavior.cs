@@ -32,12 +32,14 @@ public class MagicAttackBehavior : MonoBehaviour
         float angle = Mathf.Atan2(flightPath.y, flightPath.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle + 90f);
         Destroy(gameObject, 30f);
+        magicAnimator = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
     {
         
        transform.Translate(flightPath * speed * Time.deltaTime, Space.World);
+
     }
 
     public void InitializeMagic(int dir) {
@@ -60,7 +62,7 @@ public class MagicAttackBehavior : MonoBehaviour
      }
 
      IEnumerator PlayHitAnimation() {
-        //magicAnimator.Play("MagicExplosion");
+        magicAnimator.Play("MagicBallAttack");
         
         yield return new WaitForSeconds(animationDelay);
         Destroy (gameObject);

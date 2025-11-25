@@ -28,6 +28,7 @@ public class BatBehavior : MonoBehaviour
         Destroy(gameObject, 30f);
         batDeathClip = Resources.Load<AudioClip>("SoundFX/BatDeathSFX");
         currentHealth = health;
+        batAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -83,7 +84,7 @@ public class BatBehavior : MonoBehaviour
     }
 
         IEnumerator DestroyAndPlayHitAnimation() {
-        //magicAnimator.Play("MagicExplosion");
+        batAnimator.Play("WitchBatAttack");
         
         yield return new WaitForSeconds(animationDelay);
         Destroy (gameObject);
