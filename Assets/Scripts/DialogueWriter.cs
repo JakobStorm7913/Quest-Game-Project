@@ -4,6 +4,8 @@ using TMPro;
 
 public class DialogueWriter : MonoBehaviour
 {
+    private static DialogueWriter currentWriter = null;
+
     [Header("UI")]
     public TextMeshProUGUI textComponent;   // DialogueText (TMP)
 
@@ -12,6 +14,7 @@ public class DialogueWriter : MonoBehaviour
     public string dialogueText;             // NPC's line set in Inspector
     public float charDelay = 0.03f;
     public float autoHideDelay = 10f;      // time after finished before hiding
+    public float textSize;
 
     private Coroutine typingCoroutine;
     private DialogueFollower follower;
@@ -24,15 +27,23 @@ public class DialogueWriter : MonoBehaviour
 
     public void StartDialogue()
     {
-        if (textComponent == null)
-        {
-            Debug.LogWarning("DialogueWriter: No TextMeshProUGUI assigned on " + name);
-            return;
-        }
+       if (textComponent == null) return;
 
-        if (typingCoroutine != null)
-            StopCoroutine(typingCoroutine);
+    // If another DialogueWriter is typing, stop it cleanly
+    if (currentWriter != null && currentWriter.typingCoroutine != null)
+    {
+        currentWriter.StopCoroutine(currentWriter.typingCoroutine);
+        currentWriter.textComponent.text = "";
+        currentWriter.typingCoroutine = null;
+    }
 
+    // This writer becomes the active one
+    currentWriter = this;
+
+    // Reset UI
+    textComponent.text = "";
+
+        textComponent.fontSize = textSize;
         typingCoroutine = StartCoroutine(TypeCoroutine());
     }
 

@@ -12,9 +12,10 @@ public class PlayerUseQuestItem : MonoBehaviour
     [SerializeField] protected Transform usePoint; // Hvor detection sker
     [SerializeField] protected LayerMask doorTargetLayer; // Hvad den skal registere
     [SerializeField] protected GameObject newDoor;
-     [SerializeField] float doorXPosition = 119.7196f;
-   [SerializeField] float doorYPosition = 33.88123f;
+    [SerializeField] float doorXPosition = 119.7196f;
+    [SerializeField] float doorYPosition = 33.88123f;
     [SerializeField] protected LayerMask wellTargetLayer;
+    [SerializeField] private GameObject targetTriggerZone;
 
     [Header("SoundFX")]
     [SerializeField] private AudioClip doorOpenSFX;
@@ -54,6 +55,19 @@ public class PlayerUseQuestItem : MonoBehaviour
         Collider2D targetCollider = Physics2D.OverlapCircle(usePoint.position, useRadius, wellTargetLayer);
             if (targetCollider != null)
             {
+                DialogueFollower follower = targetTriggerZone.GetComponent<DialogueFollower>();
+                DialogueWriter   writer   = targetTriggerZone.GetComponent<DialogueWriter>();
+
+        if (follower != null)
+        {
+            follower.BeginFollowing(targetTriggerZone.transform);  // ensure it follows the right target
+            follower.ShowDialogueBox(true);                // show the UI
+        }
+
+        if (writer != null)
+        {
+            writer.StartDialogue();                        // start typewriter text
+        }
                 // Code for what happens when everything is saved
                 // Maybe:
                 // Dissable player movement
