@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3093403597935588299}
   - component: {fileID: 5479105098335061400}
   - component: {fileID: 8408964965223170979}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WitchBatAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7796064501152233825}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.1, y: -4.48, z: 0}
+  m_LocalPosition: {x: -3.3, y: 18.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -550651079
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: be6d1bf60f5b9b343b74747fdc36b5da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
