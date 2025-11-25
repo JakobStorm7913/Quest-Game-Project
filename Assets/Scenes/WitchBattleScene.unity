@@ -4147,7 +4147,7 @@ Transform:
   m_GameObject: {fileID: 1133693813}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.82, y: -4.61, z: 0}
+  m_LocalPosition: {x: 10.78, y: 2.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5294,7 +5294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2c3ba2fdb474945b9bcf8f54b503ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WitchCombatManager
-  attackScript: {fileID: 0}
+  attackScript: {fileID: 2075373513}
 --- !u!114 &1381528808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5308,7 +5308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WitchCombatTrigger
   playerTag: Player
-  combatManager: {fileID: 0}
+  combatManager: {fileID: 1381528807}
   vinesPrefab: {fileID: 0}
   vinesX: -10.6
   vinesY: -1.76
@@ -7015,7 +7015,7 @@ Transform:
   m_GameObject: {fileID: 1773839812}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.21, y: -4.51, z: 0}
+  m_LocalPosition: {x: 10.52, y: -1.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8055,8 +8055,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: WitchMain
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4900095050969095750, guid: 4c585c6f9de34e747ab2eff393eba822, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8077,6 +8076,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e541dce7d0d79945b86f6ff510fe500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WitchHealthManager
+--- !u!114 &2075373513 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4900095050969095750, guid: 4c585c6f9de34e747ab2eff393eba822, type: 3}
+  m_PrefabInstance: {fileID: 2075373505}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371217141c0367c48b8e1c9e6950d686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WitchAttackScript
 --- !u!1 &2111595064
 GameObject:
   m_ObjectHideFlags: 0
