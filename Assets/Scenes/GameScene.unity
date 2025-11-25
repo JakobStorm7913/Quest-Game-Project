@@ -2941,7 +2941,7 @@ GameObject:
   - component: {fileID: 533085716}
   - component: {fileID: 533085715}
   - component: {fileID: 533085714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform 2_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5234,7 +5234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 893063134}
   - component: {fileID: 893063133}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sten1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5508,7 +5508,7 @@ GameObject:
   - component: {fileID: 925594646}
   - component: {fileID: 925594645}
   - component: {fileID: 925594643}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform 2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6786,7 +6786,7 @@ GameObject:
   - component: {fileID: 1194323076}
   - component: {fileID: 1194323075}
   - component: {fileID: 1194323074}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform 1_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8229,7 +8229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1313737378}
   - component: {fileID: 1313737377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WalkwayTrail_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9162,7 +9162,7 @@ GameObject:
   - component: {fileID: 1460824667}
   - component: {fileID: 1460824666}
   - component: {fileID: 1460824665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform 1_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10233,7 +10233,7 @@ GameObject:
   - component: {fileID: 1574979375}
   - component: {fileID: 1574979374}
   - component: {fileID: 1574979373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform 1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13124,7 +13124,7 @@ GameObject:
   - component: {fileID: 2039150033}
   - component: {fileID: 2039150032}
   - component: {fileID: 2039150031}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform 1_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13582,7 +13582,7 @@ GameObject:
   - component: {fileID: 2109973950}
   - component: {fileID: 2109973949}
   - component: {fileID: 2109973948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform 1_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
