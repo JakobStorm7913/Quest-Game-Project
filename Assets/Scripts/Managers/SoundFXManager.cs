@@ -48,7 +48,8 @@ public class SoundFXManager : MonoBehaviour
     [Range(0f, 1f)] public float musicVolume = 0.25f;
     [Range(0f, 1f)] public float sfxVolume = 0.5f;
     
-
+    [Header("NPC")]
+    [SerializeField] private AudioSource npcTalkSource;
 
 
     [Header("Internal")]
@@ -118,7 +119,11 @@ public class SoundFXManager : MonoBehaviour
 
     public void PlayNPCTalkSFX()
     {
-        PlaySoundFX(NPCTalkClip, transform);
+        if (NPCTalkClip == null) return;
+
+        npcTalkSource.Stop();      // ensures no overlap
+        npcTalkSource.clip = NPCTalkClip;
+        npcTalkSource.Play();
     }
 
     public void PlayPlayerAttackSFX()
@@ -241,5 +246,7 @@ public class SoundFXManager : MonoBehaviour
         playerAttackClip = Resources.Load<AudioClip>("SoundFX/PlayerAttackSFX");
         playerDamageClip = Resources.Load<AudioClip>("SoundFX/PlayerDamageSFX");
         NPCTalkClip = Resources.Load<AudioClip>("SoundFX/NPCTalkSFX");
+        GameObject NPCSource = GameObject.Find("VillagerAudioSource");
+        npcTalkSource = NPCSource.GetComponent<AudioSource>();
     }
 }

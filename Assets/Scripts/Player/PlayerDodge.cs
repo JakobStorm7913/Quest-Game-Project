@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerDodge : MonoBehaviour
 {
-    [SerializeField] private float dodgeDuration = 0.05f;
+    [SerializeField] private float dodgeDuration = 0.5f;
     [SerializeField] private string normalLayerName = "Player";
     [SerializeField] private string dodgeLayerName = "PlayerDodge";
 
@@ -50,18 +50,18 @@ public class PlayerDodge : MonoBehaviour
 
         gameObject.layer = dodgeLayer;
 
-        if (dodgeDustPrefab != null)
+       /* if (dodgeDustPrefab != null)
 {
         // spawn at feet - you can tweak this offset
         Vector3 pos = transform.position; //+ Vector3.down * 0.5f;
         Instantiate(dodgeDustPrefab, pos, Quaternion.identity);
-}
+}*/
 
-        if (dodgeTrail != null)
+       /* if (dodgeTrail != null)
         {
             dodgeTrail.Clear();
             dodgeTrail.emitting = true;
-        }
+        }*/
 
         float elapsed = 0f;
         bool faded = false;
