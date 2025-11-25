@@ -211,12 +211,12 @@ SpriteRenderer:
   m_SortingLayerID: -1989753273
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7337306951721638067, guid: 5f022a60d596c93498320c33600b24e0, type: 3}
+  m_Sprite: {fileID: 4630944961002271913, guid: 45f334fb7ab04b44b8a9308b0b2d06a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.83, y: 11.5}
+  m_Size: {x: 1.94, y: 3.74}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -358,12 +358,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  isGrounded: 1
-  jumpPressed: 0
-  dodgePressed: 0
-  isKnockedBack: 0
-  knockbackTimer: 0
-  sfx_jump: {fileID: 0}
   moveAction:
     m_Name: Move
     m_Type: 0
@@ -391,7 +385,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  moveValue: {x: 0, y: 0}
+  attackPoint: {fileID: 0}
   canMove: 1
   canJump: 1
 --- !u!114 &6899608372934046433
@@ -448,9 +442,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   newDoor: {fileID: 0}
+  doorXPosition: 119.7196
+  doorYPosition: 33.88123
   wellTargetLayer:
     serializedVersion: 2
     m_Bits: 0
+  targetTriggerZone: {fileID: 0}
   doorOpenSFX: {fileID: 0}
 --- !u!114 &2768203126267128651
 MonoBehaviour:
