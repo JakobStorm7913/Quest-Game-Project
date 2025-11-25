@@ -44,8 +44,9 @@ public class WitchCombatManager : MonoBehaviour
         witchFrozen = false;
         Debug.Log("Frozen = "+ witchFrozen.ToString());
         entryCombatRunning = true;
+       
         Debug.Log("EntryRunning = " + entryCombatRunning.ToString());
-        attackScript.SpawnInitialCombat();
+        //attackScript.SpawnInitialCombat();
     }
 
     public void EndCombat() {
