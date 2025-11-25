@@ -14,8 +14,8 @@ public class PlayerUseQuestItem : MonoBehaviour
     [SerializeField] protected Transform usePoint; // Hvor detection sker
     [SerializeField] protected LayerMask doorTargetLayer; // Hvad den skal registere
     [SerializeField] protected GameObject newDoor;
-    [SerializeField] float doorXPosition = 119.7196f;
-    [SerializeField] float doorYPosition = 33.88123f;
+    [SerializeField] float doorXPosition = 119.87f;
+    [SerializeField] float doorYPosition = 34.06f;
     [SerializeField] protected LayerMask wellTargetLayer;
     [SerializeField] private GameObject targetTriggerZone;
 
@@ -114,9 +114,9 @@ public class PlayerUseQuestItem : MonoBehaviour
     }
 
     IEnumerator StartCurseLiftedCo()
-    {
+    {   yield return new WaitForSeconds(3);
         SoundFXManager.Instance.StartVillageSavedMusic();
-        yield return new WaitForSeconds(9);
+        yield return new WaitForSeconds(13);
         leftSideZone.DisableZone();
         rightSideZone.DisableZone();
         playerCam.Priority = 2;
@@ -126,7 +126,7 @@ public class PlayerUseQuestItem : MonoBehaviour
         yield return new WaitForSeconds(1);
         fog.StartFade();
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         leftSideZone.EnableZone();
         rightSideZone.EnableZone();
     }

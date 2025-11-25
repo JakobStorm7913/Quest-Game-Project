@@ -9,7 +9,7 @@ public class WitchCombatManager : MonoBehaviour
     public bool witchSlain { get; set; }
     public bool witchFrozen { get; set; }
     public bool entryCombatRunning { get; set; }
-    public int initialEnemiesBeaten { get; set; }
+    public int requiredSpidersSlain { get; set; }
     public bool normalCombatRunning { get; set; }
 
 
@@ -23,7 +23,7 @@ public class WitchCombatManager : MonoBehaviour
             witchSlain = false;
             witchFrozen = true;
             entryCombatRunning = false;
-            initialEnemiesBeaten = 0;
+            requiredSpidersSlain = 999999999;
             normalCombatRunning = false;
         }
     }
@@ -43,11 +43,10 @@ public class WitchCombatManager : MonoBehaviour
 
         witchFrozen = false;
         Debug.Log("Frozen = "+ witchFrozen.ToString());
-        //entryCombatRunning = true;
-        normalCombatRunning = true;
-
+        entryCombatRunning = true;
+        requiredSpidersSlain = GameData.Instance.SpidersSlain + 2;
         Debug.Log("EntryRunning = " + entryCombatRunning.ToString());
-       // attackScript.SpawnInitialCombat();
+        attackScript.SpawnInitialCombat();
     }
 
     public void EndCombat() {

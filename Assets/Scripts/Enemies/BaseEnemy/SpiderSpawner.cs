@@ -34,7 +34,7 @@ public class SpiderSpawner : MonoBehaviour
             if (spawnRate <= 0f)
             {
                 SpawnSpider();
-                spawnRate = 5f;
+                spawnRate = 7f;
             }
         }
     }

@@ -11,6 +11,7 @@ public class GameData : MonoBehaviour
     
     [Header("Other")]
     public bool GameRunning { get; set; }
+    public int SpidersSlain { get; set; }
 
 
 
@@ -22,6 +23,7 @@ public class GameData : MonoBehaviour
             PlayerMaxHealth = 100;
             PlayerHealth = 100;
             PlayerAttackDamage = 5;
+            SpidersSlain = 0;
             GameRunning = false;
         }
     }

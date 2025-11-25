@@ -24,14 +24,14 @@ public class Entity_Enemy : MonoBehaviour
     
      
     [Header("KnockBack")]
-    [SerializeField] private float knockbackForce = 5f;
+    [SerializeField] private float knockbackForce = 6f;
     [SerializeField] private float knockbackRadius = 5f;
     [SerializeField] private Rigidbody2D playerRB;
     [SerializeField] private bool isKnockedBack = false;
-    [SerializeField] private float knockbackTimer = 0.2f;
+    [SerializeField] private float knockbackTimer = 0.3f;
 
     [Header("Health")]
-    [SerializeField] private float maxHealth = 25;
+    [SerializeField] private float maxHealth = 15;
     [SerializeField] private float currentHealth;
 
 
@@ -110,7 +110,8 @@ public class Entity_Enemy : MonoBehaviour
 
         StartFade(targetAlphaOnExit);
         itemSpawn.SpawnRandomItem();
-        Destroy(gameObject, 2);
+        Destroy(gameObject, 0.5f);
+        GameData.Instance.SpidersSlain++;
     }
 
     void Knockback(float duration)

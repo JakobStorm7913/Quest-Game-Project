@@ -108,9 +108,9 @@ public class SpawnAttackBehavior : MonoBehaviour
         SoundFXManager.Instance.PlaySoundFX(deathClip, transform);
         if (isInitialWave)
         {
-            WitchCombatManager.Instance.initialEnemiesBeaten++;
+            GameData.Instance.SpidersSlain++;
         }
-        Debug.Log(WitchCombatManager.Instance.initialEnemiesBeaten + "inital beaten");
+        //Debug.Log(WitchCombatManager.Instance.initialEnemiesBeaten + "inital beaten");
     }
 
 

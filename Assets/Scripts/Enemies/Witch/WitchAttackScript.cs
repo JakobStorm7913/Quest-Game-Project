@@ -6,8 +6,8 @@ public class WitchAttackScript : MonoBehaviour
 {
 
     [Header("Attack attributes")]
-    [SerializeField] private float minTimeBetweenAttacks = 3f;
-    [SerializeField] private float maxTimeBetweenAttacks = 5f;
+    [SerializeField] private float minTimeBetweenAttacks = 4f;
+    [SerializeField] private float maxTimeBetweenAttacks = 7f;
 
     [Header("Attack References")]
     [SerializeField] private GameObject magicPrefab;
@@ -88,7 +88,6 @@ public class WitchAttackScript : MonoBehaviour
         playerRB = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
 
         InitializeSounds();
-        initialCombatBeaten = true;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -112,7 +111,7 @@ public class WitchAttackScript : MonoBehaviour
     }
 
     public void SpawnInitialCombat() {
-        for (float gap = 0f; gap <= 0.9f; gap = gap + 0.3f) {
+        for (float gap = 0f; gap <= 0.6f; gap = gap + 0.3f) {
         StartCoroutine(InitialSpawnAttack(gap));
         }
     }
@@ -129,15 +128,15 @@ public class WitchAttackScript : MonoBehaviour
 
     private void CheckIfInitialCombatBeaten()
     {
-        //if (WitchCombatManager.Instance.initialEnemiesBeaten >= 5)
-        //{
+        if (GameData.Instance.SpidersSlain >= WitchCombatManager.Instance.requiredSpidersSlain)
+        {
             initialCombatBeaten = true;
             normalCombatStarted = true;
-        //}
+        }
     }
 
     void DoRandomAttack() {
-        AttackID = Random.Range(0, 3); // 0 = (Base) Magic atk | 1 = Splashpotion attack | 2 = Mob spawn attack | 3 = Bat spawn attack --- 4 will never trigger, chooses random between 0-3
+        AttackID = Random.Range(0, 8); // 0 = (Base) Magic atk | 1 = Splashpotion attack | 2 = Mob spawn attack | 3 = Bat spawn attack --- 4 will never trigger, chooses random between 0-3
 
         switch (AttackID) {
             case 0:
@@ -145,10 +144,27 @@ public class WitchAttackScript : MonoBehaviour
                 //Explode();
                 break;
             case 1:
-                StartCoroutine(EnemySpawnAttack());
+                StartCoroutine(BatAttack());
                 break;
             case 2:
+                StartCoroutine(MagicAttack());
+                break;
+            case 3:
                 StartCoroutine(BatAttack());
+                //Explode();
+                break;
+            case 4:
+                StartCoroutine(MagicAttack());
+                break;
+            case 5:
+                StartCoroutine(BatAttack());
+                break;
+            case 6:
+                StartCoroutine(MagicAttack());
+                //Explode();
+                break;
+            case 7:
+                StartCoroutine(EnemySpawnAttack());
                 break;
         }
     }

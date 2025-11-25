@@ -197,13 +197,14 @@ MonoBehaviour:
   col: {fileID: 0}
   sr: {fileID: 0}
   player: {fileID: 0}
-  knockbackForce: 5
+  itemSpawn: {fileID: 0}
+  knockbackForce: 6
   knockbackRadius: 5
   playerRB: {fileID: 0}
   isKnockedBack: 0
   knockbackTimer: 0.3
   maxHealth: 15
-  currentHealth: 15
+  currentHealth: 0
   attackDamage: 5
   speed: 1
   direction: 0

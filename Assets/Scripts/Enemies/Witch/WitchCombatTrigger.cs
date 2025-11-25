@@ -13,8 +13,8 @@ public class WitchCombatTrigger : MonoBehaviour
 
     [Header("Vine")]
     [SerializeField] private GameObject vinesPrefab;
-    [SerializeField] private float vinesX = 150.49f;
-    [SerializeField] private float vinesY = 36.05781f;
+    [SerializeField] private float vinesX = 152.75f;
+    [SerializeField] private float vinesY = 36.3f;
 
     [Header("House")]
     //[SerializeField] private GameObject witchHouse;
@@ -58,7 +58,7 @@ public class WitchCombatTrigger : MonoBehaviour
             Debug.Log("Player entered Witch fight");
             SoundFXManager.Instance.StartBossBattleMusic();
             StartCoroutine(SpawnVines());
-            SoundFXManager.Instance.PlaySoundFX(witchEnterSFX, transform, 0.5f);
+            SoundFXManager.Instance.PlaySoundFX(witchEnterSFX, transform);
             combatManager.StartCombat();
             }
         else {
