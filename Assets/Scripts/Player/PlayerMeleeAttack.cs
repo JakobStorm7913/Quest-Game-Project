@@ -150,7 +150,7 @@ public class PlayerMeleeAttack : MonoBehaviour
             if (entityTarget != null)
             {
                 entityTarget.TakeDamage();
-                SoundFXManager.Instance.PlayPlayerDamageSFX();
+                SoundFXManager.Instance.PlayPlayerAttackSFX();
             }
         }
     }

@@ -2366,7 +2366,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -550651079
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3150,7 +3150,7 @@ GameObject:
   - component: {fileID: 780297909}
   - component: {fileID: 780297908}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: WitchHealthCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3391,7 +3391,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -550651079
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5735,7 +5735,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -550651079
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6064,8 +6064,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WitchCombatTrigger
   playerTag: Player
   combatManager: {fileID: 0}
-  playerCam: {fileID: 981173894}
-  bossCam: {fileID: 924990189}
   vinesPrefab: {fileID: 0}
   vinesX: -10.6
   vinesY: -1.76
@@ -6762,7 +6760,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -550651079
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7643,7 +7641,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -550651079
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7697,11 +7695,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371217141c0367c48b8e1c9e6950d686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WitchAttackScript
-  potionDamage: 20
   minTimeBetweenAttacks: 3
   maxTimeBetweenAttacks: 5
   magicPrefab: {fileID: 0}
-  splashpotionPrefab: {fileID: 0}
   batPrefab: {fileID: 0}
   spawnPrefab: {fileID: 0}
   player: {fileID: 0}
@@ -7721,8 +7717,6 @@ MonoBehaviour:
   SpawnAnimDelay: 0.3
   BatAnimDelay: 0.2
   witchScreamClip: {fileID: 0}
-  witchMagicAttackClip: {fileID: 0}
-  potionAttackClip: {fileID: 0}
   spawnAttackClip: {fileID: 0}
   magicAttackClip: {fileID: 0}
   batFlyingClip: {fileID: 0}
@@ -8029,7 +8023,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -550651079
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -1,17 +1,17 @@
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class WitchAttackScript : MonoBehaviour
 {
 
     [Header("Attack attributes")]
-    [SerializeField] private float potionDamage = 20f;
     [SerializeField] private float minTimeBetweenAttacks = 3f;
     [SerializeField] private float maxTimeBetweenAttacks = 5f;
 
     [Header("Attack References")]
     [SerializeField] private GameObject magicPrefab;
-    [SerializeField] private GameObject splashpotionPrefab;
+   // [SerializeField] private GameObject splashpotionPrefab;
     [SerializeField] private GameObject batPrefab;
     [SerializeField] private GameObject spawnPrefab;
 
@@ -39,6 +39,7 @@ public class WitchAttackScript : MonoBehaviour
     [Header ("Enemy Spawn Variables")]
     [SerializeField] private float SpawnYOffset = 0f;
     [SerializeField] private float SpawnXOffset = 2f;
+     [SerializeField] LayerMask groundMask;
 
     [Header ("Bat Spawn Variables")]
     [SerializeField] private float BatYOffset = 5f;
@@ -52,8 +53,8 @@ public class WitchAttackScript : MonoBehaviour
 
         [Header("Witch SFX")]
     [SerializeField] private AudioClip witchScreamClip;
-    [SerializeField] private AudioClip witchMagicAttackClip;
-    [SerializeField] private AudioClip potionAttackClip;
+    //[SerializeField] private AudioClip witchMagicAttackClip;
+    //[SerializeField] private AudioClip potionAttackClip;
     [SerializeField] private AudioClip spawnAttackClip;
 
     [Header("Magic attack SFX")]
@@ -80,9 +81,9 @@ public class WitchAttackScript : MonoBehaviour
      void Awake() {
         //Set prefabs
         magicPrefab = Resources.Load<GameObject>("Prefabs/MagicBallAttack");
-        splashpotionPrefab = Resources.Load<GameObject>("Prefabs/WitchAttackPotion");
+       // splashpotionPrefab = Resources.Load<GameObject>("Prefabs/WitchAttackPotion");
         batPrefab = Resources.Load<GameObject>("Prefabs/WitchBatAttack");
-        spawnPrefab = Resources.Load<GameObject>("Prefabs/WitchEnemySpawn");
+        spawnPrefab = Resources.Load<GameObject>("Prefabs/Spider");
 
         playerRB = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
 
@@ -110,7 +111,7 @@ public class WitchAttackScript : MonoBehaviour
     }
 
     public void SpawnInitialCombat() {
-        for (float gap = 0f; gap < 1f; gap = gap + 0.2f) {
+        for (float gap = 0f; gap <= 0.9f; gap = gap + 0.3f) {
         StartCoroutine(InitialSpawnAttack(gap));
         }
     }
@@ -223,12 +224,7 @@ public class WitchAttackScript : MonoBehaviour
     }*/
 
     IEnumerator EnemySpawnAttack() {
-        if (animator != null) {
-            animator.SetTrigger("SpawnAttack");
-        }
-        yield return new WaitForSeconds(SpawnAnimDelay);
-
-        Vector3 EnemySpawnPosition = transform.position;
+       Vector3 EnemySpawnPosition = transform.position;
         
         CheckPlayerSide();
 
@@ -240,15 +236,25 @@ public class WitchAttackScript : MonoBehaviour
 
         EnemySpawnPosition.y += SpawnYOffset;
 
-           //Spawn Enemy
-        GameObject Spawn = Instantiate(spawnPrefab, EnemySpawnPosition, Quaternion.identity);
-        SpawnAttackBehavior SpawnAttack = Spawn.GetComponent<SpawnAttackBehavior>();
-         if (Spawn != null) {
-            int dir = (playerSide == 0) ? -1 : 1;
-            SpawnAttack.InitializeSpawn(dir, false);
-         }
+        RaycastHit2D hit = Physics2D.Raycast(EnemySpawnPosition + Vector3.up * 2f, Vector2.down, 10f, groundMask);
 
-         SoundFXManager.Instance.PlaySoundFX(spawnClip, transform);
+    if (hit.collider != null)
+    {
+        // Place spider on the ground surface
+        EnemySpawnPosition = hit.point;
+        EnemySpawnPosition.y += SpawnYOffset; // slight offset so it isn’t inside the ground
+    }
+    else
+    {
+        // No ground found → don't spawn
+        Debug.LogWarning("No ground under spawn position, skipping spider spawn.");
+    }
+
+    GameObject spider = Instantiate(spawnPrefab, EnemySpawnPosition, Quaternion.identity);
+
+    StartCoroutine(SpawnEffect(spider.transform));
+    SoundFXManager.Instance.PlaySoundFX(spawnAttackClip, transform);
+    yield return null;
     }
 
     IEnumerator BatAttack() {
@@ -282,10 +288,6 @@ public class WitchAttackScript : MonoBehaviour
     }
     
     IEnumerator InitialSpawnAttack(float gap) {
-        if (animator != null) {
-            animator.SetTrigger("SpawnAttack");
-        }
-        yield return new WaitForSeconds(SpawnAnimDelay);
 
         Vector3 EnemySpawnPosition = transform.position;
         
@@ -299,14 +301,25 @@ public class WitchAttackScript : MonoBehaviour
 
         EnemySpawnPosition.y += SpawnYOffset;
 
-           //Spawn Enemy
-        GameObject Spawn = Instantiate(spawnPrefab, EnemySpawnPosition, Quaternion.identity);
-        SpawnAttackBehavior SpawnAttack = Spawn.GetComponent<SpawnAttackBehavior>();
-         if (Spawn != null) {
-            int dir = (playerSide == 0) ? -1 : 1;
-            SpawnAttack.InitializeSpawn(dir, true);
-        }
-        SoundFXManager.Instance.PlaySoundFX(spawnAttackClip, transform);
+        RaycastHit2D hit = Physics2D.Raycast(EnemySpawnPosition + Vector3.up * 2f, Vector2.down, 10f, groundMask);
+
+    if (hit.collider != null)
+    {
+        // Place spider on the ground surface
+        EnemySpawnPosition = hit.point;
+        EnemySpawnPosition.y += SpawnYOffset; // slight offset so it isn’t inside the ground
+    }
+    else
+    {
+        // No ground found → don't spawn
+        Debug.LogWarning("No ground under spawn position, skipping spider spawn.");
+    }
+
+    GameObject spider = Instantiate(spawnPrefab, EnemySpawnPosition, Quaternion.identity);
+
+    StartCoroutine(SpawnEffect(spider.transform));
+    SoundFXManager.Instance.PlaySoundFX(spawnAttackClip, transform);
+    yield return null;
     }
 
     void Explode()
@@ -333,7 +346,41 @@ public class WitchAttackScript : MonoBehaviour
         spawnClip = Resources.Load<AudioClip>("SoundFX/WitchSpawnSFX");
         
         //Explosion
-
-
     }
+
+  IEnumerator SpawnEffect(Transform t, float distance = 0.6f, float duration = 0.6f)
+{
+    // Save final values
+    Vector3 finalPosition = t.position;
+    Vector3 finalScale    = t.localScale;
+
+    // Start hidden & underground
+    t.localScale = Vector3.zero;
+    t.position   = finalPosition - new Vector3(0f, distance, 0f);
+
+    // Optional random delay – but spider stays invisible during this
+    float randomDelay = Random.Range(0f, 0.4f);
+    if (randomDelay > 0f)
+        yield return new WaitForSeconds(randomDelay);
+
+    float time = 0f;
+
+    while (time < duration)
+    {
+        float tNorm = time / duration;
+
+        // Move up from underground to final position
+        t.position = Vector3.Lerp(t.position, finalPosition, tNorm);
+
+        // Scale from 0 → full
+        t.localScale = Vector3.Lerp(Vector3.zero, finalScale, tNorm);
+
+        time += Time.deltaTime;
+        yield return null;
+    }
+
+    // Snap to final values to avoid tiny float errors
+    t.position   = finalPosition;
+    t.localScale = finalScale;
+}
 }

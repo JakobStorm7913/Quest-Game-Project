@@ -7,7 +7,7 @@ public class VillageToSwampChanger : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
-        SceneManager.LoadScene("WitchBattleScene");
+        SceneManager.LoadScene("GameScene");
         
     }
 }

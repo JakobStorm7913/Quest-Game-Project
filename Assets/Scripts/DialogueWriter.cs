@@ -39,11 +39,18 @@ public class DialogueWriter : MonoBehaviour
     private IEnumerator TypeCoroutine()
     {
         textComponent.text = "";
-
+        //float timer = 0;
+        SoundFXManager.Instance.PlayNPCTalkSFX();
         foreach (char c in dialogueText)
         {
             textComponent.text += c;
+           // timer += Time.deltaTime;
             yield return new WaitForSeconds(charDelay);
+            /*if (timer >= 4)
+            {
+                SoundFXManager.Instance.PlayNPCTalkSFX();
+                timer = 0f;
+            }*/
         }
 
         // done typing, wait a bit

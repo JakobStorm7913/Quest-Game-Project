@@ -21,6 +21,8 @@ public class SoundFXManager : MonoBehaviour
     [SerializeField] private AudioClip playerAttackClip;
     [SerializeField] private AudioClip playerDamageClip;
 
+    [SerializeField] private AudioClip NPCTalkClip;
+
     // [SerializeField] private AudioClip healClip
 
     [Header("Witch SFX")]
@@ -112,6 +114,11 @@ public class SoundFXManager : MonoBehaviour
         src.transform.position = spawnTransform.position;
         src.volume = (sfxVolume * masterVolume) / volumeDamping;  // <-- global scaling
         src.PlayOneShot(audioClip);
+    }
+
+    public void PlayNPCTalkSFX()
+    {
+        PlaySoundFX(NPCTalkClip, transform);
     }
 
     public void PlayPlayerAttackSFX()
@@ -233,5 +240,6 @@ public class SoundFXManager : MonoBehaviour
         //Player
         playerAttackClip = Resources.Load<AudioClip>("SoundFX/PlayerAttackSFX");
         playerDamageClip = Resources.Load<AudioClip>("SoundFX/PlayerDamageSFX");
+        NPCTalkClip = Resources.Load<AudioClip>("SoundFX/NPCTalkSFX");
     }
 }

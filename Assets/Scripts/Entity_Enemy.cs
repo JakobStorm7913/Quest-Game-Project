@@ -20,6 +20,7 @@ public class Entity_Enemy : MonoBehaviour
     [SerializeField] private Collider2D col;
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private GameObject player;
+    [SerializeField] private ItemSpawn itemSpawn;
     
      
     [Header("KnockBack")]
@@ -60,6 +61,7 @@ public class Entity_Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
         sr = GetComponent<SpriteRenderer>();
+        itemSpawn = GetComponent<ItemSpawn>();
        
         currentHealth = maxHealth;
         SpiderDamagedSFX = Resources.Load<AudioClip>("SoundFX/SpiderDamagedSFX");
@@ -107,6 +109,7 @@ public class Entity_Enemy : MonoBehaviour
         anim.enabled = false;
 
         StartFade(targetAlphaOnExit);
+        itemSpawn.SpawnRandomItem();
         Destroy(gameObject, 2);
     }
 

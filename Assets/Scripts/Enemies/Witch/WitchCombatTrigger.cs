@@ -7,14 +7,14 @@ public class WitchCombatTrigger : MonoBehaviour
     [SerializeField] private string playerTag = "Player";
     [SerializeField] private WitchCombatManager combatManager;
 
-    [Header("Camera")]
-    [SerializeField] private CinemachineCamera playerCam;
-    [SerializeField] private CinemachineCamera bossCam;
+   // [Header("Camera")]
+//    [SerializeField] private CinemachineCamera playerCam;
+   // [SerializeField] private CinemachineCamera bossCam;
 
     [Header("Vine")]
     [SerializeField] private GameObject vinesPrefab;
-    [SerializeField] private float vinesX = -10.6f;
-    [SerializeField] private float vinesY = -1.76f;
+    [SerializeField] private float vinesX = 226.96f;
+    [SerializeField] private float vinesY = 42.94f;
 
     [Header("House")]
     //[SerializeField] private GameObject witchHouse;
@@ -30,7 +30,7 @@ public class WitchCombatTrigger : MonoBehaviour
 
     void Awake() {
         combatManager = WitchCombatManager.Instance;
-        vinesPrefab = Resources.Load<GameObject>("Prefabs/Vines");
+        vinesPrefab = Resources.Load<GameObject>("Prefabs/WitchVines");
         //housePrefab = Resources.Load<GameObject>("Prefabs/WitchHouse");
         //witchHouse = GameObject.Find("WitchHouse");
         witchEnterSFX = Resources.Load<AudioClip>("SoundFX/WitchScream");
@@ -47,27 +47,27 @@ public class WitchCombatTrigger : MonoBehaviour
     {
         if (!other.CompareTag(playerTag)) return;
 
-        if (combatManager != null)
+      /*  if (combatManager != null)
         {
             //Camera switch
             //Destroy(witchHouse);
             bossCam.Priority = 10;
             playerCam.Priority = 0;
-
+*/
         if(!WitchCombatManager.Instance.witchSlain) {
             Debug.Log("Player entered Witch fight");
             SoundFXManager.Instance.StartBossBattleMusic();
             StartCoroutine(SpawnVines());
-            SoundFXManager.Instance.PlaySoundFX(witchEnterSFX, transform, 1f);
+            SoundFXManager.Instance.PlaySoundFX(witchEnterSFX, transform, 0.5f);
             combatManager.StartCombat();
             }
-        }
         else {
             Debug.LogError("null error");
         }
     }
+    
 
-    private void OnTriggerExit2D(Collider2D other)
+    /*private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag(playerTag)) {
             return;
@@ -78,7 +78,7 @@ public class WitchCombatTrigger : MonoBehaviour
             bossCam.Priority = 0;
            // witchHouse = Instantiate(housePrefab, new Vector3(houseX, houseY, 0), Quaternion.identity);
         }
-    }
+    }*/
 
     IEnumerator SpawnVines()
     {
@@ -86,3 +86,4 @@ public class WitchCombatTrigger : MonoBehaviour
         GameObject Vines = Instantiate(vinesPrefab, new Vector3(vinesX, vinesY, 0), Quaternion.identity);
     }
 }
+

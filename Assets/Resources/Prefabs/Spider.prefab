@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7255910402845420944}
   - component: {fileID: 2345083295897760851}
   - component: {fileID: 2028679094712903359}
+  - component: {fileID: 7856236874844070035}
   m_Layer: 9
   m_Name: Spider
   m_TagString: Enemies
@@ -212,3 +213,23 @@ MonoBehaviour:
   fadeSpeed: 1
   targetAlphaOnEnter: 0
   targetAlphaOnExit: 1
+--- !u!114 &7856236874844070035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195685362687196143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d54c7d1e9b22549a2a5948494bdac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSpawn
+  noSpawnChance: 60
+  smallHealthPotionChance: 80
+  largeHealthPotionChance: 95
+  witchKeyChance: 100
+  DropHit: 0
+  smallHealthPotionPrefab: {fileID: 3176799010669823755, guid: 4ab89218544e40048b8862757549754a, type: 3}
+  largeHealthPotionPrefab: {fileID: 3577331375372058292, guid: 62780b49a8b562c4da14c59b7379bbb9, type: 3}
+  witchKeyPrefab: {fileID: 3897114384099151127, guid: ad53bf37c3ff823458f8e92821058547, type: 3}

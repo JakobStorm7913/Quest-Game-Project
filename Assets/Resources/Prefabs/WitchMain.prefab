@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 4488834231572644899}
   - component: {fileID: 7695878414458864087}
   - component: {fileID: 6527079508893445654}
-  - component: {fileID: 4367226482147302245}
+  - component: {fileID: 4900095050969095750}
+  - component: {fileID: 4902476893710676149}
+  - component: {fileID: 1994212306877151475}
   m_Layer: 0
   m_Name: WitchMain
   m_TagString: Untagged
@@ -20,21 +22,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4835084086743359955
-Transform:
+--- !u!224 &4835084086743359955
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6083375058143101137}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.29, y: 1.8460038, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0974, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 252.69, y: 53.12}
+  m_SizeDelta: {x: 2.3133333, y: 3.3133333}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &4488834231572644899
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -152,30 +158,97 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!50 &4367226482147302245
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!114 &4900095050969095750
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6083375058143101137}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371217141c0367c48b8e1c9e6950d686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WitchAttackScript
+  minTimeBetweenAttacks: 3
+  maxTimeBetweenAttacks: 5
+  magicPrefab: {fileID: 2273771301595677190, guid: b0ae29e0525cf1b4d899197975f0bada, type: 3}
+  batPrefab: {fileID: 0}
+  spawnPrefab: {fileID: 0}
+  player: {fileID: 0}
+  animator: {fileID: 0}
+  explosionForce: 100
+  explosionRadius: 5
+  playerRB: {fileID: 0}
+  playerSide: 0
+  MagicYOffset: -0.1
+  MagicXOffset: 0.5
+  SpawnYOffset: 0
+  SpawnXOffset: 2
+  BatYOffset: 5
+  BatXOffset: 2
+  MagicAnimDelay: 0.1
+  PotionAnimDelay: 0.2
+  SpawnAnimDelay: 0.3
+  BatAnimDelay: 0.2
+  witchScreamClip: {fileID: 8300000, guid: 89f35435167381a468e1cd836599eb39, type: 3}
+  spawnAttackClip: {fileID: 8300000, guid: d55d87ba9ec7bc845830ab7e8436124a, type: 3}
+  magicAttackClip: {fileID: 8300000, guid: 4bd27f34351b9004d98e855ff3ad01e5, type: 3}
+  batFlyingClip: {fileID: 8300000, guid: 7389f3f2245040c428e5ab4def341e95, type: 3}
+  batAttackClip: {fileID: 0}
+  spawnClip: {fileID: 0}
+  AttackID: 0
+  initialCombatBeaten: 0
+  normalCombatStarted: 0
+--- !u!114 &4902476893710676149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6083375058143101137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e541dce7d0d79945b86f6ff510fe500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WitchHealthManager
+  maxHealth: 100
+  currentHealth: 100
+  frozen: 1
+  follower: {fileID: 0}
+--- !u!114 &1994212306877151475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6083375058143101137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ea42e3ba48952c4590fe62013f31760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WitchMovement
+  speed: 1
+  witchAnimator: {fileID: 0}
+  patrolNodes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  reachDistance: 0.1
+  currentNode: 0
