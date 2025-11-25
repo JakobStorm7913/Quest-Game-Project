@@ -1,0 +1,2678 @@
+fileFormatVersion: 2
+guid: 97ec19e8cb8ff214f942e47a3f6eb50a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5983134647232049098
+    second: Kugle_Heks_0
+  - first:
+      213: 3726252468311608164
+    second: Kugle_Heks_1
+  - first:
+      213: 4505349583111910919
+    second: Kugle_Heks_2
+  - first:
+      213: 9188155082436831113
+    second: Kugle_Heks_3
+  - first:
+      213: 7736749291432968078
+    second: Kugle_Heks_4
+  - first:
+      213: -2147331539351368306
+    second: Kugle_Heks_5
+  - first:
+      213: -5435857042514309420
+    second: Kugle_Heks_6
+  - first:
+      213: 8735559226761214903
+    second: Kugle_Heks_7
+  - first:
+      213: -5731895163364322422
+    second: Kugle_Heks_8
+  - first:
+      213: -8275875737751825768
+    second: Kugle_Heks_9
+  - first:
+      213: 8406924009913525645
+    second: Kugle_Heks_10
+  - first:
+      213: 1027194240295197865
+    second: Kugle_Heks_11
+  - first:
+      213: 1736037888497774860
+    second: Kugle_Heks_12
+  - first:
+      213: 4599319852124842115
+    second: Kugle_Heks_13
+  - first:
+      213: 8560205528535590849
+    second: Kugle_Heks_14
+  - first:
+      213: -2324355640959316853
+    second: Kugle_Heks_15
+  - first:
+      213: -4143047997517299283
+    second: Kugle_Heks_16
+  - first:
+      213: -1262467477639675216
+    second: Kugle_Heks_17
+  - first:
+      213: -4746850949948447804
+    second: Kugle_Heks_18
+  - first:
+      213: 3468459614549174460
+    second: Kugle_Heks_19
+  - first:
+      213: -7679995600660920860
+    second: Kugle_Heks_20
+  - first:
+      213: -8608861030534857700
+    second: Kugle_Heks_21
+  - first:
+      213: 3636769684539329619
+    second: Kugle_Heks_22
+  - first:
+      213: -3138565320186122781
+    second: Kugle_Heks_23
+  - first:
+      213: 1706917300391959169
+    second: Kugle_Heks_24
+  - first:
+      213: 5116863472318607442
+    second: Kugle_Heks_25
+  - first:
+      213: -2929351667255532962
+    second: Kugle_Heks_26
+  - first:
+      213: 6759565814529908881
+    second: Kugle_Heks_27
+  - first:
+      213: 8787562829750490504
+    second: Kugle_Heks_28
+  - first:
+      213: 2701289860274996394
+    second: Kugle_Heks_29
+  - first:
+      213: -7701524922957338455
+    second: Kugle_Heks_30
+  - first:
+      213: 6179858652396954296
+    second: Kugle_Heks_31
+  - first:
+      213: -5932132394848320128
+    second: Kugle_Heks_32
+  - first:
+      213: -5953938506024196347
+    second: Kugle_Heks_33
+  - first:
+      213: 7914360347909681165
+    second: Kugle_Heks_34
+  - first:
+      213: -8725200985972665699
+    second: Kugle_Heks_35
+  - first:
+      213: 3449471097558996624
+    second: Kugle_Heks_36
+  - first:
+      213: 7032546283834019478
+    second: Kugle_Heks_37
+  - first:
+      213: -253227591541056032
+    second: Kugle_Heks_38
+  - first:
+      213: -2614116528555639271
+    second: Kugle_Heks_39
+  - first:
+      213: -6757820934936032156
+    second: Kugle_Heks_40
+  - first:
+      213: -4964918232860124367
+    second: Kugle_Heks_41
+  - first:
+      213: 650549055994763650
+    second: Kugle_Heks_42
+  - first:
+      213: -2392988302264242259
+    second: Kugle_Heks_43
+  - first:
+      213: 6759092606004704581
+    second: Kugle_Heks_44
+  - first:
+      213: 9127700321346897541
+    second: Kugle_Heks_45
+  - first:
+      213: 76118642503380696
+    second: Kugle_Heks_46
+  - first:
+      213: -817530459009732788
+    second: Kugle_Heks_47
+  - first:
+      213: -6689676771030031701
+    second: Kugle_Heks_48
+  - first:
+      213: 3587863149453753743
+    second: Kugle_Heks_49
+  - first:
+      213: -4182688350404360635
+    second: Kugle_Heks_50
+  - first:
+      213: 7554968929304060568
+    second: Kugle_Heks_51
+  - first:
+      213: 7023906056307746369
+    second: Kugle_Heks_52
+  - first:
+      213: 8780638452811841127
+    second: Kugle_Heks_53
+  - first:
+      213: -418487664323595923
+    second: Kugle_Heks_54
+  - first:
+      213: -6092590170657771069
+    second: Kugle_Heks_55
+  - first:
+      213: -5996052634535784481
+    second: Kugle_Heks_56
+  - first:
+      213: -6789483780598182751
+    second: Kugle_Heks_57
+  - first:
+      213: -7135713817855325512
+    second: Kugle_Heks_58
+  - first:
+      213: -6040319248226530377
+    second: Kugle_Heks_59
+  - first:
+      213: -2183413775256541435
+    second: Kugle_Heks_60
+  - first:
+      213: 4118456755178293045
+    second: Kugle_Heks_61
+  - first:
+      213: -7308341906022796943
+    second: Kugle_Heks_62
+  - first:
+      213: 5925270439072999781
+    second: Kugle_Heks_63
+  - first:
+      213: 1425523959530982651
+    second: Kugle_Heks_64
+  - first:
+      213: -7030336438975305993
+    second: Kugle_Heks_65
+  - first:
+      213: 480924380136504491
+    second: Kugle_Heks_66
+  - first:
+      213: 5124626669094452313
+    second: Kugle_Heks_67
+  - first:
+      213: 8302837440766890033
+    second: Kugle_Heks_68
+  - first:
+      213: 477956844637915423
+    second: Kugle_Heks_69
+  - first:
+      213: 1666775434229415605
+    second: Kugle_Heks_70
+  - first:
+      213: -1462104946400534527
+    second: Kugle_Heks_71
+  - first:
+      213: -9153498010316753256
+    second: Kugle_Heks_72
+  - first:
+      213: 6024153401667740690
+    second: Kugle_Heks_73
+  - first:
+      213: 8022859695916943740
+    second: Kugle_Heks_74
+  - first:
+      213: 7051322931176631264
+    second: Kugle_Heks_75
+  - first:
+      213: -6650963404690070427
+    second: Kugle_Heks_76
+  - first:
+      213: -192137325197204242
+    second: Kugle_Heks_77
+  - first:
+      213: 5663092905726651785
+    second: Kugle_Heks_78
+  - first:
+      213: 1781976444772060684
+    second: Kugle_Heks_79
+  - first:
+      213: -2150121416673770613
+    second: Kugle_Heks_80
+  - first:
+      213: -6363489414768648488
+    second: Kugle_Heks_81
+  - first:
+      213: 4584005641605991921
+    second: Kugle_Heks_82
+  - first:
+      213: 2384907663342567396
+    second: Kugle_Heks_83
+  - first:
+      213: 2862307691132823555
+    second: Kugle_Heks_84
+  - first:
+      213: -1010372684101245753
+    second: Kugle_Heks_85
+  - first:
+      213: -3437926115390320506
+    second: Kugle_Heks_86
+  - first:
+      213: -3115078809185972005
+    second: Kugle_Heks_87
+  - first:
+      213: -6912755813975840929
+    second: Kugle_Heks_88
+  - first:
+      213: 2132001979710332613
+    second: Kugle_Heks_89
+  - first:
+      213: -1209948966561345331
+    second: Kugle_Heks_90
+  - first:
+      213: 4670309834232969281
+    second: Kugle_Heks_91
+  - first:
+      213: 6668285617255256123
+    second: Kugle_Heks_92
+  - first:
+      213: 6416385663952566532
+    second: Kugle_Heks_93
+  - first:
+      213: 322453318405876081
+    second: Kugle_Heks_94
+  - first:
+      213: -4553495609709512559
+    second: Kugle_Heks_95
+  - first:
+      213: 8455824237269231124
+    second: Kugle_Heks_96
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kugle_Heks_0
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 448
+        width: 72
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf299bf24d580350800000000000000
+      internalID: 5983134647232049098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 453
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46bc22d90ee46b330800000000000000
+      internalID: 3726252468311608164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 486
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706f6525397368e30800000000000000
+      internalID: 4505349583111910919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 465
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987e8d5dd52e28f70800000000000000
+      internalID: 9188155082436831113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_4
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 464
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ffd105d747e5b60800000000000000
+      internalID: 7736749291432968078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_5
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 465
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d08fd87552332e0800000000000000
+      internalID: -2147331539351368306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_6
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 448
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de012bf1d4ff84b0800000000000000
+      internalID: -5435857042514309420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 12
+        width: 439
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bbfc7175d0fa3970800000000000000
+      internalID: 8735559226761214903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_8
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 434
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83d3e1c7b73470b0800000000000000
+      internalID: -5731895163364322422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_9
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 449
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892570e2dde262d80800000000000000
+      internalID: -8275875737751825768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_10
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 451
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85299068d46ba470800000000000000
+      internalID: 8406924009913525645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 441
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac5f1028b3514e00800000000000000
+      internalID: 1027194240295197865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 436
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01778cf245a71810800000000000000
+      internalID: 1736037888497774860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 355
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388ad4a890114df30800000000000000
+      internalID: 4599319852124842115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_14
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 387
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7e2b40395fbc670800000000000000
+      internalID: 8560205528535590849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_15
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 365
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cc1f80cda3ebfd0800000000000000
+      internalID: -2324355640959316853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 368
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1869c0ccfe086c0800000000000000
+      internalID: -4143047997517299283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_17
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 364
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2cdc69480da7ee0800000000000000
+      internalID: -1262467477639675216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_18
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 353
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3e89ef53ccf1eb0800000000000000
+      internalID: -4746850949948447804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_19
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 336
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8edfa84a1722030800000000000000
+      internalID: 3468459614549174460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_20
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 320
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e50b0a01bc2b6590800000000000000
+      internalID: -7679995600660920860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_21
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 321
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c3442218e278880800000000000000
+      internalID: -8608861030534857700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_22
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 331
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c40e872c6687230800000000000000
+      internalID: 3636769684539329619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_23
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 338
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed22f958739174d0800000000000000
+      internalID: -3138565320186122781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 215
+        width: 75
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ad4d6bd3030b710800000000000000
+      internalID: 1706917300391959169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_25
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 323
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250f8bfb730c20740800000000000000
+      internalID: 5116863472318607442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_26
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 323
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e522903dd2ad857d0800000000000000
+      internalID: -2929351667255532962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_27
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 310
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190edea6b4dcecd50800000000000000
+      internalID: 6759565814529908881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_28
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 302
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88554bcc5d1b3f970800000000000000
+      internalID: 8787562829750490504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_29
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 291
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa44e0dd0d8ec7520800000000000000
+      internalID: 2701289860274996394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_30
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 286
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a86f4213efae1590800000000000000
+      internalID: -7701524922957338455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_31
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 264
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2ae3ab3b443c550800000000000000
+      internalID: 6179858652396954296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_32
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 263
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0858a744405dcada0800000000000000
+      internalID: -5932132394848320128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_33
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 267
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50768ed597c5f5da0800000000000000
+      internalID: -5953938506024196347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_34
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 266
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00f799edc475dd60800000000000000
+      internalID: 7914360347909681165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_35
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 239
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92163d6eebd9e680800000000000000
+      internalID: -8725200985972665699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_36
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 224
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0961bf8efabfedf20800000000000000
+      internalID: 3449471097558996624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_37
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 224
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e8b6ac59f989160800000000000000
+      internalID: 7032546283834019478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_38
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 208
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed1eded8da5c7cf0800000000000000
+      internalID: -253227591541056032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_39
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 212
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91eb6f11edac8bbd0800000000000000
+      internalID: -2614116528555639271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_40
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 205
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c80750aa56732a0800000000000000
+      internalID: -6757820934936032156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_41
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 209
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b13872c21191bb0800000000000000
+      internalID: -4964918232860124367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_42
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 205
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289988f6be6370900800000000000000
+      internalID: 650549055994763650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_43
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 212
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafefd351d56aced0800000000000000
+      internalID: -2392988302264242259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_44
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 196
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54531e8f9ee1dcd50800000000000000
+      internalID: 6759092606004704581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_45
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 193
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586c916e41b1cae70800000000000000
+      internalID: 9127700321346897541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_46
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 189
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dee237808d6e0100800000000000000
+      internalID: 76118642503380696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_47
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 196
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4fa9a5016c87a4f0800000000000000
+      internalID: -817530459009732788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_48
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 195
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2a2909b6e7923a0800000000000000
+      internalID: -6689676771030031701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_49
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 183
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8db7ed6686aac130800000000000000
+      internalID: 3587863149453753743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_50
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 177
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546cbfb2b1b14f5c0800000000000000
+      internalID: -4182688350404360635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_51
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 180
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89228489634a8d860800000000000000
+      internalID: 7554968929304060568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_52
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 177
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14620fd085de97160800000000000000
+      internalID: 7023906056307746369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_53
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 175
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e3cf8a6281bd970800000000000000
+      internalID: 8780638452811841127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_54
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 142
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61fb11cfab313af0800000000000000
+      internalID: -418487664323595923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_55
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 171
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c138eb0585c27ba0800000000000000
+      internalID: -6092590170657771069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_56
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 164
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf03f7b5edb9cca0800000000000000
+      internalID: -5996052634535784481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_57
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 169
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac4b294978e6c1a0800000000000000
+      internalID: -6789483780598182751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_58
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 153
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba03ebd61ad8fc90800000000000000
+      internalID: -7135713817855325512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_59
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 150
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bbc08f85a97c2ca0800000000000000
+      internalID: -6040319248226530377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_60
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 156
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507a3285db4f2b1e0800000000000000
+      internalID: -2183413775256541435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_61
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 153
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537c53b2992b72930800000000000000
+      internalID: 4118456755178293045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_62
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 138
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171f86af1cd839a90800000000000000
+      internalID: -7308341906022796943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_63
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 142
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 569a117221aca3250800000000000000
+      internalID: 5925270439072999781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_64
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 135
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc07aa0d7a78c310800000000000000
+      internalID: 1425523959530982651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_65
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 114
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6646fc14a3f6e90800000000000000
+      internalID: -7030336438975305993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_66
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 85
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac7cd9fc269ca600800000000000000
+      internalID: 480924380136504491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_67
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 83
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c3ed9ddc45e1740800000000000000
+      internalID: 5124626669094452313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_68
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 85
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13059bc79aa993370800000000000000
+      internalID: 8302837440766890033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_69
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 72
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f190c96c73b02a600800000000000000
+      internalID: 477956844637915423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_70
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 80
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be779d2d63912710800000000000000
+      internalID: 1666775434229415605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_71
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 80
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100647d3c4f85bbe0800000000000000
+      internalID: -1462104946400534527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_72
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 79
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89633d29e0e38f080800000000000000
+      internalID: -9153498010316753256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_73
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 85
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214eddaf9971a9350800000000000000
+      internalID: 6024153401667740690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_74
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 82
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c798de1f26ce65f60800000000000000
+      internalID: 8022859695916943740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_75
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb695da8d45bd160800000000000000
+      internalID: 7051322931176631264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_76
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 77
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5646351950803b3a0800000000000000
+      internalID: -6650963404690070427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_77
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 68
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4e687ee14655df0800000000000000
+      internalID: -192137325197204242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_78
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 78
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d2fdf4ef8579e40800000000000000
+      internalID: 5663092905726651785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_79
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 74
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e80cc922adab810800000000000000
+      internalID: 1781976444772060684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_80
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 78
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83433f96fb3922e0800000000000000
+      internalID: -2150121416673770613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_81
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 68
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de91cca71850b7a0800000000000000
+      internalID: -6363489414768648488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_82
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fdcf4c08d8ad9f30800000000000000
+      internalID: 4584005641605991921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_83
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 67
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eff3af42e4e81120800000000000000
+      internalID: 2384907663342567396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_84
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 60
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30827df0ea5f8b720800000000000000
+      internalID: 2862307691132823555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_85
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c42361a56f6af1f0800000000000000
+      internalID: -1010372684101245753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_86
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 63
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6801f18b9680a40d0800000000000000
+      internalID: -3437926115390320506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_87
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 45
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd09f13d35405c4d0800000000000000
+      internalID: -3115078809185972005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_88
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5724f86635f010a0800000000000000
+      internalID: -6912755813975840929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_89
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 42
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce50153184669d10800000000000000
+      internalID: 2132001979710332613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_90
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 40
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc092c353d5653fe0800000000000000
+      internalID: -1209948966561345331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_91
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 40
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1483874cc0640d040800000000000000
+      internalID: 4670309834232969281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_92
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 28
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30985550728a8c50800000000000000
+      internalID: 6668285617255256123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_93
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 32
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4093dc114c49b0950800000000000000
+      internalID: 6416385663952566532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_94
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 20
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1796a3ca595997400800000000000000
+      internalID: 322453318405876081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_95
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 17
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198b6f05edbbec0c0800000000000000
+      internalID: -4553495609709512559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kugle_Heks_96
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 11
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4162299c75f195570800000000000000
+      internalID: 8455824237269231124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kugle_Heks_0: 5983134647232049098
+      Kugle_Heks_1: 3726252468311608164
+      Kugle_Heks_10: 8406924009913525645
+      Kugle_Heks_11: 1027194240295197865
+      Kugle_Heks_12: 1736037888497774860
+      Kugle_Heks_13: 4599319852124842115
+      Kugle_Heks_14: 8560205528535590849
+      Kugle_Heks_15: -2324355640959316853
+      Kugle_Heks_16: -4143047997517299283
+      Kugle_Heks_17: -1262467477639675216
+      Kugle_Heks_18: -4746850949948447804
+      Kugle_Heks_19: 3468459614549174460
+      Kugle_Heks_2: 4505349583111910919
+      Kugle_Heks_20: -7679995600660920860
+      Kugle_Heks_21: -8608861030534857700
+      Kugle_Heks_22: 3636769684539329619
+      Kugle_Heks_23: -3138565320186122781
+      Kugle_Heks_24: 1706917300391959169
+      Kugle_Heks_25: 5116863472318607442
+      Kugle_Heks_26: -2929351667255532962
+      Kugle_Heks_27: 6759565814529908881
+      Kugle_Heks_28: 8787562829750490504
+      Kugle_Heks_29: 2701289860274996394
+      Kugle_Heks_3: 9188155082436831113
+      Kugle_Heks_30: -7701524922957338455
+      Kugle_Heks_31: 6179858652396954296
+      Kugle_Heks_32: -5932132394848320128
+      Kugle_Heks_33: -5953938506024196347
+      Kugle_Heks_34: 7914360347909681165
+      Kugle_Heks_35: -8725200985972665699
+      Kugle_Heks_36: 3449471097558996624
+      Kugle_Heks_37: 7032546283834019478
+      Kugle_Heks_38: -253227591541056032
+      Kugle_Heks_39: -2614116528555639271
+      Kugle_Heks_4: 7736749291432968078
+      Kugle_Heks_40: -6757820934936032156
+      Kugle_Heks_41: -4964918232860124367
+      Kugle_Heks_42: 650549055994763650
+      Kugle_Heks_43: -2392988302264242259
+      Kugle_Heks_44: 6759092606004704581
+      Kugle_Heks_45: 9127700321346897541
+      Kugle_Heks_46: 76118642503380696
+      Kugle_Heks_47: -817530459009732788
+      Kugle_Heks_48: -6689676771030031701
+      Kugle_Heks_49: 3587863149453753743
+      Kugle_Heks_5: -2147331539351368306
+      Kugle_Heks_50: -4182688350404360635
+      Kugle_Heks_51: 7554968929304060568
+      Kugle_Heks_52: 7023906056307746369
+      Kugle_Heks_53: 8780638452811841127
+      Kugle_Heks_54: -418487664323595923
+      Kugle_Heks_55: -6092590170657771069
+      Kugle_Heks_56: -5996052634535784481
+      Kugle_Heks_57: -6789483780598182751
+      Kugle_Heks_58: -7135713817855325512
+      Kugle_Heks_59: -6040319248226530377
+      Kugle_Heks_6: -5435857042514309420
+      Kugle_Heks_60: -2183413775256541435
+      Kugle_Heks_61: 4118456755178293045
+      Kugle_Heks_62: -7308341906022796943
+      Kugle_Heks_63: 5925270439072999781
+      Kugle_Heks_64: 1425523959530982651
+      Kugle_Heks_65: -7030336438975305993
+      Kugle_Heks_66: 480924380136504491
+      Kugle_Heks_67: 5124626669094452313
+      Kugle_Heks_68: 8302837440766890033
+      Kugle_Heks_69: 477956844637915423
+      Kugle_Heks_7: 8735559226761214903
+      Kugle_Heks_70: 1666775434229415605
+      Kugle_Heks_71: -1462104946400534527
+      Kugle_Heks_72: -9153498010316753256
+      Kugle_Heks_73: 6024153401667740690
+      Kugle_Heks_74: 8022859695916943740
+      Kugle_Heks_75: 7051322931176631264
+      Kugle_Heks_76: -6650963404690070427
+      Kugle_Heks_77: -192137325197204242
+      Kugle_Heks_78: 5663092905726651785
+      Kugle_Heks_79: 1781976444772060684
+      Kugle_Heks_8: -5731895163364322422
+      Kugle_Heks_80: -2150121416673770613
+      Kugle_Heks_81: -6363489414768648488
+      Kugle_Heks_82: 4584005641605991921
+      Kugle_Heks_83: 2384907663342567396
+      Kugle_Heks_84: 2862307691132823555
+      Kugle_Heks_85: -1010372684101245753
+      Kugle_Heks_86: -3437926115390320506
+      Kugle_Heks_87: -3115078809185972005
+      Kugle_Heks_88: -6912755813975840929
+      Kugle_Heks_89: 2132001979710332613
+      Kugle_Heks_9: -8275875737751825768
+      Kugle_Heks_90: -1209948966561345331
+      Kugle_Heks_91: 4670309834232969281
+      Kugle_Heks_92: 6668285617255256123
+      Kugle_Heks_93: 6416385663952566532
+      Kugle_Heks_94: 322453318405876081
+      Kugle_Heks_95: -4553495609709512559
+      Kugle_Heks_96: 8455824237269231124
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
