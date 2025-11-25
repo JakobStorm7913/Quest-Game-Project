@@ -8365,6 +8365,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4900095050969095750, guid: 4c585c6f9de34e747ab2eff393eba822, type: 3}
+      propertyPath: magicPrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900095050969095750, guid: 4c585c6f9de34e747ab2eff393eba822, type: 3}
+      propertyPath: batFlyingClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900095050969095750, guid: 4c585c6f9de34e747ab2eff393eba822, type: 3}
+      propertyPath: magicAttackClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900095050969095750, guid: 4c585c6f9de34e747ab2eff393eba822, type: 3}
+      propertyPath: spawnAttackClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900095050969095750, guid: 4c585c6f9de34e747ab2eff393eba822, type: 3}
+      propertyPath: witchScreamClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4902476893710676149, guid: 4c585c6f9de34e747ab2eff393eba822, type: 3}
       propertyPath: follower
       value: 

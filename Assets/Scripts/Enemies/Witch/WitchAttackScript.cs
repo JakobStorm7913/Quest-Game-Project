@@ -88,6 +88,7 @@ public class WitchAttackScript : MonoBehaviour
         playerRB = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
 
         InitializeSounds();
+        initialCombatBeaten = true;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -128,11 +129,11 @@ public class WitchAttackScript : MonoBehaviour
 
     private void CheckIfInitialCombatBeaten()
     {
-        if (WitchCombatManager.Instance.initialEnemiesBeaten >= 5)
-        {
+        //if (WitchCombatManager.Instance.initialEnemiesBeaten >= 5)
+        //{
             initialCombatBeaten = true;
             normalCombatStarted = true;
-        }
+        //}
     }
 
     void DoRandomAttack() {
@@ -167,7 +168,7 @@ public class WitchAttackScript : MonoBehaviour
 
     IEnumerator MagicAttack() {
         if (animator != null) {
-            animator.SetTrigger("MagicAttack");
+            animator.Play("MagicAttack");
         } 
         yield return new WaitForSeconds(MagicAnimDelay);
 
@@ -224,7 +225,15 @@ public class WitchAttackScript : MonoBehaviour
     }*/
 
     IEnumerator EnemySpawnAttack() {
+
+        if (animator != null) {
+            animator.SetTrigger("EnemySpawnAttack");
+        }
+
+        yield return new WaitForSeconds(SpawnAnimDelay);        
        Vector3 EnemySpawnPosition = transform.position;
+
+       
         
         CheckPlayerSide();
 

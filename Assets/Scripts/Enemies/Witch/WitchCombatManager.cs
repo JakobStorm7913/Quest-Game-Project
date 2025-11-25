@@ -33,7 +33,7 @@ public class WitchCombatManager : MonoBehaviour
     {
         if (attackScript == null) 
         {
-            attackScript = GameObject.Find("Witch").GetComponent<WitchAttackScript>();
+            attackScript = GameObject.Find("WitchMain").GetComponent<WitchAttackScript>();
             Debug.Log("AttackScript" + attackScript.ToString());
         }
     }
@@ -43,10 +43,11 @@ public class WitchCombatManager : MonoBehaviour
 
         witchFrozen = false;
         Debug.Log("Frozen = "+ witchFrozen.ToString());
-        entryCombatRunning = true;
-       
+        //entryCombatRunning = true;
+        normalCombatRunning = true;
+
         Debug.Log("EntryRunning = " + entryCombatRunning.ToString());
-        //attackScript.SpawnInitialCombat();
+       // attackScript.SpawnInitialCombat();
     }
 
     public void EndCombat() {
