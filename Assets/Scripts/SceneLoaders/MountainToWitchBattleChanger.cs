@@ -3,9 +3,8 @@ using UnityEngine;
 public class MountainToWitchBattleChanger : MonoBehaviour
 {
    [SerializeField] GameObject player;
-   [SerializeField] float playerXPosition = 230.1f;
-   [SerializeField] float playerYPosition = 43.96f;
-
+   [SerializeField] float playerXPosition = 153.74f;
+   [SerializeField] float playerYPosition = 36.3f;
 
    private void OnTriggerEnter2D(Collider2D other)
     {

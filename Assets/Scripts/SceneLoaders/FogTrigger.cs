@@ -36,6 +36,7 @@ public class FogTrigger : MonoBehaviour
 
     IEnumerator FadeTo(float targetAlpha)
     {
+        yield return new WaitForSeconds(1.5f);
         Color c = sr.color;
 
         while (!Mathf.Approximately(c.a, targetAlpha))

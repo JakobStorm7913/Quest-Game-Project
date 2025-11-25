@@ -5,6 +5,7 @@ public class GameData : MonoBehaviour
     public static GameData Instance  { get; private set; }
 
     [Header("Player Stats")]
+    public float PlayerMaxHealth { get; set; }
     public float PlayerHealth { get; set; }
     public float PlayerAttackDamage { get; set; }
     
@@ -18,6 +19,7 @@ public class GameData : MonoBehaviour
             
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            PlayerMaxHealth = 100;
             PlayerHealth = 100;
             PlayerAttackDamage = 5;
             GameRunning = false;

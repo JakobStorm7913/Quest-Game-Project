@@ -12,6 +12,8 @@ public class PlayerUseQuestItem : MonoBehaviour
     [SerializeField] protected Transform usePoint; // Hvor detection sker
     [SerializeField] protected LayerMask doorTargetLayer; // Hvad den skal registere
     [SerializeField] protected GameObject newDoor;
+     [SerializeField] float doorXPosition = 119.7196f;
+   [SerializeField] float doorYPosition = 33.88123f;
     [SerializeField] protected LayerMask wellTargetLayer;
 
     [Header("SoundFX")]
@@ -67,9 +69,9 @@ public class PlayerUseQuestItem : MonoBehaviour
     void ChangeDoorPrefab()
     {
         GameObject oldDoor = GameObject.FindWithTag("WitchDoor");
-        Vector3 doorPosition = oldDoor.transform.position;
+        Vector3 doorPos = new Vector3(doorXPosition, doorYPosition, oldDoor.transform.position.z);
         Destroy(oldDoor);
         SoundFXManager.Instance.PlaySoundFX(doorOpenSFX, transform);
-        GameObject openDoor = Instantiate(newDoor, doorPosition, Quaternion.identity);
+        GameObject NewDoor = Instantiate(newDoor, doorPos, Quaternion.identity);
     }
 }

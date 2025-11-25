@@ -8,8 +8,6 @@ public class WitchToMountainTeleporter : MonoBehaviour
    [SerializeField] float playerXPosition = 118.15f;
    [SerializeField] float playerYPosition = 35.78f;
    [SerializeField] GameObject fogPrefab;
-   [SerializeField] float fogXPosition = 118.3f;
-   [SerializeField] float fogYPosition = 37.7f;
     [SerializeField] private CinemachineCamera playerCam;
     [SerializeField] private CinemachineCamera swampStartCam;
     [SerializeField] private CinemachineCamera endOfRoadCam;
@@ -37,7 +35,7 @@ public class WitchToMountainTeleporter : MonoBehaviour
         endOfRoadCam.Priority = 2;
         swampStartCam.Priority = 1;
         witchBattleCam.Priority = 0;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
         Destroy(GiantFog);
     }
 }

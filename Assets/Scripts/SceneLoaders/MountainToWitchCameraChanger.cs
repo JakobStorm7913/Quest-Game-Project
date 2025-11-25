@@ -1,5 +1,6 @@
 using UnityEngine;
 using Unity.Cinemachine;
+using System.Collections;
 
 
 public class MountainToWitchCameraChanger : MonoBehaviour
@@ -9,12 +10,28 @@ public class MountainToWitchCameraChanger : MonoBehaviour
     [SerializeField] private CinemachineCamera swampStartCam;
     [SerializeField] private CinemachineCamera endOfRoadCam;
     [SerializeField] private CinemachineCamera witchBattleCam;
+    [SerializeField] GameObject fogPrefab;
+
+    void Awake()
+    {
+        fogPrefab = Resources.Load<GameObject>("Prefabs/GiantFog");
+    }
    private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-            playerCam.Priority = 2;
-            endOfRoadCam.Priority = 1;
-            witchBattleCam.Priority = 10;
-            swampStartCam.Priority = 0;
+            StartCoroutine(MakeTransition());
     }
+
+       private IEnumerator MakeTransition()
+    {
+        GameObject GiantFog = Instantiate(fogPrefab, transform.position, Quaternion.identity);
+        playerCam.Priority = 2;
+        endOfRoadCam.Priority = 1;
+        swampStartCam.Priority = 0;
+        witchBattleCam.Priority = 10;
+        yield return new WaitForSeconds(5f);
+        Destroy(GiantFog);
+    }
+
+    
 }
