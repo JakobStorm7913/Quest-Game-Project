@@ -232,7 +232,7 @@ MonoBehaviour:
   dialogueText: "Thank you Bl\xF3\xF0vegur!\n\r\nYou did what none of us were able
     to and have freed our village from that damned curse!\n\r\nWe will be forever
     grateful for your heroic actions!\n\r\nIn your honor we will celebrate with a
-    mighty party this evening.\n\r\nEveryone gather up to thank our kind savior!"
+    mighty feast this evening.\n\r\nEveryone gather up to thank our kind savior!"
   charDelay: 0.05
   autoHideDelay: 2
   textSize: 19.5

@@ -89,6 +89,12 @@ public class PlayerUseQuestItem : MonoBehaviour
         {
             writer.StartDialogue();                        // start typewriter text
         }
+        playerCam.Priority = 0;
+        leftSideCam.Priority = 0;
+        rightSideCam.Priority = 10;
+        fullVillageCam.Priority = 0;
+        leftSideZone.DisableZone();
+        rightSideZone.DisableZone();
         StartCoroutine(StartCurseLiftedCo());
                 // Code for what happens when everything is saved
                 // Maybe:
@@ -116,9 +122,7 @@ public class PlayerUseQuestItem : MonoBehaviour
     IEnumerator StartCurseLiftedCo()
     {   yield return new WaitForSeconds(3);
         SoundFXManager.Instance.StartVillageSavedMusic();
-        yield return new WaitForSeconds(13);
-        leftSideZone.DisableZone();
-        rightSideZone.DisableZone();
+        yield return new WaitForSeconds(14);
         playerCam.Priority = 2;
         leftSideCam.Priority = 0;
         rightSideCam.Priority = 1;
@@ -126,7 +130,7 @@ public class PlayerUseQuestItem : MonoBehaviour
         yield return new WaitForSeconds(1);
         fog.StartFade();
 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(6);
         leftSideZone.EnableZone();
         rightSideZone.EnableZone();
     }
