@@ -13,8 +13,8 @@ public class WitchCombatTrigger : MonoBehaviour
 
     [Header("Vine")]
     [SerializeField] private GameObject vinesPrefab;
-    [SerializeField] private float vinesX = 152.75f;
-    [SerializeField] private float vinesY = 36.3f;
+    [SerializeField] private float vinesX = 153.03f;
+    [SerializeField] private float vinesY = 40.6851f;
 
     [Header("House")]
     //[SerializeField] private GameObject witchHouse;
