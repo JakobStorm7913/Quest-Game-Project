@@ -57,7 +57,6 @@ public class WitchHealthManager : MonoBehaviour
         }
         WitchCombatManager.Instance.witchSlain = true;
         SoundFXManager.Instance.StopBossBattleMusic();
-        WitchCombatManager.Instance.EndCombat();
         StartCoroutine(PlayDeathAnimation());
     }
 
@@ -65,8 +64,9 @@ public class WitchHealthManager : MonoBehaviour
     {
         animator.Play("WitchDeath");
         SoundFXManager.Instance.PlayWitchDeathSFX();
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(1f);
         GameObject CurseCure = Instantiate(curseCurePrefab, transform.position, Quaternion.identity);
+        WitchCombatManager.Instance.EndCombat();
         Destroy(gameObject);
     }
 }

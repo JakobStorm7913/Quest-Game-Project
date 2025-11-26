@@ -10,9 +10,9 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private int slotCount = 4;
     [SerializeField] private int stackLimit = 10;
 
-    [SerializeField] private List<InventorySlot> slots;
+    [SerializeField] public List<InventorySlot> slots;
 
-    public IReadOnlyList<InventorySlot> Slots => slots;
+    //public IReadOnlyList<InventorySlot> Slots => slots;
     public int SlotCount => slotCount;
     public int StackLimit => stackLimit;
 
@@ -21,7 +21,6 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private ItemData cureItem;
 
     [Header("Actions")]
-    public System.Action OnInventoryChanged;
     private InputAction slot1Action;
     private InputAction slot2Action;
     private InputAction slot3Action;
@@ -60,7 +59,7 @@ public class InventoryManager : MonoBehaviour
             if (slot.item == itemData && slot.count < stackLimit)
             {
                 slot.count++;
-                OnInventoryChanged?.Invoke();
+                InventoryUI.Instance.Refresh();
                 return;
             }
         }
@@ -70,7 +69,7 @@ public class InventoryManager : MonoBehaviour
             {
                 slot.item = itemData;
                 slot.count = 1;
-                OnInventoryChanged?.Invoke();
+                InventoryUI.Instance.Refresh();
                 return;
             }
         }
@@ -140,7 +139,7 @@ public class InventoryManager : MonoBehaviour
             slot.count = 0;
         }
 
-    OnInventoryChanged?.Invoke();
+    InventoryUI.Instance.Refresh();
 }
     
 

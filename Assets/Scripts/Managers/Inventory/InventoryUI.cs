@@ -6,27 +6,40 @@ using TMPro;
 
 public class InventoryUI : MonoBehaviour
 {
-    [SerializeField] private InventoryManager inventoryManager;
+    public static InventoryUI Instance { get; private set; }
+    //[SerializeField] private InventoryManager inventoryManager;
     [SerializeField] private InventorySlotUI[] slotUIs;
 
+     private void Awake()
+    {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        Refresh();
+    }
     private void OnEnable()
     {
-        if (inventoryManager == null)
-            inventoryManager = InventoryManager.Instance;
+       // if (inventoryManager == null)
+         //   inventoryManager = InventoryManager.Instance;
 
-        inventoryManager.OnInventoryChanged += Refresh;
+        //InventoryManager.Instance.OnInventoryChanged += Refresh;
         Refresh();
     }
 
     private void OnDisable()
     {
-        if (inventoryManager != null)
-            inventoryManager.OnInventoryChanged -= Refresh;
+        //if (inventoryManager != null)
+           //InventoryManager.Instance.OnInventoryChanged -= Refresh;
     }
 
     public void Refresh()
     {
-        var slots = inventoryManager.Slots;
+        var slots = InventoryManager.Instance.slots;
 
         for (int i = 0; i < slotUIs.Length; i++)
         {
