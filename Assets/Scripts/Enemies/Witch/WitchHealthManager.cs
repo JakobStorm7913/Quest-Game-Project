@@ -64,6 +64,7 @@ public class WitchHealthManager : MonoBehaviour
     IEnumerator PlayDeathAnimation()
     {
         animator.Play("WitchDeath");
+        SoundFXManager.Instance.PlayWitchDeathSFX();
         yield return new WaitForSeconds(0.4f);
         GameObject CurseCure = Instantiate(curseCurePrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);

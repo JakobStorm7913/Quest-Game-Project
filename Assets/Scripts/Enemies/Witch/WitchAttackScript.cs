@@ -20,6 +20,7 @@ public class WitchAttackScript : MonoBehaviour
     [SerializeField] private Animator animator;
 
     [Header("Witch Explosion")]
+    [SerializeField] private WitchMovement movementScript;
     [SerializeField] private float explosionForce = 100f;
     [SerializeField] private float explosionRadius = 5f;
     [SerializeField] private Rigidbody2D playerRB;
@@ -79,6 +80,7 @@ public class WitchAttackScript : MonoBehaviour
     [SerializeField] private bool normalCombatStarted = false;
 
      void Awake() {
+        
         //Set prefabs
         magicPrefab = Resources.Load<GameObject>("Prefabs/MagicBallAttack");
        // splashpotionPrefab = Resources.Load<GameObject>("Prefabs/WitchAttackPotion");
@@ -86,6 +88,8 @@ public class WitchAttackScript : MonoBehaviour
         spawnPrefab = Resources.Load<GameObject>("Prefabs/Spider");
 
         playerRB = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
+
+        movementScript = GetComponentInParent<WitchMovement>();
 
         InitializeSounds();
     }
@@ -119,6 +123,11 @@ public class WitchAttackScript : MonoBehaviour
     public IEnumerator NormalAttackSequence() {
         while(initialCombatBeaten) {
         float timeToNextAttack = Random.Range(minTimeBetweenAttacks, maxTimeBetweenAttacks);
+
+        if (movementScript.currentNode == 13)
+            {
+                Explode();
+            }
 
         yield return new WaitForSeconds(timeToNextAttack);
 

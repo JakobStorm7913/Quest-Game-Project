@@ -157,7 +157,7 @@ public class SoundFXManager : MonoBehaviour
 
      public void PlayWitchDeathSFX()
     {
-        PlaySoundFX(witchDeathClip, transform, 0.5f);
+        PlaySoundFX(witchDeathClip, transform);
     }
     
 

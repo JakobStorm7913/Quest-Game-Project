@@ -433,12 +433,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150257007}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.93696, y: -4.92027, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1003610358}
+  m_Father: {fileID: 779151796}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &150257009
 AudioSource:
@@ -4140,6 +4140,7 @@ MonoBehaviour:
   witchMagicAttackClip: {fileID: 0}
   potionAttackClip: {fileID: 0}
   spawnAttackClip: {fileID: 0}
+  witchDeathClip: {fileID: 0}
   magicAttackClip: {fileID: 0}
   batFlyingClip: {fileID: 0}
   batAttackClip: {fileID: 0}
@@ -4148,7 +4149,7 @@ MonoBehaviour:
   masterVolume: 0.259
   musicVolume: 0.246
   sfxVolume: 0.5
-  npcTalkSource: {fileID: 0}
+  npcTalkSource: {fileID: 150257009}
   sfxPoolSize: 5
 --- !u!4 &779151796
 Transform:
@@ -4166,6 +4167,7 @@ Transform:
   - {fileID: 2127386210}
   - {fileID: 1490145436}
   - {fileID: 553930836}
+  - {fileID: 150257008}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &801380344
@@ -4625,8 +4627,7 @@ Transform:
   m_LocalPosition: {x: 6.52, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 150257008}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1005320391

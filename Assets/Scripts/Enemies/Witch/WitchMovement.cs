@@ -13,7 +13,7 @@ public class WitchMovement : MonoBehaviour
     [Header ("Movement Path")]
     [SerializeField] private List<Transform> patrolNodes;
     [SerializeField] private float reachDistance = 0.1f;
-    [SerializeField] private int currentNode = 0;
+    [SerializeField] public int currentNode = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -51,6 +51,7 @@ public class WitchMovement : MonoBehaviour
         {
             // Move to the next node (loop)
             currentNode = (currentNode + 1) % patrolNodes.Count;
+
         }
         }
     }
