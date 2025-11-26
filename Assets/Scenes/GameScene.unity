@@ -8116,7 +8116,7 @@ MonoBehaviour:
   combatManager: {fileID: 1230364544}
   vinesPrefab: {fileID: 4807194031598677911, guid: ea4c9fa3a2ce76748a8118777efeca74, type: 3}
   vinesX: 153.03
-  vinesY: 40.6851
+  vinesY: 36.23967
   witchEnterSFX: {fileID: 8300000, guid: 89f35435167381a468e1cd836599eb39, type: 3}
 --- !u!212 &1230364546
 SpriteRenderer:
@@ -9646,6 +9646,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333069216}
   m_CullTransparentMesh: 1
+--- !u!1001 &1334641731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2085732593551222586, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 152.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085732593551222586, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 36.239666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085732593551222586, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085732593551222586, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085732593551222586, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085732593551222586, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085732593551222586, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085732593551222586, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085732593551222586, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085732593551222586, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757023455464823711, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
+      propertyPath: m_Name
+      value: WitchVines
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c24e77b48cec51442ae381c7b5013917, type: 3}
 --- !u!1 &1365639276
 GameObject:
   m_ObjectHideFlags: 0
@@ -15930,3 +15987,4 @@ SceneRoots:
   - {fileID: 1287012881}
   - {fileID: 434151960}
   - {fileID: 1557593666}
+  - {fileID: 1334641731}
