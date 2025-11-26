@@ -80,11 +80,18 @@ public class InventoryManager : MonoBehaviour
 
     public void UseItem(int slotIndex)
     {
-        Debug.Log("UseItem called for slot " + slotIndex);
-        if (slotIndex < 0 || slotIndex >= slotCount) return; //making sure we dont grab an index out of range
+         Debug.Log("UseItem called for slot " + slotIndex);
+    if (slotIndex < 0 || slotIndex >= slotCount) return;
+
+    if (playerUse == null)
+    {
+        var playerObj = GameObject.FindWithTag("Player");
+        if (playerObj != null)
+            playerUse = playerObj.GetComponent<PlayerUseQuestItem>();
+    }
 
     var slot = slots[slotIndex];
-    if (slot.IsEmpty) return;
+    if (slot.IsEmpty || playerUse == null) return;
 
     if (slot.item is PotionItemData potion)
         {

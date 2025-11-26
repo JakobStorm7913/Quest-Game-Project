@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class WitchHealthManager : MonoBehaviour
@@ -5,13 +6,20 @@ public class WitchHealthManager : MonoBehaviour
     [SerializeField] public float maxHealth = 100;
     [SerializeField] public float currentHealth = 100;
     [SerializeField] private bool frozen = true;
+    [SerializeField] private Animator animator;
+    [SerializeField] private GameObject curseCurePrefab;
 
     [Header("UI")]
     [SerializeField] private HealthBarFollower follower;
+    void Awake()
+    {
+        curseCurePrefab = Resources.Load<GameObject>("Prefabs/CurseCure");
+    }
 
     void Start()
     {
         currentHealth = maxHealth;
+        animator = GetComponent<Animator>();
 
         if (follower == null)
         {
@@ -29,11 +37,11 @@ public class WitchHealthManager : MonoBehaviour
         }
     }
 
-    void TakeDamage(float damageAmount)
+    void TakeDamage()
     {
-        currentHealth -= damageAmount;
+        currentHealth -= GameData.Instance.PlayerAttackDamage;
 
-        Debug.Log("Witch took " + damageAmount + " damage | health = " + currentHealth);
+        Debug.Log("Witch took " + GameData.Instance.PlayerAttackDamage + " damage | health = " + currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -47,18 +55,17 @@ public class WitchHealthManager : MonoBehaviour
         {
             follower.ShowHealthBar(false); // this now exists again
         }
-
-        Destroy(gameObject);
         WitchCombatManager.Instance.witchSlain = true;
         SoundFXManager.Instance.StopBossBattleMusic();
         WitchCombatManager.Instance.EndCombat();
+        StartCoroutine(PlayDeathAnimation());
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    IEnumerator PlayDeathAnimation()
     {
-        if (other.CompareTag("PlayerAttack"))
-        {
-            TakeDamage(GameData.Instance.PlayerAttackDamage);
-        }
+        animator.Play("WitchDeath");
+        yield return new WaitForSeconds(0.4f);
+        GameObject CurseCure = Instantiate(curseCurePrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

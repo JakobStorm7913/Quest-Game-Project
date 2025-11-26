@@ -33,6 +33,7 @@ public class SoundFXManager : MonoBehaviour
     [SerializeField] private AudioClip witchMagicAttackClip;
     [SerializeField] private AudioClip potionAttackClip;
     [SerializeField] private AudioClip spawnAttackClip;
+    [SerializeField] private AudioClip witchDeathClip;
 
     [Header("Magic attack SFX")]
     [SerializeField] private AudioClip magicAttackClip;
@@ -153,6 +154,11 @@ public class SoundFXManager : MonoBehaviour
     {
         PlaySoundFX(magicAttackClip, transform);
     }
+
+     public void PlayWitchDeathSFX()
+    {
+        PlaySoundFX(witchDeathClip, transform, 0.5f);
+    }
     
 
     public void PreloadMusic(AudioClip audioClip)
@@ -271,5 +277,8 @@ public class SoundFXManager : MonoBehaviour
         NPCTalkClip = Resources.Load<AudioClip>("SoundFX/NPCTalkSFX");
         GameObject NPCSource = GameObject.Find("VillagerAudioSource");
         npcTalkSource = NPCSource.GetComponent<AudioSource>();
+
+        //Witch
+        witchDeathClip = Resources.Load<AudioClip>("SoundFX/WitchDeathSFX");
     }
 }

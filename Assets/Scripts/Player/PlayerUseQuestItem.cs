@@ -56,17 +56,41 @@ public class PlayerUseQuestItem : MonoBehaviour
     {
         
     }
+
     public bool UseWitchKey()
+{
+    Collider2D[] hits = Physics2D.OverlapCircleAll(usePoint.position, useRadius);
+
+    foreach (var hit in hits)
     {
-        bool keyWasUsed = false;
-        Collider2D targetCollider = Physics2D.OverlapCircle(usePoint.position, useRadius, doorTargetLayer);
-            if (targetCollider != null)
-            {
-                ChangeDoorPrefab();
-                keyWasUsed = true;
-            }
-        return keyWasUsed;
+        if (hit.CompareTag("WitchDoor"))
+        {
+            ChangeDoorPrefab();
+            Debug.Log("ChangeDoorMethod Called");
+            return true;
+        }
     }
+
+    return false;
+}
+
+   /* public bool UseWitchKey()
+    {
+    bool keyWasUsed = false;
+    
+    // Don’t filter by layer here
+    Collider2D targetCollider = Physics2D.OverlapCircle(usePoint.position, useRadius);
+
+    if (targetCollider != null && targetCollider.CompareTag("WitchDoor"))
+    {
+        ChangeDoorPrefab();
+        Debug.Log("ChangeDoorMethod Called");
+        keyWasUsed = true;
+    }
+
+    return keyWasUsed;
+    } */
+
 
     public bool UseCure()
     {
@@ -108,16 +132,21 @@ public class PlayerUseQuestItem : MonoBehaviour
     }
 
 
-    
-
     void ChangeDoorPrefab()
     {
-        GameObject oldDoor = GameObject.FindWithTag("WitchDoor");
-        Vector3 doorPos = new Vector3(doorXPosition, doorYPosition, oldDoor.transform.position.z);
-        Destroy(oldDoor);
-        SoundFXManager.Instance.PlaySoundFX(doorOpenSFX, transform);
-        GameObject NewDoor = Instantiate(newDoor, doorPos, Quaternion.identity);
+    GameObject oldDoor = GameObject.FindWithTag("WitchDoor");
+    if (oldDoor == null)
+        {
+        Debug.LogWarning("Door not found");
+        return;
+        }
+
+    Vector3 doorPos = new Vector3(doorXPosition, doorYPosition, oldDoor.transform.position.z);
+    Destroy(oldDoor);
+    SoundFXManager.Instance.PlaySoundFX(doorOpenSFX, transform);
+    Instantiate(newDoor, doorPos, Quaternion.identity);
     }
+
 
     IEnumerator StartCurseLiftedCo()
     {   yield return new WaitForSeconds(3);

@@ -111,7 +111,7 @@ public class WitchAttackScript : MonoBehaviour
     }
 
     public void SpawnInitialCombat() {
-        for (float gap = 0f; gap <= 0.6f; gap = gap + 0.3f) {
+        for (float gap = 0f; gap < 0.6f; gap = gap + 0.3f) {
         StartCoroutine(InitialSpawnAttack(gap));
         }
     }
@@ -350,6 +350,9 @@ public class WitchAttackScript : MonoBehaviour
     void Explode()
     {
     Debug.Log("EXPLOSION triggered");
+    if (animator != null) {
+            animator.SetTrigger("Explosion");
+        }
     Vector3 explosionPosition = transform.position;
     //explosionPosition.y -= 0.5f;
     playerRB.AddExplosionForce2D(explosionPosition, explosionForce, explosionRadius);

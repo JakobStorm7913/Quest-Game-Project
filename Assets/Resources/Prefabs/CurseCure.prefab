@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 8808306403380889877}
   - component: {fileID: 4070526736582438462}
   m_Layer: 0
-  m_Name: Curse Cure
+  m_Name: CurseCure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
