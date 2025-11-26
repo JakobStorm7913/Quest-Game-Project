@@ -363,7 +363,7 @@ public class WitchAttackScript : MonoBehaviour
             animator.SetTrigger("Explosion");
         }
     Vector3 explosionPosition = transform.position;
-    //explosionPosition.y -= 0.5f;
+    explosionPosition.y -= 1f;
     playerRB.AddExplosionForce2D(explosionPosition, explosionForce, explosionRadius);
     var movement = playerRB.GetComponent<PlayerMovementScript>();
     if (movement != null)
