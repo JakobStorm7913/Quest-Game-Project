@@ -907,63 +907,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5.0000153, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &275173325
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 178901827668323421, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.0431366
-      objectReference: {fileID: 0}
-    - target: {fileID: 178901827668323421, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.0790269
-      objectReference: {fileID: 0}
-    - target: {fileID: 178901827668323421, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 178901827668323421, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 178901827668323421, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 178901827668323421, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 178901827668323421, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 178901827668323421, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 178901827668323421, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 178901827668323421, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5567115856333705480, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
-      propertyPath: m_Name
-      value: Curse Cure
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 646032e21e7fef6458ed80c7ec99d3d5, type: 3}
 --- !u!1 &293044228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,7 +1015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &313501990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9217,4 +9160,3 @@ SceneRoots:
   - {fileID: 1003610358}
   - {fileID: 59068446}
   - {fileID: 313501993}
-  - {fileID: 275173325}
