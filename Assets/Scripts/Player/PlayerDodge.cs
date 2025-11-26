@@ -3,18 +3,19 @@ using UnityEngine;
 
 public class PlayerDodge : MonoBehaviour
 {
-    [SerializeField] private float dodgeDuration = 0.5f;
+    [SerializeField] private float dodgeDuration = 0.2f;
     [SerializeField] private string normalLayerName = "Player";
     [SerializeField] private string dodgeLayerName = "PlayerDodge";
 
     [Header("Effects")]
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private TrailRenderer dodgeTrail;
-    [SerializeField] private float flickerInterval = 0.05f;
+    [SerializeField] private float flickerInterval = 0.01f;
     [SerializeField] private float flickerAlpha = 0.1f;
     [SerializeField] private ParticleSystem dodgeDustPrefab;
+    
 
-
+    [SerializeField] private PlayerMovementScript movementScript;
     private int normalLayer;
     private int dodgeLayer;
     public bool isDodging;
@@ -25,9 +26,10 @@ public class PlayerDodge : MonoBehaviour
         normalLayer = LayerMask.NameToLayer(normalLayerName);
         dodgeLayer  = LayerMask.NameToLayer(dodgeLayerName);
         dodgeDustPrefab = Resources.Load<ParticleSystem>("Prefabs/DodgeDust");
+        movementScript = GetComponentInParent<PlayerMovementScript>();
         
         if (spriteRenderer == null)
-            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer = GetComponentInParent<SpriteRenderer>();
 
         if (spriteRenderer != null)
             originalColor = spriteRenderer.color;
@@ -91,6 +93,8 @@ public class PlayerDodge : MonoBehaviour
 
         gameObject.layer = normalLayer;
         isDodging = false;
+        movementScript.isDodging = false;
+        movementScript.EnableMovementAndJump();
     }
      private void ResolveStuckInsideEnemies()
     {

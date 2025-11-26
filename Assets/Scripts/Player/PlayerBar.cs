@@ -1,12 +1,11 @@
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerBar : MonoBehaviour
 {
     //Referencer til at styre healthbaren for witchen
     public Transform fill; //Skrumpe bar FillTop
-    
-    
-    
+    public Image redHeartImage;    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,5 +20,11 @@ public class PlayerBar : MonoBehaviour
         float percent = GameData.Instance.PlayerHealth / GameData.Instance.PlayerMaxHealth;
         fill.localScale = new Vector3(percent, 1f, 1f);
 
+        if (redHeartImage != null)
+        {
+            Color c = redHeartImage.color;
+            c.a = Mathf.Clamp01(percent);
+            redHeartImage.color = c;
+        }
     }
 }

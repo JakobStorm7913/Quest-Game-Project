@@ -209,8 +209,8 @@ MonoBehaviour:
   speed: 1
   direction: 0
   playerSide: 0
-  SpiderDamagedSFX: {fileID: 0}
-  SpiderDeathSFX: {fileID: 0}
+  SpiderDamagedSFX: {fileID: 8300000, guid: 41633711574e5ea4aad2cefcd26eb84b, type: 3}
+  SpiderDeathSFX: {fileID: 8300000, guid: cc2fafc6f3ba22849a0bd77cca540aac, type: 3}
   fadeSpeed: 1
   targetAlphaOnEnter: 0
   targetAlphaOnExit: 1

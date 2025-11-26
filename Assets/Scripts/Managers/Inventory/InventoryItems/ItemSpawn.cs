@@ -15,7 +15,7 @@ public class ItemSpawn : MonoBehaviour
     void Awake()
     {
         smallHealthPotionPrefab = Resources.Load<GameObject>("Prefabs/SmallHealthPotion");
-        largeHealthPotionPrefab = Resources.Load<GameObject>("Prefabs/LargeHealhPotion");
+        largeHealthPotionPrefab = Resources.Load<GameObject>("Prefabs/LargeHealthPotion");
         witchKeyPrefab = Resources.Load<GameObject>("Prefabs/WitchKey");
     }
 

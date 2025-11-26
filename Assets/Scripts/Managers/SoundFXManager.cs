@@ -22,6 +22,7 @@ public class SoundFXManager : MonoBehaviour
     [SerializeField] private AudioClip playerWalkClip;
     [SerializeField] private AudioClip playerAttackClip;
     [SerializeField] private AudioClip playerDamageClip;
+    [SerializeField] private AudioClip playerDeathClip;
 
     [SerializeField] private AudioClip NPCTalkClip;
 
@@ -143,6 +144,10 @@ public class SoundFXManager : MonoBehaviour
     {
         PlaySoundFX(playerDamageClip, transform);
     }
+    public void PlayPlayerDeathSFX()
+    {
+        PlaySoundFX(playerDeathClip, transform);
+    }
 
     public void PlayWitchMagicAttackSFX()
     {
@@ -165,7 +170,7 @@ public class SoundFXManager : MonoBehaviour
         }
         mainMusicSource.gameObject.SetActive(true);
         mainMusicSource.clip = mainMusicClip;
-        mainMusicSource.volume = musicVolume * masterVolume;
+        mainMusicSource.volume = (musicVolume * masterVolume) * 0.5f;
         mainMusicSource.loop = true;
         mainMusicSource.Play();
     }
@@ -242,6 +247,8 @@ public class SoundFXManager : MonoBehaviour
         float v = masterVolume * musicVolume;
         if (mainMusicSource != null) mainMusicSource.volume = v;
         if (bossMusicSource != null) bossMusicSource.volume = v;
+        if (villageSavedMusicSource != null) villageSavedMusicSource.volume = v;
+
     }
 
     private void InitializeSFXManager()
@@ -260,6 +267,7 @@ public class SoundFXManager : MonoBehaviour
         //Player
         playerAttackClip = Resources.Load<AudioClip>("SoundFX/PlayerAttackSFX");
         playerDamageClip = Resources.Load<AudioClip>("SoundFX/PlayerDamageSFX");
+        playerDeathClip = Resources.Load<AudioClip>("SoundFX/PlayerDeathSFX");
         NPCTalkClip = Resources.Load<AudioClip>("SoundFX/NPCTalkSFX");
         GameObject NPCSource = GameObject.Find("VillagerAudioSource");
         npcTalkSource = NPCSource.GetComponent<AudioSource>();

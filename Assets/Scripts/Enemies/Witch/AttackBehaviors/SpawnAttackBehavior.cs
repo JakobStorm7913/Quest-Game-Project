@@ -25,7 +25,7 @@ public class SpawnAttackBehavior : MonoBehaviour
     [SerializeField] private GameObject player;
 
     [SerializeField] private ItemSpawn itemSpawn;
-
+    [SerializeField] private PlayerMovementScript movementScript;
 
     void Awake() {
         //hitSFX= Resources.Load<AudioClip>("SoundFX/");
@@ -35,12 +35,15 @@ public class SpawnAttackBehavior : MonoBehaviour
     void Start() {
         spriteRenderer = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
+        movementScript = player.GetComponentInParent<PlayerMovementScript>();
+
         deathClip = Resources.Load<AudioClip>("SoundFX/SpawnDeathSFX");
         currentHealth = health;
     }
     // Update is called once per frame
     void Update()
     {
+        if(movementScript.isDodging) return;
         Vector2 direction = player.transform.position - transform.position;
 
         direction.y = 0;
@@ -67,10 +70,12 @@ public class SpawnAttackBehavior : MonoBehaviour
                 Debug.Log(gameObject.ToString() + " hit " + collision.gameObject.tag.ToString());
             StartCoroutine(PlayHitAnimation());
         }*/
-        if (collision.gameObject.tag == "Player") {
-            GameData.Instance.PlayerHealth -= spawnDamage;
+        if (collision.gameObject.CompareTag("Player")) {
+        var playerScript = collision.gameObject.GetComponent<PlayerMeleeAttack>();
+        if (playerScript != null) {
+            playerScript.TakeDamage(spawnDamage);
+        }
             Debug.Log(gameObject.ToString() + " hit the player: Player health = " + GameData.Instance.PlayerHealth);
-            SoundFXManager.Instance.PlayPlayerDamageSFX();
         }
      }
 

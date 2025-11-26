@@ -5,7 +5,7 @@ public class PlayerMovementScript : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float jumpForce = 20f;
     [SerializeField] private float dodgeDistance = 2f;
 
     [Header("Groundcheck")]
@@ -23,6 +23,7 @@ public class PlayerMovementScript : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sr;
+    private PlayerDodge playerDodge;
 
     public bool canMove = true;
     public bool canJump = true;
@@ -34,6 +35,7 @@ public class PlayerMovementScript : MonoBehaviour
     private bool facingRight = true;
     private bool jumpPressed;
     private bool dodgePressed;
+    public bool isDodging;
 
     private void Awake()
     {
@@ -54,6 +56,7 @@ public class PlayerMovementScript : MonoBehaviour
         moveAction?.Enable();
         jumpAction?.Enable();
         dodgeAction?.Enable();
+        playerDodge = GetComponent<PlayerDodge>();
     }
 
     private void Update()
@@ -67,6 +70,7 @@ public class PlayerMovementScript : MonoBehaviour
 
     private void FixedUpdate()
     {
+     
         if (isKnockedBack)
         {
             knockbackTimer -= Time.fixedDeltaTime;
@@ -96,8 +100,10 @@ public class PlayerMovementScript : MonoBehaviour
         }
         else
         {
+            if(!dodgePressed) {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             anim.SetBool("walking", false);
+            }
         }
 
         // Jump
@@ -114,10 +120,16 @@ public class PlayerMovementScript : MonoBehaviour
         // Dodge
         if (dodgePressed)
         {
+            DisableMovementAndJump();
+            isDodging = true;
+            anim.SetTrigger("dodge");
             float dir = Mathf.Abs(moveX) > 0.001f ? Mathf.Sign(moveX) : (facingRight ? 1f : -1f);
             transform.Translate(Vector3.right * dir * dodgeDistance, Space.World);
+             if (playerDodge != null)
+            {
+                playerDodge.StartDodge();
+            }
             dodgePressed = false;
-            // trigger your dodge animation/effects here if needed
         }
     }
 

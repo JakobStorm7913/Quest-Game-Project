@@ -17,10 +17,12 @@ public class PlayerMeleeAttack : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private LayerMask whatIsTarget;
     [SerializeField] private float attackCooldown = 0.5f;   // time between attacks
-    [SerializeField] private float attackDuration = 0.4f;   // length of attack animation (tweak in inspector)
+    [SerializeField] private float attackDuration = 0.5f;   // length of attack animation (tweak in inspector)
 
     private float nextAttackTime = 0f;
-    private bool isAttacking = false;
+    private bool isAttacking;
+     private int deathLayer;
+
 
     [Header("Input")]
     [SerializeField] private InputAction attackAction;
@@ -35,6 +37,7 @@ public class PlayerMeleeAttack : MonoBehaviour
         anim = GetComponent<Animator>();
         rb  = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
+        deathLayer = LayerMask.NameToLayer("PlayerDodge");
     }
 
     private void Start()
@@ -66,15 +69,10 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     private void TryStartAttack()
     {
+        if (isAttacking) return;
         if (Time.time < nextAttackTime)
         {
             Debug.Log("[Melee] Attack blocked by cooldown. Time left: " + (nextAttackTime - Time.time));
-            return;
-        }
-
-        if (isAttacking)
-        {
-            Debug.Log("[Melee] Attack ignored, already attacking.");
             return;
         }
 
@@ -111,32 +109,27 @@ public class PlayerMeleeAttack : MonoBehaviour
         DamageTargets();
 
         // Wait until the animation is done
-        yield return new WaitForSeconds(attackDuration * 0.5f);
-
-        isAttacking = false;
+        yield return new WaitForSeconds(attackDuration);// * 0.7f);
 
         if (movementScript != null)
         {
             movementScript.EnableMovementAndJump();
         }
-
+        isAttacking = false;
         Debug.Log("[Melee] Attack finished.");
     }
 
     public void DamageTargets()
     {
-        if (attackPoint == null)
-
-
-       { 
-
-        Vector3 localPos = attackPoint.localPosition;
-        localPos.x *= -1;   // mirror horizontally
-        attackPoint.localPosition = localPos;
-   
-          Debug.LogWarning("[Melee] No attackPoint assigned, cannot damage targets.");
+        if (attackPoint == null) 
+        { 
+            Debug.LogWarning("[Melee] No attackPoint assigned, cannot damage targets.");
             return;
         }
+
+        /*Vector3 localPos = attackPoint.localPosition;
+        localPos.x *= -1;   // mirror horizontally
+        attackPoint.localPosition = localPos;*/
 
         Collider2D[] enemiesColliders = Physics2D.OverlapCircleAll(
             attackPoint.position,
@@ -144,7 +137,7 @@ public class PlayerMeleeAttack : MonoBehaviour
             whatIsTarget
         );
 
-        foreach (Collider2D enemies in enemiesColliders)
+        /*foreach (Collider2D enemies in enemiesColliders)
         {
             Entity_Enemy entityTarget = enemies.GetComponent<Entity_Enemy>();
             if (entityTarget != null)
@@ -152,27 +145,43 @@ public class PlayerMeleeAttack : MonoBehaviour
                 entityTarget.TakeDamage();
                 SoundFXManager.Instance.PlayPlayerAttackSFX();
             }
+        }*/
+
+        foreach (Collider2D hit in enemiesColliders)
+        {
+        // Call TakeDamage() on whatever was hit, if it has it.
+        hit.SendMessage("TakeDamage", SendMessageOptions.DontRequireReceiver);
+
+        SoundFXManager.Instance.PlayPlayerAttackSFX();
         }
+
     }
 
     public void TakeDamage(float damage)
     {
         GameData.Instance.PlayerHealth -= damage;
 
-        if (GameData.Instance.PlayerHealth <= 0)
+        if (GameData.Instance.PlayerHealth <= 0) {
             Die();
+            return;
+        }
+
+        SoundFXManager.Instance.PlayPlayerDamageSFX();
     }
 
-    protected virtual void Die()
+    private void Die()
     {
-        if (anim != null) anim.enabled = false;
-        if (col != null) col.enabled = false;
-
-        if (rb != null)
+       /* if (rb != null)
         {
             rb.gravityScale = 12;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
-        }
+        } */
+        SoundFXManager.Instance.SetMusicVolume(0f);
+        SoundFXManager.Instance.PlayPlayerDeathSFX();
+        gameObject.layer = deathLayer;
+        rb.bodyType = RigidbodyType2D.Static; //freeze player position on death
+        movementScript.DisableMovementAndJump();
+        anim.Play("playerDeath");
 
         Destroy(gameObject, 3f);
     }

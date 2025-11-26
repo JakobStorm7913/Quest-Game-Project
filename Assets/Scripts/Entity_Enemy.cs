@@ -21,7 +21,7 @@ public class Entity_Enemy : MonoBehaviour
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private GameObject player;
     [SerializeField] private ItemSpawn itemSpawn;
-    
+    [SerializeField] private PlayerMovementScript movementScript;
      
     [Header("KnockBack")]
     [SerializeField] private float knockbackForce = 6f;
@@ -68,10 +68,12 @@ public class Entity_Enemy : MonoBehaviour
         SpiderDeathSFX = Resources.Load<AudioClip>("SoundFX/SpiderDeathSFX");
 
         player = GameObject.FindWithTag("Player");
+        movementScript = player.GetComponentInParent<PlayerMovementScript>();
     }
 
     void Update()
     {
+        if(player == null) return;
         if (isKnockedBack)
         {
         knockbackTimer -= Time.fixedDeltaTime;
@@ -85,11 +87,12 @@ public class Entity_Enemy : MonoBehaviour
     }
 
    void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Player") {
-           PlayerMeleeAttack playerScript = player.GetComponent<PlayerMeleeAttack>();
-           playerScript.TakeDamage(attackDamage);
+        if (collision.gameObject.CompareTag("Player")) {
+        var playerScript = collision.gameObject.GetComponent<PlayerMeleeAttack>();
+        if (playerScript != null) {
+            playerScript.TakeDamage(attackDamage);
+        }
             Debug.Log(gameObject.ToString() + " hit the player: Player health = " + GameData.Instance.PlayerHealth);
-            SoundFXManager.Instance.PlayPlayerDamageSFX();
         }
      }
 
@@ -147,6 +150,7 @@ public class Entity_Enemy : MonoBehaviour
 
     void ChasePlayer()
     {
+        if(movementScript.isDodging) return;
         if(canMove) {
         Vector2 direction = player.transform.position - transform.position;
 

@@ -22,6 +22,7 @@ public class SpiderSpawner : MonoBehaviour
     // Update is called once per frame
   void Update()
     {
+        if(player == null) return;
         float dist = Vector2.Distance(player.transform.position, transform.position);
         if (dist > activationRange) return;
 
